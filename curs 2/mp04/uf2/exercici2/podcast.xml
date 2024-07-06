@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+
+   <channel>
+       <title>The Wild Project</title>
+       <link>https://www.youtube.com/@TheWildProject</link>
+       <description>Podcast dedicado a noticias de la actualidad </description>
+       <language>es-es</language> <!-- Código de idioma para español en España -->
+       <copyright>&amp;Jordi Wild utiliza canciones y videos propios sin copyright</copyright>
+       <!-- Dirección de correo electrónico del editor principal -->
+       <managingEditor>23.raul.masso@insdanielblanxart.cat(Editor Principal)</managingEditor>
+       <!-- Dirección de correo electrónico del webmaster -->
+       <webMaster>23.raul.masso@insdanielblanxart.cat (Webmaster)</webMaster>
+       <!-- Enlace a la imagen representativa del canal -->
+       <imagen>
+           <url>https://yt3.googleusercontent.com/SiTejS0za968VUxXQ5Wvs-6dSLTe_SQNkcfG7jVzHgG6f99S5MMNmfLsOMioMwpSC0TvZHvR=s176-c-k-c0x00ffffff-no-rj</url>
+           <titul>The Wild Project</titul>
+           <link url="./logo.jpg"></link>
+       </imagen>
+
+
+     
+
+
+       <item>
+           <title>Racismo en corea</title>
+           <link>https://www.youtube.com/watch?v=R7lqhsY1-yQ</link>
+           <description>Video corto sobre el racismo en corea
+           </description>
+           <category>Actualidad</category>
+           <!--Hora-->
+           <pubDate>4 Feb 2024 00:00:00 GMT</pubDate>
+           <enclosure url="./EL%20RACISMO%20EN%20COREA%20DEL%20SUR%20-%20Maisong%20Lee%20es%20coreano%20nacido%20en%20Venezuela%20y%20lo%20ha%20vivido_QgoKnlsR4oc.mp3" type="" >
+           </enclosure>
+         
+       </item>
+
+
+       <item>
+           <title>Elon Musk usará voluntarios para probar sus chips</title>
+           <link>https://youtu.be/FuFcFm4btwk?si=q5nLZxnyd16Tsoqc</link>
+           <description>Elon Musk ha creado unos nuevos chips para el cerebro para ser "mejores" y usará voluntarios para probarlo</description>
+           <category>Tecnologia</category>
+           <!--Hora-->
+           <pubDate>4 Feb 2024 00:00:00 GMT</pubDate>
+           <enclosure url="./ELON%20MUSK%20USARÁ%20VOLUNTARIOS%20HUMANOS%20PARA%20PONER%20SUS%20CHIPS%20NEURALINK%20EN%20EL%20CEREBRO%20Y%20VER%20LO%20QUE%20PASA_gkZsoHdm7t0.mp3" type="audio/mpeg" length="">
+           </enclosure>
+       </item>
+
+
+       <item>
+           <title>Ex-ladrón cuenta como preparaba los atracos a los bancos </title>
+           <link>https://youtu.be/8GiwPS1X1C0?si=8e3zO22M65jbemxW</link>
+           <description>Un ex-ladrón cuenta como en su pasado como ladron de bancos planeaba sus robos </description>
+           <category>Historias</category>
+           <!--Hora-->
+           <pubDate>4 Feb 2024 00:00:00 GMT</pubDate>
+           <enclosure url="./Ex-ladrón%20de%20bancos%20cuenta%20cómo%20preparaban%20sus%20atracos%20_%20The%20Wild%20Project_pBVFJXyVHsg.mp3" type="" >
+           </enclosure>
+       </item>
+                                 
+       <item>
+           <title>Un periodista se infiltra en corea del norte</title>
+           <link>https://www.youtu.be/qt6zFuyx1Ek?si=29NLTDi2B5YXv7ag</link>
+           <description>Un periodista se infiltró en corea y en este podcast nos cuenta la vida que viven allí</description>
+           <category>Noticias</category>
+           <!--Hora-->
+           <pubDate>4 Feb 2024 00:00:00 GMT</pubDate>
+           <enclosure url="./Periodista%20se%20infiltró%20en%20COREA%20DEL%20NORTE%20y%20explica%20cómo%20lo%20hizo%20para%20que%20no%20lo%20pillaran_MLtU8gLTQe8.mp3" type="" >
+           </enclosure>
+       </item>
+   </channel>
+
+
+</rss>

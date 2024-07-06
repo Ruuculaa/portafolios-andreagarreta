@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.title_contacte{
+
+
+    width: 85%;
+  margin: 20px auto;
+  text-align: center;
+  height: 100px;
+  font-family: 'Signika Negative', sans-serif;
+  background-color: #095c93;
+  color: white;
+
+  padding-top: 1.8%;
+}
+
+.container-form1{
+    height: max-content;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+   
+  
+
+}
+
+.info-form{
+    width: auto;
+   
+    margin-left: 5%;
+}
+.info-form h2{
+    margin-bottom: 12px;
+    font-size: 35px;
+    font-family: Arial;
+   
+    margin-left: 9%;
+    margin-right: 7%;
+}
+
+.info-form p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    font-family: Arial;
+
+}
+.info-form a{
+    font-size: 17px;
+    display: inline-block;
+    margin-left: 25%;
+    text-decoration: none;
+    width: 30%;
+    margin-bottom: 15px;
+    color:black;
+    font-weight: 700;
+    font-family: Arial;
+
+
+}
+
+
+.reg_con2{
+    width: auto;
+    margin-top: 0%;
+  
+}
+
+.container-form a i{
+    color: blue;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.reg_con2 form .campo,textarea{
+
+    width: 80%;
+    padding: 16px 1px;
+    font-size: 15px;
+    border: 3px solid rgba(0, 18, 108, 0.38);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+
+
+}
+.reg_con2 form textarea{
+    max-width: 510px;
+    min-width: 50px;
+    
+    min-height: 140px;
+    max-height: 200px;
+
+}
+
+
+.reg_con2 .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid black;
+    outline: 0px;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-top: 30px;
+    font-family: arial;
+    margin:0px 00px 10px;
+    
+
+}
+
+
+@media screen and (max-width: 800px){
+    .title_contacte{
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        height: auto;
+    }
+    .container-form1{
+        flex-direction: column;
+        text-align: center;
+        height: max-content;
+    }
+    .info-form{
+        margin: auto;
+       
+        
+
+    }
+
+    .contacto_cosas{
+       
+        margin: 0;
+      
+    }
+
+    .info-form a{
+        margin-left: 0%;
+        width: 40%  ;
+    }
+
+    .container-form .btn-enviar:hover{
+    background-color: rgb(11, 30, 83);
+    }
+
+}
+
+
+
+
+@keyframes anim{
+    0% {background-color: rgb(22, 42, 187);} /*Amarillo*/
+   25% {background-color: rgba(12, 68, 173, 0.856);} /*Naranja*/
+   50% {background-color: rgba(2, 33, 102, 0.768);} /*Negro*/
+   75% {background-color: rgba(30, 72, 188, 0.856)} /*Otra vez naranja*/
+  100% {background-color: rgb(22, 42, 187);} /*Otra vez amarillo*/
+  }
+  footer {
+  animation-name: anim;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  margin-top: 20px;
+  }

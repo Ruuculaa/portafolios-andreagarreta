@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Canal de Notícies</title>
+  <link href="http://example.com"/>
+  <subtitle>Canal de notícies amb diverses categories</subtitle>
+  <id>http://example.com/</id>
+  <updated>2024-02-04T00:00:00Z</updated>
+  <author>
+    <name>© 2024, Nom del Teu Mitjà</name>
+  </author>
+  <link rel="self" href="http://example.com/feed.atom"/>
+  <entry>
+    <title>Titol de la Notícia 1</title>
+    <link href="https://www.sport.es/es/noticias/gente/leo-messi-enloquece-fans-zapatillas-simpson-dv-97526810?utm_source=pocket-newtab-es-es"/>
+    <id>https://www.sport.es/es/noticias/gente/leo-messi-enloquece-fans-zapatillas-simpson-dv-97526810?utm_source=pocket-newtab-es-es</id>
+    <summary>Messi se pone unas zapatillas de los simpson</summary>
+    <published>2023-01-01T12:00:00Z</published>
+    <updated>2023-01-01T12:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>Titol de la Notícia 2</title>
+    <link href="https://www.sport.es/es/noticias/barca/buscando-pareja-araujo-97561965"/>
+    <id>https://www.sport.es/es/noticias/barca/buscando-pareja-araujo-97561965</id>
+    <summary>Buscan un compañero a Araujo en la defensa</summary>
+    <published>2023-02-02T15:30:00Z</published>
+    <updated>2023-02-02T15:30:00Z</updated>
+  </entry>
+  <entry>
+    <title>Titol de la Notícia 3</title>
+    <link href="https://www.sport.es/es/noticias/barca/deco-barca-barcelona-97565771"/>
+    <id>https://www.sport.es/es/noticias/barca/deco-barca-barcelona-97565771</id>
+    <summary>Trata sobre las operaciones de fichajes en el mercado de invierno</summary>
+    <published>2023-03-03T18:45:00Z</published>
+    <updated>2023-03-03T18:45:00Z</updated>
+  </entry>
+  <entry>
+    <title>Titol de la Notícia 4</title>
+    <link href="https://www.sport.es/es/noticias/barca/motivacion-araujo-dvs-97578325"/>
+    <id>https://www.sport.es/es/noticias/barca/motivacion-araujo-dvs-97578325</id>
+    <summary>Habla sobre la motivacion que tiene el central Uruguayo Araujo</summary>
+    <published>2023-04-04T21:15:00Z</published>
+    <updated>2023-04-04T21:15:00Z</updated>
+  </entry>
+</feed>

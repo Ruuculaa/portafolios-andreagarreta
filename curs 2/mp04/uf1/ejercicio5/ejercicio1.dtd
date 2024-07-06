@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT matricula (cicle,alumnes)+>
+<!ELEMENT cicle (#PCDATA)>
+<!ELEMENT alumnes (alumne)>
+<!ELEMENT alumne (nom,any,moduls)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT moduls (modul+)>
+<!ELEMENT modul (#PCDATA)>

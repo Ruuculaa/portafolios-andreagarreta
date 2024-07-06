@@ -1,0 +1,492 @@
+.contacto_general{
+   
+    height: 1690px;
+    background-color:  rgb(226, 225, 225);
+}
+
+.contacto_titulo{
+   
+    text-align: center;
+    font-family: 'Nanum Myeongjo'; 
+    font-size: 23px;
+}
+
+.contacto_titulo h1{
+    padding: 30px;
+  
+}
+
+.flex_contacto{
+    display: flex;
+}
+
+.contact_normal{
+   
+    height: 500px;
+    width: 50%;
+    margin-top: 30px;
+   
+    flex-direction: row;
+
+}
+.contact_normal h1{
+    margin-bottom: 30px;
+}
+.contacto2{
+    display: none;
+}
+.reg_con2{
+    width: auto;
+    margin-top: 0%;
+     
+  
+}
+.campo{
+
+}
+
+.reg_con2 form .campo,textarea{
+   
+    width: 50%;
+    padding: 16px 1px;
+    font-size: 15px;
+    border: 3px solid rgba(18, 18, 18, 0.38);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    position: relative;
+    left: 50%;
+   
+    outline: 0px;
+}
+
+.name_contact{
+    margin-top: 20px;
+}
+.reg_con2 form textarea{
+    max-width: 510px;
+    min-width: 50px;
+    
+    min-height: 140px;
+    max-height: 200px;
+   
+}
+
+
+.reg_con2 .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid black;
+    outline: 0px;
+    background-color: rgb(148, 148, 148);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+    top: 40px;
+    
+    font-family: arial;
+   
+    
+
+}
+
+
+
+
+
+
+.contact_normal h1{
+    text-align: right;
+    font-family: 'Nanum Myeongjo'; 
+}
+
+
+
+
+
+
+
+
+.contact_estil{
+  
+    height: 600px;
+
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.contact_estil h1{
+    text-align: center;
+}
+
+.flex_estil{
+    display: flex;
+   
+   
+
+}
+.img_estil{
+   margin-top: 40px;
+    width: 50%;
+   
+    margin-left: 120px;
+}
+
+.data_estil label{
+    font-size: 30px;
+   
+    color: red;
+}
+
+
+.data_estil input{
+   margin-top: 20px;
+    height: 30px;
+    
+    width: 100%;
+    padding: 16px;
+
+    text-align: center;
+}
+
+.data_estil input:hover{
+    background-color: rgb(231, 231, 231);
+    color: rgb(14, 13, 13);
+}
+.data_estil{
+
+    height: max-content;
+    position: relative;
+    top: 150px;
+    left: 20px;
+   
+    text-align: center;
+    
+
+    margin-left: 120px;
+}
+
+
+.data_estil1{
+ 
+    height: max-content;
+    margin-left: 50px;
+    width:200px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    text-align: center;
+}
+
+.data_estil1 label{
+    font-size: 30px;
+   
+    color: red;
+}
+.data_estil1 input{
+  margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    padding: 16px;
+    
+    text-align: center;
+}
+
+.data_estil1 input:hover{
+    background-color: rgb(231, 231, 231);
+    color: rgb(14, 13, 13);
+}
+
+.gender-details{
+ 
+    height: 70px;
+    position: relative;
+    top: 80px;
+    right: 310px;
+    width: 100%;
+}
+#dot-1{
+
+   
+    height: 20px;
+}
+.category{
+  
+    position: relative;
+    width: 400px;
+    bottom: 33px;
+}
+.category label #dot-1{
+   
+}
+
+.gender{
+    margin-left: 30px;
+    font-size: 30px;
+    
+}
+
+.gender1{
+    margin-left: 120px;
+    font-size: 30px;
+}
+
+#dot-2{
+    margin-left: 210px;
+    position: relative;
+    bottom: 3px;
+}
+
+
+
+
+.btn_estil {
+  
+    height: max-content;
+    position: relative;
+    top: 200px;
+    left: 143px;
+    width: max-content;
+   
+}
+
+.btn_estil input{
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 4px;
+    
+ 
+}
+
+.btn_estil input:hover{
+    background-color: black;
+    color:white;
+
+}
+
+
+
+
+
+/*------------REDES SPCIALES----------------------*/
+.redes_sociales{
+    
+    height: 300px;
+    width: 50%;
+    margin-top: 0px;
+}
+
+.redes_title{
+  
+    text-align: center;
+    font-family:'Nanum Myeongjo' ;
+}
+
+
+.rds_sociales{
+  
+    width: 50%;
+    margin-left: 100px;
+    text-align: center;
+    margin-top:80px;
+}
+
+
+.rds_sociales a{
+    color: black;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.hr{
+    width: 50px;
+}
+#face{
+    margin:auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+#face:hover{
+    -webkit-transform:scale(1.5);transform:scale(1.5);
+}
+#twit{
+    margin:auto;
+    width: 60px;
+    height: 60px;
+}
+#twit:hover{
+    -webkit-transform:scale(1.5);transform:scale(1.5);
+}
+#insta{
+    margin:auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+}
+#insta:hover{
+    -webkit-transform:scale(1.5);transform:scale(1.5);
+}
+.pie_col2 {
+    padding-left: 140px;
+    padding-top: 5%;   
+    font-family: 'Nanum Myeongjo';
+   
+}
+.pie_col2 h3{
+   font-size: 24px;
+}
+.pie_col2 a{
+   justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mapa_contacto{
+
+    height: max-content;
+    margin-top: 10px;
+   
+}
+.mapa_title{
+ 
+    text-align: center;
+    font-family:'Nanum Myeongjo' ;
+    padding: 30px;
+}
+
+.mapa_contacto{
+    text-align: center;
+}
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 910px) {
+    *{
+        
+    }
+    /***Consultas***/
+
+    .contacto_general{
+        width: 100%;
+       
+        height: 2200px;
+        background-color:  rgb(226, 225, 225);
+    }
+    
+    .contacto_titulo{
+        margin: 0 0 ;
+        text-align: center;
+        font-family: 'Nanum Myeongjo'; 
+        font-size: 19px;
+    }
+    .flex_contacto{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto_titulo h1{
+        padding: 30px;
+      
+    }
+    .contacto1{
+       
+        margin-left: 0px;
+        text-align: center;
+        width: max-content;
+        margin-left: 40px;
+    }
+   
+    
+    .contact_normal{
+        display: flex;  
+         flex-direction: column;
+        
+    }
+
+    .flex_contacto{
+     
+       
+    }
+
+    .reg_con2 form .campo,textarea{
+           position: relative;
+           left: 35%    ;
+           width: 130%;
+    }
+    .btn-enviar{
+    
+        margin-left: 130px;
+        margin-top: 0px;
+        
+    }
+    /***Dirección***/
+
+    .redes_sociales{
+        height: 450px;
+       
+        width: 100%;
+        margin-top: 0px;
+    }
+    .rds_sociales{
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /***redes sociales***/
+
+    .pie_col2{
+        margin: 40px 4px;
+        padding: 0  80px;
+       
+    }
+    .pie_col2 h3{
+        margin: 0 4px;
+        padding-left: 10px;
+       
+    }
+
+    /***Contacto estilista***/
+    
+    .contact_estil{
+        height: 500px;
+        margin-top: 0px;
+       
+    }
+    .img_estil{
+        display: none;
+    }
+    .data_estil{
+        position: relative;
+        margin-left: 0px;
+    }
+.mapa_contacto{
+    position: relative;
+    margin: 0 0;
+    margin-top: 300px;
+    
+}
+
+
+
+
+}

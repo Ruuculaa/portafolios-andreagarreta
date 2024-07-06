@@ -1,0 +1,40 @@
+<!--Generador de preguntes fet per Raul i Abu-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generador de Preguntas</title>
+        <link rel="stylesheet" href="./estilo.css">
+     </head>
+     <body>
+        <h1>Generador de Preguntas</h1>
+        <form id="questionForm">
+            <label for="pregunta">Pregunta:</label>
+            <input type="text" id="pregunta" required>
+           
+            <label for="respuesta">Respuesta:</label>
+            <input type="text" id="respuesta" required>
+           
+            <label for="correcta">Correcta:</label>
+            <input type="checkbox" id="correcta">
+   
+     
+            <button type="button" onclick="addAnswer()">Agregar Respuesta</button>
+            <button type="button" onclick="addQuestion()">Agregar Pregunta</button>
+        </form>
+     
+     
+        <h2>Lista de Preguntas</h2>
+        <ul id="listaPreguntas"></ul>
+     
+     
+        <button onclick="mostrarCodigoXML()">Mostrar XML</button>
+       
+     
+     
+        <div id="codigoXML"></div>
+     
+     
+        <script src="code.js"></script>
+     </body>
+     </html>

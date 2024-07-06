@@ -1,0 +1,372 @@
+.gen_hombres{
+    height: max-content;
+    background-color: rgb(226, 225, 225);
+  
+}
+
+.title_hombres{
+    text-align: center;
+    font-family: 'Nanum Myeongjo'; 
+    font-size: 23px;
+  
+}
+
+.title_hombres h1{
+    padding: 30px;
+}
+
+.fotos_ninios{
+   
+    height: 490px;
+}
+
+
+
+.flex_ninio{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 55px;
+    display: flex;
+    height: 300px;
+}
+
+.ninio1{
+     
+    width: 20%;
+    height: 300px;
+    margin: auto;
+}
+
+.tamaños{
+    width: 100%;
+    height: 100%;
+}
+
+
+.ninio2{
+  
+    width: 20%;
+    margin: auto;
+    height: 300px;
+}
+.ninio3{
+    
+    height: 300px;
+    width: 20%;
+    margin: auto;
+}
+.ninio4{
+  
+    width: 20%;
+    height: 300px;
+    margin: auto;
+}
+
+.flex_precios{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+.preu1{
+    height: 100px;
+    
+    width: 20%;
+    margin: auto;
+}
+.preu2{
+    height: 100px;
+   
+    width: 20%;
+    margin: auto;
+}
+.preu3{
+    height: 100px;
+    
+    width: 20%;
+    margin: auto;
+}
+.preu4{
+    height: 100px;
+    
+    width: 20%;
+    margin: auto;
+}
+
+
+
+
+
+.preu1 h4{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.preu1 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.preu2 h4{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.preu2 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.preu3 h4{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.preu3 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.preu4 h4{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.preu4 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+
+
+
+
+/*--------------CARROUSEL NIÑOSSS----------------*/
+
+
+
+.carrousel_ninios{
+
+    height: 530px;
+  
+    background-color: rgb(226, 225, 225);
+    
+}
+
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel img{
+    height: 100%;
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+
+
+/*-------------------RESPONSIVE------------------*/
+
+
+
+@media screen and (max-width: 910px) {
+
+    *{
+       
+    }
+
+    .gen_mujeres{
+        height: 2040px;
+    }
+    .flex_ninio{
+        display: flex;
+       
+        flex-wrap: wrap;
+    }
+    .fotos_ninios{
+        height: 900px;
+    }
+    .ninio1{
+        width: 45%;
+        margin-left: 6px;
+        
+        height: 300px;
+    }
+
+    .ninio2{
+        width: 45%;
+        
+        margin-right: 6px;
+        height: 300px;
+    }
+
+    .ninio3{
+        width: 45%;
+        margin-top: 160px;
+        margin-left: 6px;
+        height: 300px;
+    }
+    .ninio4{
+        width: 45%;
+       margin-right: 6px;
+        margin-top: 160px;
+        height: 300px;
+    }
+
+    .flex_precios{
+       
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .preu1{
+      
+        position: relative;
+        width: 46%;
+       
+
+    }
+
+  .preu1 p{
+        font-family: arial;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .preu2{
+      
+        position: relative;
+        width: 46%;
+    }
+    .preu2 p{
+        font-family: arial;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .preu3{
+        
+        position: relative;
+        width: 46%;
+        top: 360px;
+    }
+    .preu3 p{
+        font-family: arial;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .preu4{
+        
+        position: relative;
+        width: 46%;
+        top: 360px;
+        left: 10px;
+    }
+
+    .preu4 p{
+        font-family: arial;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+
+    .carrousel_ninios{
+        width: 200px;
+        display: none;
+    }
+    .content-all{
+        width: 200px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,238 @@
+/*---------EL MISMO CSS PARA TODOS LOS ARTÍCULOS---------*/
+
+*{
+    padding: 0%;
+    margin: 0px;
+   
+   
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*--------------------------MAIN PAGINA PRINCIPAL--------------------------*/
+
+
+.primera{
+   
+    height: max-content;
+    background-color: rgb(226, 225, 225);
+    width: 100%;
+}
+.segunda{
+    position: relative;
+    display: flex;
+    
+}
+.foto{
+    display: flex;
+}
+.foto{
+    height:600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.foto1{
+   padding-top: 30px;
+   display: flex;
+}
+.peques{
+    padding-left: 5px;
+}
+.lema2{
+    display: none;
+}
+
+/*---------Borde en la fotos pequeñas al hacer clic---------*/
+#foto_d:hover{
+    border: 1px solid black;
+}
+#foto_t:hover{
+    border: 1px solid black;
+}
+.img_foto{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 15px;
+
+}
+
+/*---------Formato a la lupa--------*/
+#foto_i:hover{
+    cursor:zoom-in;
+}
+
+/*---------Formato lupa: tamaño, borde y forma redonda---------*/
+#lupa {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 150px;
+    background-size: 600px auto;
+    z-index: 999;
+}
+
+/*---------Formato descripción artículos---------*/
+
+.descripcion{
+    width: 100%;
+    height: 95%;
+    margin: auto;
+    padding: 50px 60px;
+    
+}
+.lineaa{
+    display: flex;
+    
+}
+.marca{
+    font-size: 25px;
+    
+}
+.modelo{
+    color: rgb(61, 51, 51);
+    font-size: 24px;
+    padding-left: 10px;
+}
+.precio{
+    padding-top: 20px;
+    font-size: 25px;
+    
+}
+.linea{
+    margin-top: 40px;
+}
+.detalles{
+    padding-top: 50px;
+    font-size: 20px;
+}
+.d{
+    padding-bottom: 10px;
+    color: rgb(61, 51, 51);
+}
+.lista{
+    padding-left: 20px;
+    line-height: 30px;
+    color: rgb(61, 51, 51);
+}
+.lema{
+    margin-top: 10px;
+    display: flex;
+}
+.texto{
+    margin-top: 15px;
+}
+.dir{
+    margin-top: 8px;
+  
+}
+
+/*------------------------FORMATO RESPONSIVE---------------------*/
+/*--------- Desactivamos algunas fotos, cambiaños tamaños de imagenes y textos---------*/
+@media screen and (max-width: 800px) {
+    .primera{
+        margin: 0 0;
+        padding: 0 0;
+        height: 900px;
+    }
+    /*---------desactivamos fotos pequeñas para que no se vean---------*/
+    .peques{
+        display: none;
+    }
+    .foto{
+        display:flex;
+        flex-direction: column;
+        margin: 0 0;
+       
+    }
+    .foto1{
+        height: 90%;
+        width: 0%;
+    }
+    .img_foto{
+        display:flex;
+        flex-direction: column;
+        height: 250px;
+        
+        
+    }
+    #foto_i{
+        height: 410px;
+        width: 330px;
+        margin-left: 30px;
+    }
+   
+    
+    .descripcion{
+        position: relative;
+        width: 100%;
+        margin-left: -30px;
+        margin-top: 150px;
+       
+    }
+    .marca{
+        font-size: 25px;
+        margin: 0 0;
+        position: relative;
+        
+    }
+    .lineac{
+        display: inline;
+    }
+    .linea{
+       display: none; 
+    }
+    .lineaa{
+        display: inline;
+       
+    }
+    .modelo{
+        font-size: 18px;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .precio{
+        padding-top: 20px;
+        padding-left: 5px;
+        font-size: 18px;
+        
+    }
+    .linea{
+        margin-top: 40px;
+    }
+    .lema{
+        display: none;
+        
+    }
+    
+    .lema2{
+        
+        display: inline;
+        left: 25px;
+        top: 300px;
+        width: 95%;
+       
+       
+    }
+    .detalles{
+       position: relative;
+       margin-left: -10px;
+       padding-top: 30px;
+       
+       
+    }
+
+
+    /*---------Desactivamos la lupa de aumento---------*/
+    #lupa{
+        display: none;
+    }
+}
+    
+
+

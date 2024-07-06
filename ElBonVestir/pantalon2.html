@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ª Mano</title>
+    <link rel="icon" type="image/jpg" href="./favicon_io (2)/favicon.ico"/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/articulo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <!--COMIENZA HEADER-->
+    <header>
+        <div class="gen_header">
+            <div class="flex_header">
+
+                <div class="logo_box">
+                    <img class="logo_header" src="./img/BONVESTIR1(1).png" alt="">
+                </div>
+
+                <div class="box_links">
+                    <nav class="links_header">
+                        <ul>
+                            <a href="./index.html"><b>INICIO</b></a>
+                            <a href="./outlet.html"><B>Outlet</B></a>
+                            <a href="./2mano.html"><b>2ª Mano</b></a>
+                            <a href="./oportunidades.html"><b>Oportunidades</b></a>
+                            <a href="./contacto.html"><b>cONTACTO</b></a>
+                            <a style="color: red; background-color:rgb(175, 175, 175); padding: 10px;" href="./suscripcion.html"><B>suscribirse</B></a>
+                        </ul>                     
+                   </nav>
+                </div>
+
+                <!-------------MENU HAMBURGUESA------------->
+
+                <nav class="hamburguesa_header">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                        </label>
+            
+                        <ul class="menu__box">
+                        <li><a class="menu__item" href="./index.html">Inicio</a></li>
+                        <li><a class="menu__item" href="./outlet.html  ">Outlet</a> </li>
+                        <li><a class="menu__item" href="./2mano.html">2ª Mano</a></li>
+                
+                    
+                        <li><a class="menu__item" href="./oportunidades.html">Oportunidades</a></li>
+                        <li><a class="menu__item" href="./contacto.html">Contacto</a></li>
+                        <li><a class="menu__item" href="suscripcion.html">Suscribirse</a></li>
+                        </ul>
+                    </div>
+               </nav>
+
+            </div>
+            
+        </div>
+
+
+    </header>
+
+    <!------------------------------------------MAIN--------------------------------------------->
+    <main>
+        <div class="primera">
+            <section class="segunda">
+                <div class="foto">
+                    <div class="foto1">
+                        <!-----------FOTOS PEQUEÑAS DE LA IZQUIERDA, AL HACER CLIC CAMBIA LA GRANDE-->
+                        <div class="peques">
+                            <img id="foto_d" src="./img/pantalo2_peque_d.jpg" onclick="funcion1('./img/npantalo2_grande_delante2.jpg')" alt="">
+                            <img id="foto_t" src="./img/pantalo2_peque_t.jpg" onclick="funcion2('./img/pantalo2_grande_delante2.jpg')" alt="">
+                        </div>
+                        <!---------------------FOTOS GRANDE DE LA DERECHA--------------------->
+                        <div class="img_foto">
+                            <img id="foto_i" src="./img/pantalo2_grande_delante2.jpg" alt="" height="450px" width="420px"> 
+                                                 
+                         </div> 
+                          <!--se cambia la foto-->
+                        <script>
+                            function funcion1() {
+                                document.getElementById("foto_i").src="./img/pantalo2_grande_delante.jpg";
+                                var imagenOriginal = document.getElementById("foto_i");
+                                
+                            }
+                         </script>
+                         <script>
+                            function funcion2() {
+                                document.getElementById("foto_i").src="./img/pantalo2_grande_detras.jpg";
+                                var imagenOriginal = document.getElementById("foto_i");
+                                
+                            }
+                         </script>   
+                         <!--se activa la lupa al pasar el cursor por la foto grande-->
+                         <!--la lupa se desactiva al pasar el curesor fuera de la foto-->
+                         <div id="lupa"></div>   
+                         <script>
+                           var imagenOriginal = document.getElementById("foto_i");
+                            var lupa = document.getElementById("lupa");
+
+                            imagenOriginal.addEventListener("mouseover", function() {
+                            lupa.style.display = "block";
+                            });
+
+                            imagenOriginal.addEventListener("mousemove", function(event) {
+                            var x = event.clientX - 100;
+                            var y = event.clientY - 100;
+
+                            <!--le paso la variable de la imagen para la ampliación-->
+
+                            lupa.style.backgroundImage = "url('" +  imagenOriginal.src + "')";
+                            lupa.style.backgroundPosition = "-" + (x * 0.7) + "px -" + (y * 0.7) + "px";
+                            lupa.style.left = (x + 20) + "px";
+                            lupa.style.top = (y + 20) + "px";
+                            });  
+                            imagenOriginal.addEventListener("mouseout",() =>{
+                                lupa.style.display="none";
+                            })
+                        </script>            
+                    </div>
+                    
+               <!---------------------DESCRIPCIÓN DEL ARTÍCULO--------------------->
+                    <div class="descripcion">
+                        <div class="lineaa">
+                            <p class="marca"><strong>COS</strong>
+                            <p class="modelo">Vestido gris casual</p>
+                        </div>
+                        <div class="lineac">
+                            <p class="precio"><span style="text-decoration:line-through;color: rgb(61, 51, 51);">115€</span>&nbsp;&nbsp;<b style="color: red;">33,49€</b></p>   
+                            <p>descuento del 71 %</p> 
+                        </div>
+                        <div class="lema">
+                            <span class="dir"> <img src="./img/percha.svg"> </span>
+                            <p class="texto">&nbsp;&nbsp;Prendas revisadas a mano para garantizar su calidad </p>
+                        </div>
+                        <div class="linea"><hr></div>
+                        <!---------------------cambiar formato al hacer responsive-------------------->
+                         <div class="lema2">
+                            <p><span class="dir2"> <img src="./img/percha.svg"> </span><span class="texto">&nbsp;&nbsp;Prendas revisadas a mano para garantizar su calidad </span></p>
+                        </div>
+                            <div class="detalles">
+                            <div class="d"><p><b>Detalles</b></p></div>
+                            <div class="lista">
+                                <p><b>Color</b>: Gris </p>
+                                <p><b>Talla</b>: 36 </p>
+                                <p><b>Temporada</b>: Primavera / Verano </p>
+                                <p><b>Condición</b>: Buen estado </p>
+                             </div>
+                           </div>
+                        </div>
+                       
+                    </div>
+                </div>              
+              </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+  <!--------------------------COMENÇAMENT FOOOTERR------------------------------>
+
+
+
+
+  <footer>
+    <div class="gen_footer">
+
+        <div class="flex_footer">
+            <div class="column1_footer">
+                <div class="logo_box_footer">
+                    <img class="logo_footer" src="./img/BONVESTIR1(1).png" alt="">
+                </div>
+
+
+            </div>
+            <div class="column2_footer">
+
+
+                <div class="info_footer">
+                    <ul>
+                      
+                     <br> <li>
+                        <a href="./concepto.html">Nuestro concepto</a>
+                      </li>  
+                      <br><li> <a href="./sostenibilidades.html">Sostenibilidad</a>
+                        </li>
+                        <br><li><a href="./cconsultoria.html">Servicio de conserjería</a>
+                        </li>
+                        <br><li><a href="./quiensomos.html">Quienes somos</a></li>
+
+                    </ul>
+                </div>
+              
+
+
+            </div>
+            <div class="column3_footer">
+                <div class="derecha_footer">
+                    <ul>
+                
+                  
+                        <br> admin@elbonvestir.click
+                          
+                        <bR>C/ Provença, 485 - (08025) BARCELONA
+                          
+                       <br>+34 971 348 903
+                        
+                    </ul>
+                </div>
+               
+              
+            </div>
+
+        </div>
+
+        <div class="privacidad">
+            <p>     Copyright by ElBonVestir  |
+                
+                <span> <a href="./privacidad.html">Politica de privacidad</a> | <a href="./cookies.html">Politica de cookies</a></span>
+            
+            
+            
+            
+            </p>
+        </div>
+
+    </div>
+
+
+
+</footer>

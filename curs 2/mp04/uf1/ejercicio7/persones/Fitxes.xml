@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Fitxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Fitxes.xsd">
+   <Fitxa número="1">
+      <nom>Ana Sanz Tin</nom>
+      <edat>22</edat>
+   </Fitxa>
+   <Fitxa número="2">
+      <nom>Iker Rubio Mol</nom>
+      <edat>23</edat>
+   </Fitxa>
+</Fitxes>

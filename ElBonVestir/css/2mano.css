@@ -1,0 +1,357 @@
+/*--------------------------MISMO CSS PARA 2 MANO Y OPORTUNIDADES-------------------------*/
+
+
+*{
+    padding: 0%;
+    margin: 0px;
+   
+   
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*--------------------------MAIN PAGINA PRINCIPAL--------------------------*/
+
+/*-------------CAJA PRINCIPAL ---------*/
+.primera{
+   
+    height: max-content;
+    height: 1500px;
+    background-color: rgb(226, 225, 225);
+    width: 100%;
+}
+.segunda{
+    position: relative;
+    
+}
+
+.title_segunda{
+    text-align: center;
+    font-family:  'Nanum Myeongjo', serif;
+    
+    font-size: 36px;
+}
+
+.title_segunda h1{
+    padding: 30px;
+}
+
+/*---------Formato de las fotos de la izquierda 1r combo--------*/
+.fotos1{
+    
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0px; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+   
+}
+
+.fotoi{
+   
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+   
+}
+.img_fotoi{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.foto_i{
+    height: 100%;
+    width: 100%;
+    
+    
+
+}
+.txt_foto{
+   
+    height: 100px;
+    margin-top: 15px;
+    
+ }
+ .txt_foto h4{
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: arial;
+    text-align: center;
+ }
+ 
+ 
+ .txt_foto p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 0px;
+ }
+ .modelo{
+    display: block;
+    font-size: 15px;
+   padding-top: 5px;
+   margin-top: auto;
+    justify-content:space-around;
+ }
+ 
+ .precio{
+    text-align: left;
+    color: red;
+    font-size: 18px;
+    
+ }
+ /*---------Formato de las fotos de centro-izquierdo---------*/
+
+.fotoc1{
+    
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.img_fotoc1{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.foto_c1{
+    height: 100%;
+    width: 100%;
+    
+    max-width: 350px;
+
+}
+/*---------Formato de las fotos del centro-derecho---------*/
+.fotoc2{
+    
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+    
+}
+
+.img_fotoc2{
+    height: 100%;
+    width: 100%;
+  
+}
+
+.foto_c2{
+    height: 100%;
+    width: 100%;
+    flex:350px;
+    max-width: 350px;
+
+}
+/*---------Formato de las fotos de la derecha---------*/
+
+.fotod{
+    
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.img_fotod{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.foto_d{
+    height: 100%;
+    width: 100%;
+    flex:350px;
+    max-width: 350px;
+
+}
+
+/*---------Formato 2º COMBO DE FOTOS---------*/
+
+.fotos2{
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    max-width: 100%;
+    margin: 80px auto;
+    display: flex;
+    padding-bottom: 50px; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+   
+   
+}
+.foto2{
+   
+    width: 20%;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+/*---------Formato 3R COMBO DE FOTOS---------*/
+
+.fotos3{
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    margin: -50px auto;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content:space-around;
+    
+    
+}
+.foto3{
+   
+    width: 20%;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+
+
+
+/*------------------DAR FORMATO PARA EL RESPONSIVE-------------------------------------------*/
+/*---------Reducimos el tamaño de las fotos y los textos--------*/
+
+
+
+@media screen and (max-width: 910px) {
+    *{
+  
+    }
+     .logo_box{
+         width: 100%;
+         position: relative;
+         right: 15px;
+ 
+     }
+     .logo_header{
+         position: relative;
+         left: 89px;
+         width: 66%;
+    }
+    /*HEADER*/
+ 
+
+    /*main*/
+
+
+    .primera{
+       
+        height: 2600px;
+    }
+    .title_segunda{
+       
+        font-size: 24px;
+    }
+
+    .fotos1{
+        height: 850px;
+        width: 90%;
+    }
+    .fotoi{
+        width: 46%;
+        margin: 0px;
+       
+    }
+
+    .fotoc1{
+        width: 46%;
+        margin-top: 0px;
+        margin-right: 0px;
+    }   
+
+
+    .fotoc2{
+        width: 46%;
+        margin-top: 0px;
+        margin-left: 0px;
+       
+    }
+    .fotod{
+        width: 46%;
+        margin-right: 0px;
+        margin: 0px;
+    }
+    .fotos2{
+        border: 2px solid redsss;
+        height: 850px;
+        margin: auto;
+    }
+    .foto2{
+        width: 43%;
+        margin: 0px;
+        padding-top: 20px;
+    }
+
+    .fotos3{
+        height: 850px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foto3{
+        width: 43%;
+        padding-top: 20px;
+        margin: 0px;
+    }
+   
+
+     /*FOOTER*/
+ 
+     .gen_footer{
+        
+        height: 650px;
+     }
+ 
+ 
+     .flex_footer{
+         display: flex;  
+         flex-direction: column;
+     }
+ 
+     .column1_footer{
+         
+     }
+ 
+     .column2_footer{
+       
+         text-align: center;
+ 
+     }
+     .column2_footer li{
+         display:inline;
+         line-height:40px;
+         margin-top: 0px;
+     }
+ 
+     .column3_footer{
+         
+     }
+   
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+   

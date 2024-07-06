@@ -1,0 +1,994 @@
+*{
+    padding: 0%;
+    margin: 0px;
+   
+   
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*--------------------------MAIN PAGINA PRINCIPAL--------------------------*/
+
+
+.primera{
+   
+    height: max-content;
+    background-color: rgb(226, 225, 225);
+    width: 100%;
+}
+  
+.fotos1{
+    
+    height:500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    
+   
+}
+
+.fotoi{
+   
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+   
+}
+.img_fotoi{
+    height: 100%;
+    width: 100%;
+
+}
+.foto_i{
+    height: 100%;
+    width: 100%;
+
+}
+.txt_foto{
+   
+    height: 100px;
+    margin-top: 15px;
+    
+ }
+ .txt_foto h4{
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: arial;
+    text-align: center;
+ }
+ 
+ 
+ .txt_foto p{
+    font-family: arial;
+    margin-top: 6px;
+    margin-left: 0px;
+ }
+ .modelo{
+    display: flex;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-top: auto;
+    justify-content:space-around;
+ }
+ 
+ .precio{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 8px;
+    
+ }
+ 
+.fotoc1{
+    
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.img_fotoc1{
+    height: 100%;
+    width: 100%;
+
+}
+
+.foto_c1{
+    height: 100%;
+    width: 100%;
+}
+.fotoc2{
+    
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.img_fotoc2{
+    height: 100%;
+    width: 100%;
+
+}
+
+.foto_c2{
+    height: 100%;
+    width: 100%;
+}
+.fotod{
+    
+    width: 20%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.img_fotod{
+    height: 100%;
+    width: 100%;
+
+}
+
+.foto_d{
+    height: 100%;
+    width: 100%;
+}
+.fotos2{
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    padding-top: 0px;
+   
+}
+.foto2{
+   
+    width: 20%;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+.fotos3{
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0px;
+    
+    padding-bottom: 20px;
+    
+    
+}
+.foto3{
+   
+    width: 20%;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+
+
+/*MAIN PAGINA PRINCIPAL ////////CARROUSEL/////////*/
+
+
+.text_carrousel{
+   
+    
+}
+
+.text_carrousel h2{
+    text-align: center;
+    font-family:  'Nanum Myeongjo', serif;
+ 
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+#kiko-slider {
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+#kiko-slider>ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+}
+
+#kiko-slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+}
+
+#kiko-slider>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#kiko-slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: inherit;
+    transition: opacity .5s;
+   
+}
+
+#kiko-slider>ul.slider li img {
+    width: 100%;
+    margin-left: 170px;
+    height: 500px;
+   
+    object-fit: cover;
+}
+
+#kiko-slider>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#kiko-slider>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#kiko-slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#kiko-slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#kiko-slider>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(39, 38, 38);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+
+
+
+
+/*.---------------NOVEDADES-----------------------*/
+.novedades_box{
+   margin-top: 30px;
+    height: 500px;
+    width: 100%;
+   
+}
+
+.texto_novedades{
+ 
+}
+
+.texto_novedades h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif; 
+}
+
+
+.flex_novedades{
+    
+    width: 95%;
+    margin: auto;
+    margin-top: 55px;
+    display: flex;
+    height: 300px;
+}
+
+
+
+.novedad1{
+    margin-right: 12px;
+    height: 100%;
+    width: 25%;
+}
+
+.imgnove1{
+    height: 300px;
+    margin: auto;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+
+.novedad2{
+    margin-right: 12px;
+   
+    height: 100%;
+    width: 25%;
+}
+
+
+
+.novedad3{
+  
+    height: 100%;
+    width: 25%;
+    margin-right: 12px;
+}
+
+
+
+
+.novedad4{
+   
+    height: 100%;
+    width: 25%;
+    
+}
+
+.flex_novedades2{
+  
+    width: 95%;
+    margin: auto;
+    display: flex;
+    height: 100px;
+}
+
+
+.txt_nove1{
+    
+    
+    height: 100px;
+    width: 25%;
+}
+
+.txt_nove2{
+   
+    
+    height: 100px;
+    width: 25%;
+}
+.txt_nove3{
+    
+   
+    height: 100px;
+    width: 25%;
+
+}
+.txt_nove4{
+   
+    height: 100px;
+   
+    width: 25%;
+}
+
+
+/*--------CONTACTAR ESTILISTA EN EL INDEX--------*/
+
+
+
+.contact_estilista{
+    
+    height: 300px;
+
+
+
+
+
+
+}
+
+
+.linianegra{
+    border: 1px solid rgb(58, 57, 57);
+    
+    width: 88%;
+    margin: auto;
+}
+
+
+.gen_estilista{
+  
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+.gen_estilista h2{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.gen_estilista p{
+    text-align: center;
+    font-family: arial;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.gen_estilista a{
+    border: 2px solid rgb(53, 51, 51);
+    position: relative;
+    border-radius: 10px;
+    left: 44.5%;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    font-family: Arial;
+    font-size:30px;
+}
+.gen_estilista   a:hover{
+    background-color: rgb(182, 172, 172);
+    color: black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------MAIN QUIENES SOMOS-------------------------*/
+
+
+
+
+.main_somos{
+    height: max-content;
+    width: 100%;
+    
+}
+
+.box_texto_somos{
+    
+    height: 100%;
+}
+.box_titlesomos{
+    font-family: 'Nanum Myeongjo', serif;
+   
+    height: max-content;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+
+.info_somos{
+    text-align: center;
+
+}
+
+
+.info_somos p{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/*MAIN SOSTENIBILIDAD*/
+
+
+.main_soste{
+    height: max-content;
+    width: 100%;
+   
+}
+
+.box_texto_soste{
+   
+    height: 100%;
+}
+.box_titlesoste{
+    font-family: 'Nanum Myeongjo', serif;
+  
+    height: max-content;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+
+.info_soste{
+    text-align: center;
+
+}
+
+
+.info_soste p{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.valores_soste{
+   
+    height: 300px;
+}
+
+.valores_flex{
+    display: flex;
+}
+
+.box_valores1{
+  
+    height: max-content;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 100px;
+    flex-direction: row;
+}
+
+.box_valores2{
+   
+    height: 100px;
+    width: 50%;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.text_valores p{
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+}
+
+
+
+/*SOSTENIBILIDAD /////// SECCION ECO/////////*/
+
+
+
+.ecologica{
+   
+    height: 300px;
+}
+
+.sub_eco{
+    height: max-content;
+    margin-top: 10px;
+   
+    text-align: center;
+}
+
+.flex_eco{
+    display: flex;
+}
+
+
+.box_eco1{
+    flex-direction: row;
+  
+    height: 200px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.box_eco2{
+    flex-direction: row;
+    
+    height: max-content;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+
+
+.box_eco2 p{
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+
+
+
+
+/*SOSTENIBILIDAD /////// COMUNIDAD/////////*/
+
+
+.comunidad{
+    height: max-content;
+   
+}
+
+.flex_comu{
+    display: flex;
+}
+
+
+.box_comu1{
+    flex-direction: row;
+   
+    height: max-content;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.box_comu2{
+    flex-direction: row;
+   
+    height: max-content;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+
+
+.box_comu1 p{
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+
+
+/* SOSTENIBILIDAD ////////TE NEECSITAMOS////////////*/
+
+
+.box_necesitar1{
+ height: 150px;
+ 
+ 
+   
+}
+
+
+
+
+.box_necesitar1 p{
+   
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+/*--------------CONCEPTO---------------*/
+
+.box_concepto{
+    border: 2px solid red;
+}
+
+
+.box_titleconce{
+    font-family: 'Nanum Myeongjo', serif;
+   
+    height: max-content;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.sub_title_conce{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+}
+
+
+
+.sec_con{
+    border: 2px solid red;
+    height: 200px;
+}
+
+.sec_box{
+    border: 2px solid green;
+    width: 80%;
+    margin: auto;
+    height: 200px;
+
+}
+
+.flex_conce{
+    display: flex;
+}
+
+
+.foto_conce{
+    flex-direction: row;
+  
+    height: 100px;
+    width: 50%;
+}
+
+
+
+.text_conce{
+    width: 50%;
+    flex-direction: row;
+   
+    height: 200px;
+    width: 50%;
+}
+
+
+.text_conce h2{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.text_conce p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: arial;
+}
+
+
+/*vender en cocndepto*/
+
+
+.sec_con2{
+    border: 2px solid red;
+    height: 200px;
+}
+
+.sec_box2{
+    border: 2px solid green;
+    width: 80%;
+    margin: auto;
+    height: 200px;
+
+}
+
+.flex_conce2{
+    display: flex;
+}
+
+
+.foto_conce2{
+    flex-direction: row;
+    
+    height: 100px;
+    width: 50%;
+}
+
+
+
+.text_conce2{
+    width: 50%;
+    flex-direction: row;
+    
+    height: 200px;
+    width: 50%;
+}
+
+
+.text_conce2 h2{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.text_conce2 p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------footer.---------------------*/
+
+
+
+.gen_footer{
+    
+    height: 280px;
+    background-color: rgba(51, 48, 48, 0.778);
+}
+
+
+
+
+.flex_footer{
+   
+    height: 100%;
+   
+    width: 100%;
+    display: flex;
+}
+
+.column1_footer{
+    width: 100%;
+
+    
+}
+
+.logo_box_footer{
+    
+    width: 100%;
+    height: 100%;
+}
+.logo_footer{
+    height: 140px;
+    
+    width: 370px;
+    margin-top: 60px;
+    margin-left: 33px;
+    
+}
+
+.column2_footer{
+   
+    width: 100%;
+}
+
+.info_footer{
+    
+    margin:auto;
+    width: max-content;
+    height: max-content;
+    margin-top: 9%;
+  
+
+}
+
+.info_footer a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+
+.info_footer li{
+
+    color: aliceblue;
+    
+}
+
+.column3_footer{
+    
+    width: 100%;
+   
+}
+
+.derecha_footer ul{
+    color: aliceblue;
+    line-height: 50px;
+    text-align: center;
+}
+
+.privacidad{
+   
+    
+    background-color: rgb(75, 75, 75);
+}
+
+.privacidad p{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.privacidad span{
+    color: aliceblue;
+}
+.privacidad a{
+    color: aliceblue;
+}
+
+
+
+
+
+
+/*POLITICA DE PRIVACIDAD */

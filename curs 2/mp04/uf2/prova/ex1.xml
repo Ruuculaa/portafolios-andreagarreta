@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+   
+    <channel>
+        <atom:link href="http://84.236.223.118/gpala/ex1.xml" rel="self" type="application/rss+xml" />
+      <title>GerardNews. Intro RSS.</title>
+      <link>https://smxdaw.insdanielblanxart.cat</link>
+      <description>MP04: Aplicacions XML: RSS i Atom.</description>
+      <language> ca </language>
+      <copyright>Creative Commons</copyright>
+      <webMaster>gpala@insdanielblanxart.cat (Gerard Palà)</webMaster>
+      <managingEditor>gpala@insdanielblanxart.cat (Gerard Palà)</managingEditor>
+      <category>News</category>
+    
+    <item>
+      <title>Introducció a RSS. RSS vs. Atom</title>
+      <link>https://smxdaw.insdanielblanxart.cat/course/view.php?id=52</link>
+      <guid isPermaLink="true">https://smxdaw.insdanielblanxart.cat/course/view.php?id=52</guid>
+    <description>RSS és l'acrònim de Really Simple Syndication. Es tracta d'una família de formats de canals web XML utilitzats per publica</description>
+      <pubDate>Sat, 20 Feb 2021 08:00:00 +0100</pubDate>
+      <author>xpala@insdanielblanxart.cat (Xavi Palà)</author>
+      <category>News</category>
+    </item>
+    <item>
+      <title>Brief history of RSS.</title>
+      <link>https://www.brainbell.com/tutorials/XML/A_Brief_History_Of_RSS.htm</link>
+      <guid isPermaLink="true">https://www.brainbell.com/tutorials/XML/A_Brief_History_Of_RSS.htm</guid>
+      <description>"There was a fork in RSS land. The original RSS, version 0.91, 0.92, etc. was just simple XML. A crew didn't like it, or t</description>
+      <pubDate>Wed, 17 Feb 2021 08:00:00 +0100</pubDate>
+      <author>jpala@insdanielblanxart.cat (Jordi Palà)</author>
+      <category>News</category>
+    </item>
+    <item>
+      <title>RSS vs. Atom.</title>
+      <link>http://www.differencebetween.net/technology/difference-between-rss-and-atom/</link>
+      <guid isPermaLink="true">http://www.differencebetween.net/technology/difference-between-rss-and-atom/</guid>
+      <description>Really Simple Syndication or RSS has been the standard for web feeds for a considerable time. Web feeds contains either a </description>
+      <pubDate>Mon, 15 Feb 2021 08:00:00 +0100</pubDate>
+      <author>pmuril@insdanielblanxart.cat (Pau Murillo)</author>
+      <category>News</category>
+    </item>
+    <item>
+      <title>Diferències entre versions d'XML.</title>
+      <link>https://smxdaw.insdanielblanxart.cat</link>
+      <guid isPermaLink="true">https://smxdaw.insdanielblanxart.cat</guid>
+      <description> Des de l’aparició d’RSS 0.9 el 1999 han anat apareixent diferents versions d’RSS que es poden resumir en dos grans grups:</description>
+      <pubDate>Thu, 11 Feb 2021 08:00:00 +0100</pubDate>
+      <author>hpala@insdanielblanxart.cat (Helena Palà)</author>
+      <category>News</category>
+    </item>
+    </channel>
+  </rss>

@@ -1,0 +1,160 @@
+.outlet_gen{
+    height: 1250px;
+    background-color:  rgb(226, 225, 225);
+}
+
+
+.title_outlet h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo'; 
+    font-size: 40px;
+    padding: 30px;
+}
+
+.flex_outlet{
+   
+    display: flex;
+  
+    width: 95%;
+    margin: auto;
+    margin-top: 55px;
+
+    height: 300px;
+    
+}
+
+.m1{
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    flex-direction: column;
+
+}
+.m1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.m1_2{
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    flex-direction: column;
+}
+.m1_2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.m2{
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.m2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.m3{
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.m3 img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.m4{
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    flex-direction: column;
+}
+.m4 img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 910px) {
+
+    .outlet_gen{
+       
+        background-color:  rgb(226, 225, 225);
+        height: 2100px;
+   
+   
+    }
+    .flex_outlet{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .m1{
+       flex-wrap: wrap;
+       margin-left: 10px;
+       width: 45%;
+       margin-bottom: 80px;
+    }
+
+    .m1_2{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        width: 45%;
+       
+        margin-bottom: 40px;
+    }
+
+    .m1_2 img{
+
+    }
+
+    .m2{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        width: 45%;
+        margin-bottom: 80px;
+        position: relative;
+        top: 300px;
+    }
+
+
+    .m3{
+        margin-left: 10px;
+        width: 45%;
+        margin-bottom: 80px;
+        position: relative;
+        top: 600px;
+    }
+    .m3 img{
+
+    }
+    .m4{
+        margin-left: 10px;
+        width: 45%;
+        margin-bottom: 80px;
+        position: relative;
+        top: 600px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

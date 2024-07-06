@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 23539  -->
+  <question type="multichoice">
+    <name>
+      <text>ASCII vs. Unicode</text>
+    </name>
+    <questiontext format="html">
+      <text>Quina és la principal diferència entre ASCII i Unicode?</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>Respuesta1</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>La teva resposta és correcta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>La teva resposta és parcialment correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>La teva resposta és incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>ASCII representa caràcters alfanumèrics, mentre que Unicode no.</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>ASCII utilitza 8 bits per a cada caràcter, mentre que Unicode pot utilitzar més.</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Unicode és una versió antiga d'ASCII.</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ASCII i Unicode són exactament el mateix.</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>

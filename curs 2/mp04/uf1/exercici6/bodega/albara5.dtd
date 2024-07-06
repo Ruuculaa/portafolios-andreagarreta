@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT albara (numero,data,client,articles)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT client (nom,poblacio)>
+<!ATTLIST client id CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT poblacio (#PCDATA)>
+<!ELEMENT articles (compra+)>
+<!ELEMENT compra (article+,quantitat+,descompte?)>
+<!ELEMENT descompte (#PCDATA)>
+<!ELEMENT quantitat (#PCDATA)>
+<!ELEMENT article (descripcio,ampolla*,granel?,preu)>
+<!ATTLIST article codi CDATA #REQUIRED>
+<!ELEMENT granel (#PCDATA)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT ampolla (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT adreca (carrer,numero,codipostal,poblacio)>

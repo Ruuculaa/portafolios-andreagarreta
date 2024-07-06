@@ -1,0 +1,1665 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.gen_header{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+}
+
+.logo_box{
+    width: 30%;
+    background-color: rgb(170,170,170);
+    height: 100px;
+}
+
+.logo_header{
+    height: 100px;
+    position: relative;
+    top: 10%;
+    left: 30px;
+    width: 70%;
+}
+
+.flex_header{
+    display: flex;
+}
+
+.box_links{
+    width: 70%;
+    height: 100px;
+}
+
+.links_header{
+    text-align: right;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: relative;
+    top: 44%;
+}
+
+.links_header a{
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 20px;
+    text-align: center;
+    width: max-content;
+}   
+
+.links_header a:link, a:visited {
+    padding-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.links_header a:hover, a:active {
+    background-color: rgba(54, 52, 52, 0.599);
+    color: white;
+    border-radius: 3px;
+}
+
+.suscripcion_header{
+    color: red;
+}
+
+@media screen and (max-width: 910px) {
+    .box_links {
+      display: none;  /*que los links no se vean a menos que la pantalla
+                        sea mas pequña de 900px*/
+    }
+    
+  }
+  
+
+
+/*---------------MENU HAMBURGUESA---------------*/
+
+/*------------------------------------------------------------*/
+
+
+.hamburguesa_header{
+    display: none;
+    z-index: 2;
+}
+
+#menu__toggle {
+    opacity: 0;
+    
+}
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 999;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.973);
+    box-shadow: 4px 4px 10px rgba(99, 97, 97, 0.4);
+    transition-duration: .25s;
+    overflow: hidden;
+    z-index: 100;
+}
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu__item2 {
+    display: block;
+    padding: 12px 60px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu__item a:hover,a:active{
+   background-color: #c94343;
+}
+.menu__item li:hover > ul{
+    display: block;
+}
+
+.menu__item li ul{
+    display: none ;
+    position: absolute;
+    min-width: 140px ;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+   
+  
+  }
+
+@media screen and (max-width: 910px) {
+    .hamburguesa_header {
+    display:contents; /*Que el menu hamburguesa solo se 
+                        vea cuando hay menos de 910px de pantalla*/
+    z-index: -1;
+    
+  
+    }
+    .menu__item a:hover,a:active{
+        background-color: #757272;
+     }
+       
+    
+}
+  
+
+/*--------------------------MAIN PAGINA PRINCIPAL--------------------------*/
+
+
+.gen_main{
+   
+    height: 2250px ;
+    
+    background-color: rgb(226, 225, 225);
+
+}
+  
+.flex_categorias{ /*Para que las clases se puedan  poner una
+                    al lado de otra*/
+   
+    height: 630px;
+    margin-right: 10px;
+    width: 99%;
+    display: flex;
+   
+}
+
+.mujeres{
+    width: max-content;
+    height: 400px;
+    margin-top: 30px;
+    margin: auto;
+    
+  
+}
+.foto_mujer{
+    height: 400px;
+    width: 350px;
+
+}
+.hombres{
+   
+    width: max-content;
+    height: 400px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.img_hombres{
+    height: 100%;
+    width: 100%;
+}
+
+.foto_hombre{
+    height: 400px;
+    width: 360px;
+}
+
+.ninios{
+    width: max-content;
+    height: 400px;
+    margin-top: 30px;
+    margin: auto;
+    margin-right: 40px;
+   
+}
+
+.res_ninios{
+    display: none;
+}
+.img_ninios{
+    height: 100%;
+}
+
+.foto_ninios{
+    height: 400px;
+    
+    width: 350px;
+}
+
+
+
+
+
+
+
+/*MAIN PAGINA PRINCIPAL ////////CARROUSEL/////////*/
+
+
+.text_carrousel h2{
+    text-align: center;
+    font-family:  'Nanum Myeongjo', serif;
+ 
+    font-size: 40px;
+}
+
+#kiko-slider {
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    z-index: -1;
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#kiko-slider>ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#kiko-slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+}
+
+#kiko-slider>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#kiko-slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: inherit;
+    transition: opacity .5s;
+   
+}
+
+#kiko-slider>ul.slider li img {
+    width: 100%;
+    margin-left: 170px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#kiko-slider>ul.slider li:first-child {
+    opacity: 1;
+    /*Para mostrar el primer <li>*/
+}
+
+#kiko-slider>ul.slider li:target {
+    opacity: 1;
+    /*Para mnmostrar el <li> del link que pulsemos*/
+}
+
+#kiko-slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#kiko-slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#kiko-slider>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(39, 38, 38);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+
+
+/*------------------------------*/
+
+
+
+
+/*.---------------NOVEDADES-----------------------*/
+.novedades_box{
+   margin-top: 30px;
+    height: 550px;
+    width: 100%;
+  
+} 
+
+.texto_novedades h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif; 
+}
+
+
+.flex_novedades{ 
+    width: 95%;
+    margin: auto;
+    margin-top: 55px;
+    display: flex;
+    height: 300px;
+}
+
+.novedad1{
+    margin-right: 12px;
+    height: 100%;
+    width: 25%;
+}
+
+.imgnove1{
+    height: 300px;
+    margin: auto;
+    width: 100%;
+    border-radius: 6px;
+}
+.novedad2{
+    margin-right: 12px;
+    height: 100%;
+    width: 25%;
+}
+
+.novedad3{
+    height: 100%;
+    width: 25%;
+    margin-right: 12px;
+   
+}
+
+.novedad4{
+    height: 100%;
+    width: 25%;
+    
+}
+
+.flex_novedades2{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    height: 130px;
+}
+
+.txt_nove1{
+    height: 130px;
+    width: 25%;
+}
+
+.txt_nove1 h4{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.txt_nove1 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.txt_nove2{
+   margin-left: 8px;
+   height: 130px;
+   width: 25%;
+}
+
+.txt_nove2 h4{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: arial;
+}
+
+.txt_nove2 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.tallas{
+    margin-left: 20px;
+}
+.txt_nove3{
+    margin-left: 8px;
+    height: 130px;
+    width: 25%;
+
+}
+
+.txt_nove3 h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.txt_nove3 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.txt_nove4{
+    margin-left: 8px;
+    height: 130px;
+    width: 25%;
+}
+
+.txt_nove4 h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.txt_nove4 p{
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+
+/*--------CONTACTAR ESTILISTA EN EL INDEX--------*/
+
+
+
+.contact_estilista{
+    height: 300px;
+    margin-top: 50px;
+}
+
+.linianegra{
+    border: 1px solid rgb(58, 57, 57);
+    position: relative;
+    bottom: 30px;
+    width: 88%;
+    margin: auto;
+}
+
+.linianegra1{
+    border: 1px solid rgb(58, 57, 57);
+    position: relative;
+    bottom: 80px;
+    width: 88%;
+    margin: auto;
+}
+
+.gen_estilista{
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.gen_estilista h2{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.gen_estilista p{
+    text-align: center;
+    font-family: arial;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.gen_estilista a{
+    border: 2px solid rgb(53, 51, 51);
+    position: relative;
+    border-radius: 6px;
+    left: 41.5%;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:30px;
+}
+.gen_estilista   a:hover{
+    background-color: rgb(182, 172, 172);
+    color: black;
+   
+}
+
+
+
+/*------------------MAIN QUIENES SOMOS-----------------*/
+
+
+
+.main_somos{
+    height: max-content;
+    width: 100%;
+    background-color: rgb(226, 225, 225);
+    
+}
+
+.box_texto_somos{
+    height: 100%;
+}
+.box_titlesomos{
+    font-family: 'Nanum Myeongjo', serif;
+    height: max-content;
+    text-align: center;
+    padding:30px;
+    font-size: 30px;
+
+}
+
+
+.info_somos{
+    text-align: center;
+
+}
+
+
+.info_somos p{
+    margin-top: 10px;
+   padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/*-----MAIN SOSTENIBILIDAD------*/
+
+
+.main_soste{
+    height: max-content;
+    width: 100%;
+    background-color:  rgb(226, 225, 225);
+}
+
+.box_texto_soste{
+    height: 100%;
+}
+.box_titlesoste{
+    font-family: 'Nanum Myeongjo', serif;
+    height: max-content;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+
+}
+.box_titlesoste1{
+    font-family: 'Nanum Myeongjo', serif;
+    height: max-content;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+
+.info_soste{
+    text-align: center;
+
+}
+
+.info_soste p{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valores_soste{
+    height: 350px; 
+}
+
+.valores_flex{
+    display: flex;
+}
+
+.box_valores1{
+    height: max-content;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 100px;
+    flex-direction: row;
+}
+
+.box_valores2{
+    height: 200px;
+    width: 50%;
+    flex-direction: row;
+    padding-top: 25px;
+    margin-left: 80px;
+}
+.text_valores {
+    padding-top: 25px;
+}
+.text_valores p{
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+}
+.flex_comu{ 
+    padding-top: 20px;
+}
+.box_comu2{
+    padding-left: 150px;
+}
+
+
+/*SOSTENIBILIDAD / SECCION ECOLOGIA /*/
+
+
+
+.ecologica{
+    height: 300px;
+}
+
+.sub_eco{
+    height: max-content;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.flex_eco{
+    display: flex;
+}
+
+
+.box_eco1{
+    flex-direction: row;
+    height: 200px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.box_eco2{
+    flex-direction: row;
+    height: max-content;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+
+.box_eco2 p{
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+
+
+/*SOSTENIBILIDAD / COMUNIDAD/*/
+
+
+.comunidad{
+    height: max-content;
+   
+}
+
+.flex_comu{
+    display: flex;
+}
+
+
+.box_comu1{
+    flex-direction: row;
+    height: max-content;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.box_comu2{
+    flex-direction: row;
+    height: max-content;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.box_comu1 p{
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+/* SOSTENIBILIDAD /TE NECESITAMOS/*/
+
+
+.box_necesitar1{
+    height: 150px;
+ }
+
+.box_necesitar1 p{
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+/*--------------CONCEPTO---------------*/
+
+
+.concepto{
+    height: 1100px;
+    background-color: rgb(226, 225, 225);
+}
+
+.box_titleconce{
+    font-family: 'Nanum Myeongjo', serif;
+    height: max-content;
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+}
+
+.sub_title_conce{
+    margin-top: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+}
+
+.sec_con{
+    margin-top: 20px;
+    height: 250px;
+}
+
+.sec_box{
+    width: 80%;
+    margin: auto;
+    height: 250px;
+
+}
+
+.flex_conce{
+    display: flex;
+   
+}
+.flex_conce3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto_conce{
+    flex-direction: row;
+    padding-left: 120px;
+    height: 100px;
+    width: 50%;
+}
+
+.foto_conce3{
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding-left: 110px;
+    padding-top: 0px;
+    height: 100px;
+    width: 50%;
+}
+
+.text_conce{
+
+    width: 50%;
+    flex-direction: row;
+    height: 250px;
+    width: 50%;
+}
+
+.text_conce h2{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.text_conce p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: arial;
+}
+
+/*vender en concepto*/
+
+.sec_con2{
+    height: 250px;
+}
+
+.sec_box2{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+
+}
+
+.flex_conce2{
+    display: flex;
+}
+
+.foto_conce2{
+    flex-direction: row;
+    padding-left: 100px;
+    height: 100px;
+    width: 50%;
+}
+
+.text_conce2{
+    width: 50%;
+    flex-direction: row;
+    height: 200px;
+    width: 50%;
+}
+
+.text_conce2 h2{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.text_conce2 p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: arial;
+}
+
+/*****CONSERJERÍA *****/
+
+.conserj{
+    background-color:  rgb(226, 225, 225);
+    height: 900px;
+}
+.box_texto_conserj{
+   
+    text-align: center;
+    padding-top: 40px;
+}
+.box_titleconserj{
+    font-family: 'Nanum Myeongjo', serif;
+    height: max-content;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+.flex_conserj{
+    padding-top: 40px;
+}
+
+.flex_conserj2{
+    display: flex;
+    padding-top: 50px;
+}
+
+.box_conserj1{
+    flex-direction: row;
+    height: max-content;
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.box_conserj2{
+    flex-direction: row;
+    text-align: left;
+    height: max-content;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.text_conserj p{
+    padding-top: 8px;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+
+
+/*-------------------------footer.---------------------*/
+
+.gen_footer{
+    height: 280px;
+    background-color: rgba(51, 48, 48, 0.778);
+}
+
+.flex_footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.column1_footer{
+    width: 100%;   
+}
+
+.logo_box_footer{
+    width: 100%;
+    height: 100%;
+}
+.logo_footer{
+    height: 140px;
+    width: 370px;
+    margin-top: 60px;
+    margin-left: 33px;
+    
+}
+
+.column2_footer{
+   width: 100%;
+}
+
+.info_footer{
+    margin:auto;
+    width: max-content;
+    height: max-content;
+    margin-top: 9%;
+}
+
+.info_footer a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+
+.info_footer li{
+    color: aliceblue;
+    
+}
+
+.column3_footer{
+    width: 100%;
+   
+}
+
+.derecha_footer ul{
+    color: aliceblue;
+    line-height: 50px;
+    text-align: center;
+}
+
+.privacidad{  
+    background-color: rgb(75, 75, 75);
+}
+
+.privacidad p{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.privacidad span{
+    color: aliceblue;
+}
+.privacidad a{
+    color: aliceblue;
+}
+
+
+
+/*---------------------------RESPONISVE-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 910px) {
+   *{
+ 
+   }
+    .logo_box{
+        width: 100%;
+        position: relative;
+        right: 15px;
+
+    }
+    .logo_header{
+        position: relative;
+        left: 89px;
+        width: 66%;
+    }
+    .gen_main{
+        height: 2050px;
+    }
+
+    .flex_categorias{
+        height: 100px;
+
+    }
+
+
+    .mujeres{
+        height: max-content;
+        margin-top: 30px;
+        width: max-content;
+    }
+    .mujeres a{
+        color: #1d1c1c;
+    }
+    .img_mujeres{
+        display: none;
+    }
+
+    .hombres{
+        height: max-content;
+        width: max-content;
+        margin-top: 30px;
+    }
+    .hombres a{
+    
+        color: #1d1c1c;
+
+    }
+    .img_hombres{
+        
+        display: none;
+    }
+    .ninios{
+        height: max-content;
+        width: max-content;
+        margin-top: 30px;
+    }
+    .ninios a{
+        color: #1d1c1c;
+    }
+    .res_ninios {
+        display:contents;
+    }
+    
+    .img_ninios{
+        display: none;
+    }
+
+    #kiko-slider>ul.slider li img {
+        width: 100%;
+        margin-left: 0px;
+        height: 500px;
+        
+        object-fit: cover;
+
+    }
+
+    .novedades_box{
+        margin-top: 30px;
+        height: 800px;
+        width: 100%;
+       
+    }
+    .flex_novedades{
+        
+        width: 95%;
+        margin: auto;
+        margin-top: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 600px;
+
+    }
+    .novedad1{
+        width: 45%;
+        height: 40%;
+        margin: auto;
+    }
+    .novedad1 img{
+        height: 100%;
+        width: 100%;
+
+       
+    }
+
+    .novedad2{
+        width: 45%;
+        height: 40%;
+        margin: auto;
+    }
+    .novedad2 img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .novedad3{
+        width: 45%;
+        margin-top: 130px;
+        height: 40%;
+        margin-left: 14px;
+       
+    }
+    .novedad3 img{
+        height: 100%;
+        width: 100%;
+
+       
+    }
+
+    .novedad4{
+        width: 45%;
+        margin-top: 130px;
+        height: 40%;
+        margin-left: 13px;
+       
+    }
+    .novedad4 img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .flex_novedades2{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        height: 100px;
+        flex-wrap: wrap;
+    }
+
+    .txt_nove1{
+       
+       position: relative;
+       width: 150px;
+       bottom: 360px;
+       margin-top: 0px;
+       margin-left: 13px;
+    }
+    .txt_nove2{
+      
+       position: relative;
+       width: 150px;
+      
+       bottom: 490px;
+       margin-top: 0px;
+       margin-left: 210px;
+    }
+    .txt_nove3{
+        
+       position: relative;
+       width: 150px;
+       bottom: 250px;
+       margin-top: 0px;
+       margin-left: 13px;
+    }
+    .txt_nove4{
+     
+       position: relative;
+       width: 150px;
+       bottom: 380px;
+       margin-top: 0px;
+       margin-left: 220px;
+    }
+
+    .contact_estilista{
+        height: 600px;
+    }
+
+    .gen_estilista{
+        height: 450px;
+    }
+    .linkparacontacto{
+        
+        width: 200px;
+        height: 50px;
+
+    }
+
+    .linkparacontacto a{
+      
+        position: relative;
+        right: 600px;
+        margin: 0px;
+           
+    }
+    .linianegra{
+        
+       position: relative;
+       bottom: 10px;
+        width: 88%;
+        margin: auto;
+    }
+    
+    .linianegra1{
+        
+       position: relative;
+       bottom: 200px;
+        width: 88%;
+        margin: auto;
+    }
+    
+    /*SOSTENIBILIDAD*/
+    .main_soste{
+   
+    }
+    .box_titlesoste{
+        padding: 30px;
+        margin-top: 10px;
+        font-size: 24px;
+
+    }
+    .info_soste{
+        
+        margin: 20px;
+        font-size: 20px;
+    }
+    .valores_soste{
+        
+        height: max-content;
+
+    }
+    .valores_flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box_valores1{
+        
+        width: 100%;
+        margin: 0px;
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin: 20px;
+    }
+    .text_valores p{
+        font-size: 20px;
+    }
+    .text_valores{
+        
+        
+    }
+    .box_valores2{
+        display: none;
+    }
+    .flex_eco{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .box_eco1{
+        display: none;
+
+    }
+    .box_comu1{
+        width: 100%;
+        margin: 0px;
+        margin: 20px;
+        font-size: 20px;
+        
+    }
+    
+    .box_eco2{
+        width: 100%;
+        margin: 0px;
+        margin: 20px;
+        height: 400px;
+        font-size: 20px;
+        
+    }
+    .box_eco2 p{
+        font-size: 20px;
+    }
+    .box_comu2{
+        display: none;
+    }
+    .box_comu1 p{
+        font-size: 20px;
+    }
+    .box_titlesoste{
+        margin: auto;
+        width: 80%;
+       
+      padding: 30px;
+        text-align: center;
+    }
+    .box_titlesoste1{
+        padding: 30px;
+        margin: auto;
+        margin-top: 130px;
+        width: 80%;
+        
+     
+        text-align: center;
+    }
+    .box_necesitar1{
+        
+    
+        height: 170px
+    
+    }
+
+    /********CONCEPTO*****/
+    
+    .concepto{
+        margin: 0 0;
+        height:2100px;
+    }
+    .box_titleconce,
+    .sub_title_conce{
+        font-size: 22px;
+    }
+    .sec_con,
+    .sec_con2,
+    .sec_con3{
+        height: 550px;
+        margin: 0 0;
+    }
+    .flex_conce{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+       padding-top: 50px;
+    }
+    .foto_conce{
+        width: 100%;
+        height: 200px;
+        padding: 20px 63px ;
+
+    }
+    .text_conce,
+    .text_conce2 {
+        width: 100%;
+       font-size: 22px;
+    }
+    .flex_conce2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 700px;
+    }
+    .foto_conce2{
+        width: 100%;
+        height: 200px;
+        padding: 20px 10px ;
+
+    }
+    .flex_conce3{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 300px;
+        padding-top: 100px;
+       
+    }
+    .foto_conce3{
+       display: none;
+    }
+    .foto_conce4{
+        width: 100%;
+        height: 200px;
+        padding: 20px 10px ;
+
+    }
+
+
+    /********CONSERJERÍA********/
+    *{
+      
+    }
+    .conserj{
+        height: 1250px;
+       
+    }  
+    .box_valore2{
+        display: none;
+    }
+    .box_conserj1{
+        display: none;
+        text-align: justify;
+    }
+    .valores_flex{
+      
+
+        display: flex;
+        flex-wrap: wrap;
+        height: 440px;
+    }
+
+    .box_valores1{
+        height: 550px;
+        width: 100%;
+        margin: 0px;
+        font-size: 20px;
+        margin-bottom: 200px;
+        margin: 20px;
+      
+    }
+    .box_valores2{
+        display: none;
+        
+    }
+    .text_valores p{
+        font-size: 20px;
+    }
+    .info_soste{
+        text-align: justify;
+       
+
+    }
+    .text_conserj{
+        
+        text-align: center;
+    }
+    .text_conserj h2{
+        margin-bottom: 30px;
+    }
+    .text_conserj p{
+        width: 100%;
+      
+        text-align: justify;
+    }
+    
+    .box_conserj1{
+      
+    }
+    .box_conserj2{
+        height: 300px;
+        
+        width: 140%;
+        margin: 20px;
+        text-align: justify;
+       margin-top: 100px;
+    }
+
+    .box_conserj2 h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .text_conserj{
+        
+    }
+
+    /********QUIENES SOMOS********/
+     .info_somos{
+        text-align: center;
+        margin: 0 20px;
+        font-size: 20px;
+    }
+    .box_titlesomos{
+        font-size: 24px;
+    }
+
+
+    /*FOOTER*/
+
+    .logo_footer{
+        position: relative;
+        left: 1px;
+        width: 85%;
+    }
+    .gen_footer{
+       
+        height: 650px;
+    }
+
+
+    .flex_footer{
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .column2_footer{
+      
+        text-align: center;
+
+    }
+    .column2_footer li{
+        display:inline;
+        line-height:40px;
+        margin-top: -10px;
+    }
+   
+    .linianegra{
+        border: 1px solid rgb(58, 57, 57);
+       position: relative;
+       bottom: 10px;
+        width: 88%;
+        margin: auto;
+    }
+    
+    .linianegra1{
+        border: 1px solid rgb(58, 57, 57);
+       position: relative;
+       bottom: 200px;
+        width: 88%;
+        margin: auto;
+    }
+ 
+
+    /*POLITICA DE PRIVACIDAD*/
+
+    /*POLITICA DE CCOOKIES*/
+
+
+
+    /*FOOTER*/
+
+    .logo_footer{
+        position: relative;
+        left: 1px;
+        width: 85%;
+    }
+    .gen_footer{
+       
+        height: 650px;
+    }
+
+
+    .flex_footer{
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .column2_footer{
+      
+        text-align: center;
+
+    }
+    .column2_footer li{
+        display:inline;
+        line-height:40px;
+        margin-top: -10px;
+    }
+   
+    .linianegra{
+        border: 1px solid rgb(58, 57, 57);
+       position: relative;
+       bottom: 10px;
+        width: 88%;
+        margin: auto;
+    }
+    
+    .linianegra1{
+        border: 1px solid rgb(58, 57, 57);
+       position: relative;
+       bottom: 200px;
+        width: 88%;
+        margin: auto;
+    }
+ 
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

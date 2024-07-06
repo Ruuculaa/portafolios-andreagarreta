@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="./xshtml.xsl"?>
+<institut nom="Daniel Blanxart">
+    <cicles>
+        <especialitat nom="Informàtica">
+            <cicle id="SMX" tipus="Grau Mitjà">Sistemes Microinformàtics i Xarxes.</cicle>
+            <cicle id="DAW" tipus="Grau Superior">Desenvolupament d'Aplicacions Web.</cicle>
+        </especialitat>
+        <especialitat nom="Administració">
+            <cicle id="GA" tipus="Grau Mitjà">Gestió Administrativa.</cicle>
+            <cicle id="AF" tipus="Administració i Finances">Administració i Finances.</cicle>
+        </especialitat>
+    </cicles>
+</institut>

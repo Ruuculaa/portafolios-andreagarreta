@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="plantilla_receptes.xsl"?>
+<receptes>
+	<recepta>
+		<nom>Tofu al horno</nom>
+		<categoria>Vegetal</categoria>
+		<informacio_general>
+			<foto>tofu.jpg</foto>
+			<comensals>4</comensals>
+			<temps unitat="minutos">45</temps>
+			<dificultat>Muy fácil</dificultat>
+		</informacio_general>
+		<ingredients>
+			<ingredient quantitat="1">Tofu</ingredient>
+			<ingredient quantitat="1">Limón</ingredient>
+			<ingredient quantitat="1" unitat="cuchara sopera">Pan rallado</ingredient>
+			<ingredient quantitat="2" unitat="dientes">Ajo</ingredient>
+			<ingredient quantitat="1/2" unitat="dl">Vino blanco</ingredient>
+			<ingredient>Aceite</ingredient>
+			<ingredient>Perejil</ingredient>
+			<ingredient>Sal</ingredient>
+		</ingredients>
+		<preparacio>
+			<pas numero="1">Lavamos las patatas bajo el grifo a conciencia.</pas>
+			<pas numero="2">Introducimos en una cazuela, cubrimos con agua, añadimos las hojas de
+				laurel y sazonamos al gusto. Ponemos a fuego alto y, en cuanto empiece a hervir,
+				bajamos el fuego y dejamos cocer a fuego lento durante 15 minutos.</pas>
+			<pas numero="3">Sacamos y dejamos templar.</pas>
+			<pas numero="4">Quitamos la piel y cortamos en rodajas gruesas.</pas>
+			<pas numero="5">Colocamos las rodajas de patatas sobre una fuente de horno.</pas>
+			<pas numero="6">Lavamos y sazonamos el tofu.</pas>
+			<pas numero="7">Le realizamos unos cortes en el lomo, con un cuchillo afilado, e
+				introducimos en cada corte media rodaja de limón.</pas>
+			<pas numero="8">Colocamos el tofu encima de las patatas.</pas>
+			<pas numero="9">En una sartén con cuatro cucharadas de aceite de oliva doramos los ajos,
+				pelados y cortados en láminas, añadimos el caldo de pescado y el vino, removemos y
+				vertemos sobre el tofu.</pas>
+			<pas numero="10">Introducimos la fuente en el horno (en la base) que tendremos
+				precalentado a 170º, durante 20-25 minutos, dependiendo del tamaño del tofu.</pas>
+			<pas numero="11">Comprobamos que el tofu está hecho y sacamos del horno.</pas>
+		</preparacio>
+	</recepta>
+	<recepta>
+		<nom>Pasta Alfredo</nom>
+		<categoria>Pasta</categoria>
+		<informacio_general>
+			<foto>pasta_alfredo.jpg</foto>
+			<comensals>2</comensals>
+			<temps unitat="minutos">20</temps>
+			<dificultat>Fácil</dificultat>
+		</informacio_general>
+		<ingredients>
+			<ingredient quantitat="200" unitat="g">Pasta (tipo fettuccine)</ingredient>
+			<ingredient quantitat="50" unitat="g">Mantequilla</ingredient>
+			<ingredient quantitat="200" unitat="ml">Nata para cocinar</ingredient>
+			<ingredient quantitat="50" unitat="g">Queso parmesano rallado</ingredient>
+			<ingredient>Salsa de ajo (opcional)</ingredient>
+			<ingredient>Pimienta negra molida al gusto</ingredient>
+			<ingredient>Sal al gusto</ingredient>
+		</ingredients>
+		<preparacio>
+			<pas numero="1">Cocina la pasta en agua hirviendo con sal según las instrucciones del
+				paquete hasta que esté al dente.</pas>
+			<pas numero="2">En una sartén grande, derrite la mantequilla a fuego medio.</pas>
+			<pas numero="3">Añade la nata para cocinar y remueve bien.</pas>
+			<pas numero="4">Agrega el queso parmesano rallado y remueve hasta que se funda y la
+				salsa tenga una consistencia cremosa.</pas>
+			<pas numero="5">Si lo deseas, añade un poco de salsa de ajo para potenciar el sabor.</pas>
+			<pas numero="6">Escurre la pasta y añádela a la sartén con la salsa. Remueve bien para
+				que la pasta se impregne de la salsa.</pas>
+			<pas numero="7">Sirve caliente, espolvoreando pimienta negra molida al gusto por encima.</pas>
+		</preparacio>
+	</recepta>
+
+	<recepta>
+		<nom>Ensalada César</nom>
+		<categoria>Ensalada</categoria>
+		<informacio_general>
+			<foto>ensalada_cesar.jpg</foto>
+			<comensals>4</comensals>
+			<temps unitat="minutos">15</temps>
+			<dificultat>Fácil</dificultat>
+		</informacio_general>
+		<ingredients>
+			<ingredient quantitat="1">Lechuga romana</ingredient>
+			<ingredient quantitat="100" unitat="g">Trocitos de pollo a la parrilla</ingredient>
+			<ingredient quantitat="50" unitat="g">Queso parmesano en láminas</ingredient>
+			<ingredient>Croutones</ingredient>
+			<ingredient>Salsa César</ingredient>
+			<ingredient>Sal al gusto</ingredient>
+			<ingredient>Pimienta negra molida al gusto</ingredient>
+		</ingredients>
+		<preparacio>
+			<pas numero="1">Lava y corta la lechuga romana en trozos.</pas>
+			<pas numero="2">En un bol grande, mezcla la lechuga con los trocitos de pollo a la
+				parrilla.</pas>
+			<pas numero="3">Añade las láminas de queso parmesano y los croutones.</pas>
+			<pas numero="4">Aliña la ensalada con salsa César al gusto.</pas>
+			<pas numero="5">Salpimienta al gusto y mezcla bien todos los ingredientes.</pas>
+			<pas numero="6">Sirve la ensalada César en platos individuales.</pas>
+		</preparacio>
+	</recepta>
+
+	<recepta>
+		<nom>Pizza Margarita</nom>
+		<categoria>Pizza</categoria>
+		<informacio_general>
+			<foto>pizza_margarita.jpg</foto>
+			<comensals>2-4</comensals>
+			<temps unitat="minutos">30</temps>
+			<dificultat>Media</dificultat>
+		</informacio_general>
+		<ingredients>
+			<ingredient quantitat="1">Base de pizza (puede ser casera o comprada)</ingredient>
+			<ingredient quantitat="200" unitat="g">Tomates maduros</ingredient>
+			<ingredient quantitat="200" unitat="g">Mozzarella</ingredient>
+			<ingredient>Albahaca fresca</ingredient>
+			<ingredient>Aceite de oliva virgen extra</ingredient>
+			<ingredient>Sal al gusto</ingredient>
+			<ingredient>Pimienta negra molida al gusto</ingredient>
+		</ingredients>
+		<preparacio>
+			<pas numero="1">Precalienta el horno a 220°C.</pas>
+			<pas numero="2">Extiende la base de pizza sobre una bandeja apta para horno.</pas>
+			<pas numero="3">Corta los tomates y la mozzarella en rodajas finas.</pas>
+			<pas numero="4">Coloca las rodajas de tomate sobre la base de pizza.</pas>
+			<pas numero="5">Distribuye las rodajas de mozzarella sobre los tomates.</pas>
+			<pas numero="6">Salpimienta al gusto y añade unas hojas de albahaca fresca.</pas>
+			<pas numero="7">Riega con un chorrito de aceite de oliva virgen extra.</pas>
+			<pas numero="8">Hornea la pizza durante 15-20 minutos, o hasta que la masa esté dorada y
+				el queso fundido.</pas>
+			<pas numero="9">Retira del horno y deja reposar unos minutos antes de cortar y servir.</pas>
+		</preparacio>
+	</recepta>
+
+	<recepta>
+		<nom>Sopa de Verduras</nom>
+		<categoria>Sopa</categoria>
+		<informacio_general>
+			<foto>sopa_verduras.jpg</foto>
+			<comensals>6</comensals>
+			<temps unitat="minutos">40</temps>
+			<dificultat>Fácil</dificultat>
+		</informacio_general>
+		<ingredients>
+			<ingredient quantitat="1">Cebolla</ingredient>
+			<ingredient quantitat="2">Zanahorias</ingredient>
+			<ingredient quantitat="2">Patatas</ingredient>
+			<ingredient quantitat="1">Calabacín</ingredient>
+			<ingredient quantitat="100" unitat="g">Judías verdes</ingredient>
+			<ingredient quantitat="1">Puerro</ingredient>
+			<ingredient>Apio</ingredient>
+			<ingredient>Tomate</ingredient>
+			<ingredient>Caldo de verduras</ingredient>
+			<ingredient>Sal al gusto</ingredient>
+			<ingredient>Pimienta negra molida al gusto</ingredient>
+		</ingredients>
+		<preparacio>
+			<pas numero="1">Pela y corta todas las verduras en trozos pequeños.</pas>
+			<pas numero="2">En una olla grande, calienta un poco de aceite y sofríe la cebolla hasta
+				que esté transparente.</pas>
+			<pas numero="3">Añade las zanahorias, las patatas, el calabacín, las judías verdes, el
+				puerro y el apio. Cocina por unos minutos.</pas>
+			<pas numero="4">Agrega el tomate picado y remueve bien.</pas>
+			<pas numero="5">Vierte el caldo de verduras suficiente para cubrir las verduras.</pas>
+			<pas numero="6">Sazona con sal y pimienta al gusto.</pas>
+			<pas numero="7">Deja cocinar a fuego medio-bajo durante unos 30 minutos, o hasta que las
+				verduras estén tiernas.</pas>
+			<pas numero="8">Prueba y ajusta la sazón si es necesario.</pas>
+			<pas numero="9">Sirve caliente, acompañada de pan si lo deseas.</pas>
+		</preparacio>
+	</recepta>
+
+</receptes>

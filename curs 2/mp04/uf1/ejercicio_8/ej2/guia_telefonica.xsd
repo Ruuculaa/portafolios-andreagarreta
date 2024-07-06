@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="guia_telefonica">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nom"/>
+            <xs:element name="cognom"/>
+            <xs:element name="telefon" type="telefono"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+        <xs:simpleType name="telefono">
+            <xs:restriction base="xs:string">
+              <xs:pattern value="\+[0-9]{3}[0-9]{7}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        
+    
+
+</xs:schema>

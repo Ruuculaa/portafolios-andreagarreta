@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Canal de Notícies</title>
+    <link>http://example.com</link>
+    <description>Canal de notícies amb diverses categories</description>
+    <language>ca</language>
+    <copyright>© 2024, Nom del Teu Mitjà</copyright>
+    <managingEditor>editor@example.com (Editor Principal)</managingEditor>
+    <webMaster>webmaster@example.com (Webmaster)</webMaster>
+    <category>Notícies</category>
+    <image>
+      <url>data:image/png;base64,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</url>
+      <title>Sport</title>
+      <link>https://www.facebook.com/sport.es/photos/a.426191582534/10158006525907535/?type=3</link>
+    </image>
+
+    <!-- Notícia 1 -->
+    <item>
+      <title>Titol de la Notícia 1</title>
+      <link>https://www.sport.es/es/noticias/gente/leo-messi-enloquece-fans-zapatillas-simpson-dv-97526810?utm_source=pocket-newtab-es-es</link>
+      <description>Messi se pone unas zapatillas de los simpson</description>
+      <pubDate> 01 Jan 2023 12:00:00 GMT</pubDate>
+    </item>
+
+    <!-- Notícia 2 -->
+    <item>
+      <title>Titol de la Notícia 2</title>
+      <link>https://www.sport.es/es/noticias/barca/buscando-pareja-araujo-97561965</link>
+      <description>Buscan un compañero a Araujo en la defensa</description>
+      <pubDate> 02 Feb 2023 15:30:00 GMT</pubDate>
+    </item>
+
+    <!-- Notícia 3 -->
+    <item>
+      <title>Titol de la Notícia 3</title>
+      <link>https://www.sport.es/es/noticias/barca/deco-barca-barcelona-97565771</link>
+      <description>Trata sobre las operaciones de fichajes en el mercado de invierno</description>
+      <pubDate>03 Mar 2023 18:45:00 GMT</pubDate>
+    </item>
+
+    <!-- Notícia 4 -->
+    <item>
+      <title>Titol de la Notícia 4</title>
+      <link>https://www.sport.es/es/noticias/barca/motivacion-araujo-dvs-97578325</link>
+      <description>Habla sobre la motivacion que tiene el central Uruguayo Araujo</description>
+      <pubDate>04 Apr 2023 21:15:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>

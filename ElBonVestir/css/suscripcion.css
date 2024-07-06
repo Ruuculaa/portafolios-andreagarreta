@@ -1,0 +1,122 @@
+.gen_sub{
+   
+    background-color: rgb(226, 225, 225);
+    height: 560px;
+    
+}
+.flex_sub{
+    display: flex; /*Dividir la parte de 
+    texto*/
+}
+
+.foto_sub{
+    width: 60%;
+    margin-left: 50px;
+   
+    height: 520px;
+    margin-top: 20px;
+   border-left: 2px solid black;
+   border-top: 2px solid black;
+   border-bottom:  2px solid black;
+   border-bottom-left-radius: 30px;
+   border-top-left-radius: 30px;
+
+}
+.foto_sub img{
+    height: 100%;
+    opacity: 0.9;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+}
+.text_sub{
+    width: 40%;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-bottom-right-radius: 30px;
+
+    border-top-right-radius: 30px;
+    height: 520px;
+    margin-right: 50px;
+}
+
+
+
+.title_sub{
+    
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25%;
+    font-family: 'Nanum Myeongjo'; 
+}
+
+.paragraph_sub{
+   
+    margin: 20px;
+    text-align: center;
+
+}
+.paragraph_sub p{
+    font-size: 17px;
+    font-family: Arial;
+}
+.email_sub{
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email_sub label{
+
+}
+.email_sub input{
+    padding: 10px;
+    width: 38%;
+    
+}
+
+.email_sub .btn2{
+    width: 15%;
+}
+
+.btn_envia{
+    border: 2px solid green;
+}
+
+/**********RESPONSIVE********/
+
+@media screen and (max-width: 910px) {
+    .gen_sub{
+        height: 800px;
+    }
+    .flex_sub{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto_sub{
+        width: 100%;
+        margin: 0px;
+        height: 400px;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .foto_sub img{
+        border-radius: 0px;
+    }
+
+    .text_sub{
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+        height: 400px;
+        border: none;
+    }
+
+    .title_sub{
+        margin-top: 35px;
+    }
+
+}

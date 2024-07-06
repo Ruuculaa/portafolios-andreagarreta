@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT artistes (artista)>
+<!ELEMENT artista (nom,sobrenom,dataNaixament) >
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT sobrenom (#PCDATA)>
+<!ELEMENT dataNaixement (#PCDATA)>

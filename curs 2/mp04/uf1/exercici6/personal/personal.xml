@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personal SYSTEM "personal.dtd">
+<personal>
+    <persona id="bruno" note="alumno" contr="true" salary="1000">
+        <dades>
+            <nom>Bruno</nom> 
+            <cognom>Ostos</cognom>
+        </dades>
+        <email>bostos@insdanielblanxart.cat</email>
+        <url href='http://'>iyreu</url>
+        <relació ></relació>
+    </persona>
+    <persona id="jose" note="alumno" contr="true" salary="1000">
+        <dades>
+            <cognom>Turrado</cognom>
+            <nom>Jose</nom>
+        </dades>
+        <email>jturrado@insdanielblanxart.cat</email>
+        <url href='http://'></url>
+        <relació ></relació>
+    </persona>
+</personal>

@@ -1,0 +1,93 @@
+/*------------MISMO CSS PARA PRIVACIDAD Y COOKIES--------------------*/
+
+/*------------tamaño pantalla privacidad--------------------*/
+.privacidad_gen{
+    height: 2150px;
+    background-color: rgb(226, 225, 225);
+
+}
+/*------------tamaño pantalla cookies--------------------*/
+.cokies_gen{
+    height: 1800px;
+    background-color:  rgb(226, 225, 225);
+}
+
+
+.title_privacidad{
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    font-family: 'Nanum Myeongjo'; 
+}
+
+
+.texto_pri{
+    width: 80%;
+
+    margin:auto;
+}
+
+.texto_pri p{
+    margin-top: 20px;
+    font-family: arial;
+    font-size: 18px;
+    text-align: justify;
+}
+.texto_pri ul{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: arial;
+    font-size: 18px;
+    
+}
+.texto_pri h3{
+    font-size: 23px;
+    font-family: arial;
+}
+
+
+/*------------RESPONSIVE--------------------*/
+
+
+@media screen and (max-width: 910px) {
+
+    /*------------tamaño pantalla privacidad--------------------*/
+    
+    .privacidad_gen{
+        height:4550px;
+        margin: 0 0;
+        padding: 20px 0;
+              
+    }
+    /*------------tamaño pantalla cookies--------------------*/
+
+    .cokies_gen{
+        height: 3300px;
+        margin: auto;
+        padding: 20px 0;
+    }
+    .title_privacidad{
+        text-align: center;
+        font-size: 18px;
+        
+    }
+    .texto_pri p{
+        margin-top: 10px;
+        font-family: arial;
+        font-size: 12x;
+        text-align: justify;
+    }
+    .texto_pri ul li{
+        margin-top: 10px;
+        margin-left: 30px;
+        font-family: arial;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    /*------------escondemos los enlaces ya que-------------------*/
+    /*------------dismonta a pantalla-------------------*/
+    .pregunta{
+        display: none;
+    }
+}

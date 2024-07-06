@@ -1,0 +1,1184 @@
+
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+ 
+
+ 
+  
+
+}
+html{
+  width: auto;
+}
+
+
+/*HEADER*/
+
+#head2{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(13, 13, 37);
+  
+  font-family: Din,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  padding: 20px;
+  
+  
+}
+
+h1{
+  width: max-content; 
+  margin-left: 120px;
+  font-size: 35px;
+  font-family: arial;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+#head2 a{
+  color: white;
+}
+
+.navhead{
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 25px;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+.nav1 li a{
+  background-color: rgb(13, 13, 37);
+  text-decoration: none;
+  padding: 10px 15px ;
+  display: block;
+
+
+}
+.nav1 li ul{
+  display: none ;
+  position: absolute;
+  min-width: 140px ;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+ 
+
+}
+
+.nav1 > li{
+  float: right;
+
+
+}
+
+.nav1 li:hover > ul{
+  display: block;
+}
+
+
+
+
+.nav1 a:link, a:visited {
+  background-color: rgb(13, 13, 37);
+  color: rgb(255, 255, 255);
+  
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav1 a:hover, a:active {
+  background-color: rgba(0, 58, 158, 0.599);
+  color: white;
+}
+
+
+.navlink1{
+
+  
+  font-size: 130%;
+
+
+}
+
+@media screen and (max-width: 910px) {
+  .nav1 {
+    display: none;
+  }
+  
+}
+
+
+/*------------------------------------------------------------*/
+
+
+
+
+#menu__toggle {
+  opacity: 0;
+  
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  
+  background-color: #afd3f1;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+ 
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: rgb(235, 250, 253);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #0a181d;
+}
+
+
+@keyframes anim{
+  0% {background-color: rgb(22, 42, 187);}
+  25% {background-color: rgb(12, 68, 173);}
+ 50% {background-color: rgb(0, 42, 133);} 
+ 75% {background-color: rgb(30, 72, 188)} 
+100% {background-color: rgb(22, 42, 187);} 
+}
+.menu__box{
+animation-name: anim;
+animation-duration:10s;
+animation-iteration-count: infinite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------MAIN--------------------*/
+
+
+
+
+
+
+.topmain_box{
+  
+    height: 450px;
+    width: 100%;
+   
+}
+
+.topgeneral_box{
+    margin-top: 30px;
+    height: 400px;
+  
+    margin-left: 8%;
+    border-radius: 10px;
+    width: 85%;
+    display:flex;
+    
+
+}
+
+
+
+/*PARTE DE LA IZQUIERDA */
+
+
+.izqtopletras_box{
+    width: 50%;
+  
+    height: 100%;
+    border-top-left-radius: 10px;
+
+   
+    border-bottom-left-radius: 10px;
+    background-color: rgb(221, 236, 255);
+}
+
+.izqtext_box{
+  
+    text-align: center;
+   
+    
+    
+}
+
+.izqtext_box h2{
+    font-size: 48px;
+    
+    
+    font-family: 'Saira Semi Condensed', sans-serif;
+    
+}
+
+
+.imgtop_box{
+  margin: auto;
+  width: max-content;
+  height: 100px;
+  background-image: url("./img/icon/logo ltera negra.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 80%;
+    width: 200%
+  }
+
+  to {
+    margin-left: 14.5%;
+    width: 30%;
+  }
+}
+
+
+
+
+/*----------------------PARTE DERECHA-----------------------*/
+
+.dertopimg_box{
+    width: 50%;
+    
+    height: 100%;
+    background-color:  rgb(221, 236, 255);
+    
+}
+
+
+.derimg1{
+    
+    height: 400px;
+}
+.slider {
+	width: 100%;
+
+	margin:auto;
+	overflow: hidden;
+    height: 400px;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+    height: max-content;
+}
+
+
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+/*-------------------------QUI SOM----------------------------*/
+
+
+
+
+.quisom_sec{
+    height: 400px;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 80px;
+  
+    
+    
+}
+
+
+.title_quisom{
+    width: 100%;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    height: 100px;
+    background-color: #095c93;
+    color: white;
+   
+    padding-top: 2.5%;
+
+}
+.quisom_boxgen{
+    height: 100%;
+ 
+}
+
+.inside_quisom{
+    display: flex;
+    
+    height: 75%;
+    background-color:  rgb(221, 236, 255);
+    text-align: center;
+}
+
+.text_quisom{
+    width: 70%;
+    height: 100%;
+  
+    text-align: center;
+    
+}
+
+.text_quisom p{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 12%;
+ 
+  margin-right: 10%;
+  margin-left: 60px;
+  font-family: arial;
+  
+}
+
+.img_quisom{
+    width: 30%;
+    
+   margin-top: 30px ;
+  margin-right: 2%;
+    height: 100%;
+}
+ 
+/*--------------SECTION ACTIVITAT---------*/
+
+.activitats_sec{
+  height: auto;
+  margin-top: 80px;
+  
+  width: 85%;
+  
+
+  margin-left: 8%;
+  
+}
+
+.title_act{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100px;
+  font-family: 'Signika Negative', sans-serif;
+  background-color: #095c93;
+  color: white;
+
+ 
+  padding: 2.5%;
+}
+
+
+.tres_act{
+  display: flex;
+  height: auto;
+  margin-top: 30px;
+
+  
+  
+}
+
+.colum1_act{
+  margin-left: 40px;
+  width: 28%;
+  
+  background-color:  rgb(221, 236, 255);
+  border-radius: 10px;
+  
+  
+}
+
+
+.colum2_act{
+  margin-left: 50px;
+  width: 28%;
+  
+  border-radius: 10px;
+  background-color:  rgb(221, 236, 255);
+}
+
+
+.colum3_act{
+
+ margin-left: 50px;
+  width: 28%;
+ 
+  background-color:  rgb(221, 236, 255);
+  
+  border-radius: 10px;
+  
+}
+
+.link_act{
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+
+  font-family: arial;
+}
+
+.link_act a:link, a:visited {
+  background-color: rgba(10, 0, 126, 0.633);
+  color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  font-family: Arial;
+   
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link_act a:hover, a:active {
+  background-color: rgb(107, 133, 228);
+  color: rgb(7, 12, 20);
+}
+
+.actfot{
+  width: 100%;
+ border-radius: 4px;
+  height: 70%;
+  
+  
+
+}
+
+
+.sabermas a:link, a:visited {
+  background-color: rgb(0, 16, 67);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  font-family: arial;
+  padding: 10px 20px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sabermas a:hover, a:active {
+  background-color: rgb(148, 169, 246);
+  color: rgb(0, 0, 0);
+}
+
+.sabermas{
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+/*---------INSCRIPCIÓ-------------*/
+
+.insc_sec{
+  height: auto;
+  margin-top: 80px;
+
+
+  width: 85%;
+
+  margin-left: 8%;
+}
+
+
+
+.title_inssec{
+  width: 100%;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+  height: 100px;
+  background-color: #095c93;
+  color: white;
+  padding-top: 2.5%;
+}
+
+
+.inside_ins{
+  
+  
+  height: 400px;
+  background-color:  rgb(221, 236, 255);
+  border-radius: 4px;
+
+
+}
+
+
+
+.ins_cont{
+  
+  display: flex;
+  height: 100%;
+ 
+}
+
+.ins_info{
+  height: 300px;
+  width: 50%;
+ 
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ins_info p{
+  font-family: arial;
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 30px;
+ 
+}
+
+
+.link_ins a:link, a:visited{
+  background-color: rgba(10, 0, 126, 0.633);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.link_ins a:hover, a:active {
+  background-color: rgb(107, 133, 228);
+  color: rgb(7, 12, 20);
+}
+
+
+.insfoto{
+  margin-top: 52px;
+  height: 250px;
+  margin-left: 110px;
+  border-radius: 4px;
+
+}
+
+
+/*---------------ON ESTEM-----------------*/
+
+.onestem_box{
+  width: 85%;
+  
+  height: 600px;
+  margin-top: 80px;
+  margin-left: 8%;
+  margin-bottom: 20px;
+
+}
+
+.title_onestem{
+  width: 100%;
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
+  height: 100px;
+  background-color: #095c93;
+  color: white;
+  padding-top: 2.5%;
+
+}
+
+
+.mapa{
+  background-color:  rgb(221, 236, 255);
+  height: 83%;
+  border-radius: 4px;
+  
+
+}
+
+
+
+
+/* ------------------------------CALENDARI-------------------*/
+
+
+.inside_calen{
+  margin-top: 20px;
+  height: max-content;
+ 
+  width: 100%;
+}
+
+.title_calen{
+  width: 85%;
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
+  height: 100px;
+  background-color: #095c93;
+  color: white;
+  padding-top: 2.5%;
+  margin-left: 7.5%;
+}
+
+
+
+
+.calen_img{
+  width: 85%;
+  
+  margin-left: 7.5%;
+    
+  height: max-content;
+  align-items: center;
+  margin-top: 20px;
+  background-color:  rgb(221, 236, 255);
+}
+
+.primera_img{
+  
+ text-align: center;
+
+}
+
+
+.horarios_img{
+  margin: auto;
+  height: 340px;
+}
+.segunda_img{
+  text-align: center;
+}
+.horarios1_img{
+ 
+  height: 500px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------START FOOTER-----------------------------*/
+
+
+footer{
+    background-color: rgb(13, 13, 37);
+    color: white;
+    width: 1400;
+    padding: 40px;
+    
+    
+} 
+  
+  
+.container-footer-all{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial
+    
+}
+  
+.container-body{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial;
+    
+}
+.colum4{
+  
+    width: 800px;
+    font-family: Arial;
+  
+}
+.colum1 h3{
+  
+    font-size: 22px;
+    font-family: Arial;
+  
+}
+  .colum4 p{
+    font-size: 14px;
+    color: white;
+    font-family: Arial;
+    margin-top: 20px;
+  
+}
+  
+  .colum5{
+    
+    width: 600px;
+    margin-left: 90px;
+    
+  
+    
+}
+  .colum5 h3{
+    font-size: 22px;
+  
+}
+  .row3{
+    margin-top: 20px;
+    display: flex;
+}
+  .row3 img{
+    width: 36px;
+    height: 36px;
+}
+  
+.row3 label{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+  
+}
+  
+.colum6{
+    margin-left: 50px;
+    width: 800px;
+    
+}
+.colum6 h3{
+    font-size: 22px;
+}
+  
+.row1{
+    margin-top: 20px;
+}
+  
+  
+.row4 img{
+    width: 36px;
+    height: 36px;
+    margin-top: 20px;
+}
+  
+.row4 label{
+    
+    margin-left: 20px;
+  position: relative;
+  bottom: 12px;
+    color: white;
+   
+}
+  
+  
+  
+.container-footer{
+    width:100%;
+    background-color: #101010;
+    display: flex;
+    margin-top: 30px;
+    
+    justify-content: space-between;
+    font-family: Arial
+    
+}
+  
+.footer{
+    max-width: 900px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    
+}
+  
+.copyright{
+    color: #b2bcc3;
+  
+}
+  
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial
+  
+}
+  
+  .informacion a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial
+}
+
+
+
+@media screen and (max-width: 800px){
+  /*-------------------TOP--------------------*/
+
+  .topgeneral_box{
+    flex: none;
+  }
+
+  .izqtopletras_box{
+    width: 100% ;
+    border-radius: 7px;
+  }
+
+  .dertopimg_box{
+  height: 0;
+  width: 0; 
+  }
+
+  .imgtop_box{
+   
+    height: max-content;
+    margin: auto;
+
+
+  }
+  .imgtop_box1{
+    margin-top: 15px;
+    height: 100px;
+  }
+  /*--------------QUI SOM--------------*/
+  .quisom_sec{
+    height: auto;
+    margin: auto;
+  }
+  .quisom_boxgen{
+    height: auto;
+    text-align: center;
+
+  }
+
+  .title_quisom {
+    margin:auto ;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+  }
+
+  .text_quisom{
+    width: 100%;
+    height: 100%;
+    margin-top: 12px;
+    text-align: right;
+    
+}
+
+  .text_quisom p{
+    text-align: left;
+    font-size: 21px;
+   
+   margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+    font-family: arial;
+    
+  }
+
+
+  .inside_quisom{
+    height: auto;
+    
+  }
+  .text_quisom{
+    width: 100%;
+  }
+
+
+  .text_quisom P{
+    margin-top: 0;
+  }
+  .img_quisom{
+    height: 0;
+    width: 0;
+    margin-left: 0;
+    
+  }
+  .img_quisom1{
+    height: 0;
+    width: 0;
+    margin-left: 0;
+    
+  }
+
+  /*---------ACTIVITATS---------*/
+
+    
+  .activitats_sec{
+    height: min-content;
+     margin: auto;
+   }
+   .title_act {
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+  }
+   
+   .tres_act{
+     flex-direction: column;
+     height: max-content;
+     margin-left: 0px;
+ 
+   }
+ 
+   .colum1_act{
+     width: auto;
+     margin: auto ;
+     
+   }
+   .colum2_act{
+     width: auto;
+     
+     margin:10px  auto ;
+   }
+   .colum3_act{
+     width: auto;
+     margin-top: 10px;
+     margin: 10px 0%;
+   }
+
+
+  /*--------INSCRIPCION-------*/
+
+
+  .insc_sec{
+    margin-top: 30px;
+    height: max-content;
+  }
+  .title_inssec {
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+  }
+  .ins_info{
+    width: 100%;
+
+  }
+  .ins_info P{
+    font-size: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .link_ins{
+    margin-top: 10px;
+    
+  }
+  .insfoto{
+    height: 0px;
+    width: 0px;
+    margin-left: 0px;
+  }
+
+
+  /*------MAPA---------*/
+
+  .title_onestem{
+    margin: auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+  }
+
+/*-----------CALENDARIO------------*/
+  .title_calen{
+    margin: auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+    
+  }
+
+  .horarios_img{
+    margin: auto;
+    margin-left: 3%;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .horarios1_img{
+   margin: auto;
+   margin-left: 3%;
+   height: 300px;
+   margin-bottom: 10px;
+  
+  }
+  /*-------------------FOOOOOOOOOOOTER--------------------*/
+
+  
+  .container-footer-all{
+    flex-direction: column;
+    
+  }
+  .container-body{
+    flex-direction: column;
+  }
+
+  .foot_img{height: 100px;}
+  .colum4{
+    width: max-content;
+    margin: auto;
+  }
+
+  .foot_img{
+    height: 100px;
+    
+  }
+  .colum5{
+   margin: auto;
+   margin-top: 20px;
+    width: max-content;
+  }
+ 
+  .colum6{
+    margin: auto;
+    margin-top: 20px;
+    width: max-content;
+  }
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes anim{
+  0% {background-color: rgb(22, 42, 187);} /*Amarillo*/
+ 25% {background-color: rgba(12, 68, 173, 0.856);} /*Naranja*/
+ 50% {background-color: rgba(2, 33, 102, 0.768);} /*Negro*/
+ 75% {background-color: rgba(30, 72, 188, 0.856)} /*Otra vez naranja*/
+100% {background-color: rgb(22, 42, 187);} /*Otra vez amarillo*/
+}
+footer {
+animation-name: anim;
+animation-duration:10s;
+animation-iteration-count: infinite;
+margin-top: 20px;
+}

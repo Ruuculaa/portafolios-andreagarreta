@@ -1,0 +1,908 @@
+*{
+    
+   box-sizing: border-box;
+   font-family: Arial;
+  
+  
+}
+
+.general{
+    width: 60%;
+    height: max-content;
+    
+    margin: auto;
+    margin-top: 2%;
+}
+    /*-----------------------------------HEADER----------------------------*/
+.header{
+ 
+ display: flex;
+ 
+}
+.imglogo{
+    
+}
+.imglogo{
+    height: 100px;
+  
+}
+
+.cv{
+    
+    height: max-content;
+    width: max-content;
+    text-align: right;
+    align-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    right: 0;
+    
+    top: 20px;
+    margin-left: 900px;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv i{
+    font-size: 40px;
+    color: black;
+}
+   
+/*---------------------------------BODY---------------------------------*/
+
+/*-----PRESENTACION-----*/
+
+
+.presentacion{
+  
+    height: max-content;
+    width: 100%;
+    margin-top: 2%;
+   
+}
+.dedicacion{
+   
+    height: 20%;
+   
+    margin: auto;
+   
+    width: 40%;
+    margin-top: 2%;
+}
+
+.dedicacion h1 {
+    text-align: center;
+
+}
+.dedicacion h3 {
+    text-align: center;
+    margin: auto;
+    margin-top: 7%;
+    width: 70%;
+   
+}
+
+    
+/*----------------FOTO CARA----------------*/
+
+.fotocara{
+    height: 250px;
+   
+    margin-top: 7%;
+}
+
+.foto{
+  
+    width: max-content;
+    margin: auto;
+}
+.cara{
+    border-radius: 70%;
+    height: 230px;
+   
+
+}
+/*
+.fotoinformatica{
+    border: 2px solid black;
+    width: max-content;
+    margin: auto;
+}*/
+
+
+/*--------------------------DESCRIPCION BREVE -----------------*/
+
+.descripcion{
+ 
+    height: max-content;
+    margin-top: 3%;
+    padding: 0.01%;
+    background-color: rgba(152, 209, 226, 0.781);
+    border-radius: 15px;
+}
+
+.textdescription{
+   
+    width: 60%;
+    
+    margin: auto;
+   text-align: center;
+    
+}
+.textdescription h4 {
+    text-align: center;
+    font-size:23px;
+}
+
+/*----------------------------ESTUDIOS/EXPERIENCIA-----------------------*/
+
+
+
+
+.estudios_exp{
+    margin-top: 3%;
+  
+  
+    height: max-content;
+}
+.estudios_exp_flex{
+    display: flex;
+  
+}
+.title_study_exp{
+    text-align: center;
+   
+    height: 100px;  
+}
+
+.box_study{
+  
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    width: 70%;
+  
+    flex-direction: row;
+    justify-content: flex-star;
+   
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.box_study h4{
+    font-size: 23px;
+
+    text-align: center;
+    margin: auto;
+    
+   
+}
+
+.estudios{
+    width: 70%;
+  font-size: 18px;
+    text-align: left;
+    margin: 30px auto;
+   
+    height: max-content;
+}
+
+hr{
+    border: 2px solid black;
+    margin: 3%;
+}
+.box_exp{
+   
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    
+    width: 70%;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.box_exp H4{
+    font-size: 23px;
+  
+    text-align: center;
+    margin: auto;
+}
+
+.laboral{
+    width: 70%;
+  font-size: 18px;
+    text-align: left;
+    margin: 30px auto;
+  
+}
+
+.box_exp li{
+    font-size: 18px;
+    line-height: 35px;  
+  
+
+}
+
+
+
+
+/*-----------------------------CUALIDADES---------------------------*/
+
+
+
+
+
+
+
+
+
+
+.cualidades{
+    
+    height: max-content;
+    margin-top: 8%;
+   
+    border-radius: 15px;
+    background-color: rgba(152, 209, 226, 0.781);
+}
+
+.box_cualidades{
+
+    height: max-content;
+    display: flex;
+}
+
+.seccion_cualidades{
+
+    height: 100%;
+    width: 33.3%;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+
+.icono_cuali{
+    
+    text-align:center ;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.title_cualidades{
+   
+    text-align: center;
+}
+
+.descripcion_cualidades{
+  
+    height:max-content ;
+    width: max-content;
+    line-height: 60px;
+    margin: auto;
+    
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.descripcion_cualidades p{
+    font-size: 28px;
+}
+
+/*--------------------------TRABAJOS----------------------*/  
+
+
+.work{
+
+    height: 800px;
+    width: 100%;
+   
+    margin: 4% 0% 4% 0%;
+}
+
+.title_work{
+  
+    text-align: center;
+}
+.box_work1{
+    
+    height: 300px;
+    margin-top: 5%;
+    display: flex;
+    
+}
+
+
+.secction_work{
+ 
+    position: relative;
+    border-radius: 5%;
+    height: 300px; 
+    width: 25%;
+    margin: auto;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Cambiado a column para alinear imagen y overlay uno encima del otro */
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden; /* Para asegurar que los bordes redondeados funcionen correctamente */
+}
+ /*-------------------------WEB GYM---------------------------*/
+.gymsal{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    transition: opacity 0.5s;
+}
+
+
+.gymsal2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/LOGOS\ PROYECTOS/gymsal2.png);
+    color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.secction_work:hover .gymsal {
+    opacity: 0;
+}
+
+.secction_work:hover .gymsal2 {
+    opacity: 1;
+}
+
+.gymsal2 p{
+    margin: 8%;
+}
+.gymsal2 a {
+
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px;
+    text-decoration: none;
+    
+}
+
+.gymsal2 a:hover{
+    background-color: black;
+    color: white;
+}
+/*-----------------------WEB BONVESTIR--------------------*/
+
+.vestir{
+    height: max-content;
+    width: 100%;
+    border-radius: 15px;
+    transition: opacity 0.5s;
+}
+
+.bonvestir2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/LOGOS\ PROYECTOS/Bonvestir2.png);
+    color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.secction_work:hover .vestir {
+    opacity: 0;
+}
+
+.secction_work:hover .bonvestir2 {
+    opacity: 1;
+}
+
+.bonvestir2 p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 18%;
+   
+}
+.bonvestir2 a {
+
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px;
+    text-decoration: none;
+   
+}
+
+.bonvestir2 a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*-----------------------STREET FIGHTER--------------------*/
+
+
+.street{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    transition: opacity 0.5s;
+}
+
+.street2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300PX;
+
+    background-image: url(./img/LOGOS\ PROYECTOS/street2.png);
+    color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.secction_work:hover .street {
+    opacity: 0;
+}
+
+.secction_work:hover .street2 {
+    opacity: 1;
+}
+
+.street2 p{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
+.street2 a {
+
+    color: black;
+    border: 2px solid rgb(102, 1, 1);
+    padding: 4px;
+    text-decoration: none;
+    
+}
+
+.street2 a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+
+
+
+
+.box_work2{
+
+    height: 300px;
+    margin-top: 3%;
+    width: 70%;
+    margin: 3% auto;
+    display: flex;
+
+}
+
+.secction_work2{
+ 
+    position: relative;
+    border-radius: 5%;
+    height: 300px; 
+    width: 35%;
+
+    margin: auto;
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Cambiado a column para alinear imagen y overlay uno encima del otro */
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden; /* Para asegurar que los bordes redondeados funcionen correctamente */
+}
+
+/*--------------DRAGON BALL-----------------*/
+
+.dragon{
+    height: 300px;
+    width: 100%;
+ 
+    border-radius: 15px;
+    transition: opacity 0.5s;
+}
+
+.dragon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300PX;
+    background-image: url(./img/LOGOS\ PROYECTOS/dragonball2.png);
+    color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.secction_work2:hover .dragon {
+    opacity: 0;
+}
+
+.secction_work2:hover .dragon2 {
+    opacity: 1;
+}
+
+.dragon2 p{
+
+  height: max-content;
+  
+  width: 80%;
+   margin: 30px auto;
+}
+.dragon2 a {
+
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px;
+    text-decoration: none;
+    
+}
+
+.dragon2 a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*----------------SOPA DE LETRAS ---------------------*/
+
+
+
+.sopa{
+    height: 300px;
+    width: 100%;
+   
+    border-radius: 15px;
+    transition: opacity 0.5s;
+}
+
+.sopa2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300PX;
+    background-image: url(./img/LOGOS\ PROYECTOS/sopaletras2.png);
+    color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.secction_work2:hover .sopa {
+    opacity: 0;
+}
+
+.secction_work2:hover .sopa2 {
+    opacity: 1;
+}
+
+.sopa2 p{
+  
+
+  height: max-content;
+
+  width: 80%;
+   margin: 20px auto;
+}
+.sopa2 a {
+
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px;
+    text-decoration: none;
+    
+}
+
+.sopa2 a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------FOOTER------------------------*/
+footer{
+    border-radius: 15px;
+   height: max-content;
+    animation-name: anim;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    margin-top: 20px;
+    background-color: rgba(152, 209, 226, 0.781);
+}
+
+
+.logo_fo{
+   
+    width: max-content;
+    margin: auto;
+   
+}
+
+.img_fo{
+    height: 100px;
+    margin-top: 40px;
+}
+
+.redes_fo{
+
+    height:max-content;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    width: 50%;
+    font-size: 50px;
+}
+
+.section_redes{
+
+    text-align: center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: flex-star;
+    align-items: stretch;
+    width: max-content;
+    height: max-content;
+    
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.section_redes a{
+    color: black;
+}
+
+
+
+/*@keyframes anim{
+    0% {background-color: rgb(8, 35, 238);} /*AZUL
+    25% {background-color: rgba(90, 137, 224, 0.856);} /*AZUL FLOJO
+    50% {background-color: rgba(2, 33, 102, 0.768);} /*Negro
+    75% {background-color: rgba(69, 100, 185, 0.856)} /*Otra vez naranja
+   100% {background-color: rgb(25, 33, 94);} /*Otra vez amarillo
+ }
+
+
+
+ */
+
+/*----------------DERECHOS DE AUTOR----------------*/
+
+
+.derechos{
+    
+   width: 100%;
+   margin: auto;
+    height: max-content;    
+    background-color: rgba(65, 99, 119, 0.801);
+}
+
+.derechos p{
+    width: 100%;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    height: max-content;
+
+}
+
+
+
+
+
+/*------------------------------------------RESPONISVE----------------------------*/
+
+
+@media screen and (max-width: 600px){
+
+    *{
+        
+    }
+.general{
+    
+    width: 100%;
+    margin: 0;
+}
+.imglogo{
+    text-align: center;
+    margin: auto;
+}
+.cv{
+    border: 2px solid green;
+   margin-left: 350px;
+   display: none;
+}
+
+
+.presentacion{
+    border: 2px solid blue;
+}
+
+.dedicacion{
+    border: 2px solid orange;
+    width: 100%;
+}
+
+.descripcion{
+    border: 2px solid blue;
+}
+
+.textdescription{
+    width: 90%;
+}
+.textdescription h4{
+    font-size: 17px;
+}
+
+.estudios_exp{
+    border: 2px solid red;
+
+}
+
+
+.box_study{
+    height: 800px;
+}
+
+.box_study h4{
+    border: 2px solid green;
+}
+
+.box_exp{
+   
+    height: 800px;
+    font-size: 30px;
+    text-align: center;
+    flex-direction: column;
+justify-content: flex-star;
+align-items: stretch;
+flex-wrap: nowrap;
+    width: 70%;
+    margin: auto;
+    margin-left: 20px;
+}
+
+
+
+
+.cualidades{
+  
+}
+
+.box_cualidades{
+    display: flex;
+}
+
+
+.seccion_cualidades{
+    height: 500px;
+    width: 100%;
+    border: 2px solid red;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

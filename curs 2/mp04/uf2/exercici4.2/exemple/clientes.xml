@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="1">
+    <nombre>Carlos Pérez</nombre>
+    <correos>
+      <correo>carlos.perez@gmail.com</correo>
+      <correo>cperez@empresa.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-123-4567</telefono>
+      <telefono>555-765-4321</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="2">
+    <nombre>Maria Gomez</nombre>
+    <correos>
+      <correo>mgomez@yahoo.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-987-6543</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="3">
+    <nombre>Juan Rodriguez</nombre>
+    <correos>
+      <correo>jrodriguez@hotmail.com</correo>
+      <correo>jrodriguez@ou.edu</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-555-5555</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="4">
+    <nombre>Ana Ortiz</nombre>
+    <correos>
+      <correo>aortiz@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-777-7777</telefono>
+    </telefonos>
+  </cliente>
+  <cliente id="5">
+    <nombre>Antonio Hernandez</nombre>
+    <correos>
+      <correo>antonio.hernandez@gmail.com</correo>
+    </correos>
+    <telefonos>
+      <telefono>555-111-2222</telefono>
+      <telefono>555-333-4444</telefono>
+    </telefonos>
+  </cliente>
+</clientes>
+

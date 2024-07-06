@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <cordenada xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cordenadas.xsd">
+        <x>10.5</x>
+        <y>20.0</y>
+        <z>5.3</z>
+      </cordenada>
+      

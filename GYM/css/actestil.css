@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+    
+}
+
+.titulo_acti{
+    
+    width: 85%;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    height: 100px;
+    background-color: #095c93;
+    color: white;
+    padding-top: 1.8%;  
+    
+    margin-left: 7.5%;
+    margin-top: 20px;
+   
+    
+}
+
+.titulo_acti h2{
+    text-align: center;
+    font-family: Arial;
+}
+
+.box_act{
+  
+ height: 720px;
+ margin-top: 20px;
+}
+
+.general_act{
+   
+    height: 350px;
+    display: flex;
+    font-family: Arial;
+    
+
+}
+
+.box2_act{
+    width: 33%;
+    
+    border-radius: 10px;
+    height: 350px;
+    margin-right: 10px;
+    background-color: rgb(221, 236, 255);
+    font-family: Arial;
+}
+
+
+.fotoact1{
+    
+    height: 200px;
+    width: 70%;
+    margin: 5%   15%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px;
+    font-family: Arial;
+    color: rgba(0, 0, 255, 0.14)
+}
+
+.textact h3{
+    
+    width: max-content;
+    font-family: Arial;
+    margin-left: 30%;
+}
+
+.textact p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.box3_act{
+    width: 33%;
+    
+    
+    height: 350px;
+    border-radius: 10px;
+    font-family: Arial;
+    background-color: rgb(221, 236, 255);
+    
+}
+
+.textact1 h3{
+   
+    width: max-content;
+    font-family: Arial;
+    margin-left: 38%;
+}
+.textact1 p{
+    margin-top: 5px;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+.box4_act{
+    width: 33%;
+    border-radius: 10px;
+    height: 350px;
+    font-family: Arial;
+    background-color: rgb(221, 236, 255);
+    margin-left: 10px;
+    
+}
+
+.textact2 h3{
+    font-family: Arial;
+    width: max-content;
+    margin-left: 40%;
+}
+.textact2 p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+
+.general1_act{
+    margin-top: 10px;
+    
+    height: 300px   ;
+    display: flex;
+    
+
+}
+
+
+
+.btn_ins{
+    margin: 10PX auto;   
+    font-family: arial;
+    width: max-content;
+}
+
+.btn_ins a:link{
+    background-color: rgba(0, 60, 225, 0.317);
+    color: black;
+    font-family: arial;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn_ins a:visited{
+    background-color: rgba(0, 60, 225, 0.317);
+    color: black;
+    font-family: arial;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.btn_ins a:hover, a:active {
+    background-color: rgba(0, 94, 255, 0.599);
+    color: white;
+}
+
+
+@media screen and (max-width: 800px){
+   
+   .titulo_acti {
+     
+     padding-top: 2.5%;
+     padding-bottom: 2.5%;
+     height: auto;
+   }
+    .box_act{
+        height: max-content;
+        border-radius: 0;
+
+    }
+    .general_act{
+        flex-wrap: wrap;
+        min-width: 370px;
+        border-radius: 0;
+        border-radius: 0;
+        height: max-content;
+    }
+    .box2_act{
+        margin: auto;
+        width: 100%;
+        margin-right: 0px;
+
+        height: 30%;
+    }
+
+    .box3_act{
+        margin: auto;
+        width: 100%;
+        margin-right: 0px;
+        border-radius: 0;
+        height: 30%;
+    }
+    .box4_act{
+        margin: auto;
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0px;
+        height: 30%;
+    }
+
+    .general1_act{
+        height: max-content;
+        border-radius: 0;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+    
+    .textact1 h3{
+        margin: auto;
+        text-align: center;
+    }
+
+    .textact2 h3{
+        margin: auto;
+        text-align: center;
+    }
+    .textact p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .textact1 p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .textact2 p{
+        margin-bottom: 10px;
+    }
+
+    .btn_ins{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+@keyframes anim{
+    0% {background-color: rgb(22, 42, 187);} /*Amarillo*/
+   25% {background-color: rgba(12, 68, 173, 0.856);} /*Naranja*/
+   50% {background-color: rgba(2, 33, 102, 0.768);} /*Negro*/
+   75% {background-color: rgba(30, 72, 188, 0.856)} /*Otra vez naranja*/
+  100% {background-color: rgb(22, 42, 187);} /*Otra vez amarillo*/
+  }
+  footer {
+  animation-name: anim;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  margin-top: 20px;
+  }

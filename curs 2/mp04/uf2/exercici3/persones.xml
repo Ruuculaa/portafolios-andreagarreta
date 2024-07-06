@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persones>
+    <nom>DAW1</nom>
+    <alumnes>
+        <nom grup="daw1">Marcel Puig</nom>
+        <nom grup="daw1">Frederic Pi</nom>
+        <nom grup="daw2">Filomeno Garcia</nom>
+        <nom grup="daw2">Manel Puigdevall</nom>
+    </alumnes>
+    <profes>
+        <nom grup="daw12">Gerard </nom>
+        <cognom>Palà</cognom>
+    </profes>
+    <profes>
+        <nom grup="daw12">Josep</nom>
+        <cognom>Vaño</cognom>
+    </profes>
+</persones>

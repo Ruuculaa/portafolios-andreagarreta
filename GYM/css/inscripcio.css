@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body {
+  
+   font-family: Arial;
+}
+
+
+
+
+/*----------------------INSCRIPCION -----------------------------*/
+
+.ins_titulo h2{
+    width: 84%;
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
+  height: 100px;
+  background-color: #095c93;
+  color: white;
+  padding-top: 2.5%;
+  margin-top: 20px;
+  margin-left: 8%;
+   
+}
+
+
+.box_ins{
+    
+    height:max-content;
+    
+}
+
+.intro{
+    display: flex;
+    padding-left: 8%;
+    margin-top: 20px;
+    padding-right: 8%;
+         
+}
+
+.introduccion{
+
+    border-radius: 4px;
+    height: 300px;
+    width: 40%;
+    background-color: rgb(221, 236, 255);
+   
+  
+}
+.ins_logo{
+    margin-top: 15%;
+    padding-left: 5%;
+    
+
+}
+
+
+.introduccion2{
+    border-radius: 4px;
+     
+    height: 300px;
+    width: 60%;
+    background-color: rgb(221, 236, 255);
+    
+}
+
+.introduccion2 h3{
+    text-align: center;
+    margin-top: 6%;
+    width: 94%;
+    font-size: 60px;
+}
+.introduccion2 p{
+    width: 94%;
+    font-size: 20px;
+    margin-top: 4%;
+    text-align: center;
+}
+
+
+/*---------------------PLAN--------------------*/
+
+
+
+.plan{
+    height: auto;
+    margin-top: 5%;
+    padding-left: 8%;
+   
+    padding-right: 8%;
+}
+
+
+.selection{
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+     
+    text-align: center;
+    background-color: rgb(221, 236, 255);
+
+}
+
+.selection h2{
+    padding-top: 30px;
+    font-size: 40px;
+     
+}
+
+.content_select select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.content_select select::-ms-expand{
+    display: none;
+}
+
+.content_select{
+    
+    max-width: 170px;
+   
+    margin: 1.5% auto;
+}
+.content_select select{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    margin-bottom: 5%;
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 160, 0.666);
+    color: aliceblue;
+    font-size: 1em;
+    font-family: arial;
+    border: 2px solid rgb(43, 43, 43);
+    position: relative;
+    transition: all 0.25s ease;
+
+
+}
+.content_select select:hover{
+    background-color: rgba(63, 161, 253, 0.725);
+    color: black;
+}
+
+
+
+
+/*OPCIONES DEL PLAN*/
+
+.opciones_plan{
+    
+  display: flex;
+    
+    
+    height: auto;
+    background-color: rgb(221, 236, 255);
+}
+
+.primera_opcion{
+    width: 23%;
+
+    margin-left: 10px;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    margin-top: 4%;
+    margin-right: 30px;
+    
+}
+
+.segunda_opcion{
+    width: 23%;
+   
+    height: 300px;
+    margin-top: 4%;
+    margin-right: 30px;
+
+}
+.tercera_opcion{
+    text-align: center;
+    margin-top: 4%;
+    width: 23%;
+    
+    height: 300px;
+    margin-right: 30px;
+}
+.cuarta_opcion{
+    width: 23%;
+    margin-top: 4%;
+   margin-right: 10px;
+    height: 300px;
+    text-align: center;
+    
+}
+.titulo_opci{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(0, 32, 63);
+    color: aliceblue    ;
+}
+
+.texto_opci p{
+    text-align: center;
+    padding-top: 14%;
+    padding-bottom: 14%;
+    border-bottom: 2px dashed black;
+}
+.ultim_text {
+    text-align: center;
+    text-align: center;
+    
+    padding-top: 12%;
+    padding-bottom: 13%;
+}
+
+
+/*  ------INFORMACION EXTRA------    */
+
+
+.mas_info_opci{
+   padding-left: 5%;
+    padding-top: 10%;
+   padding-right: 5%;
+   padding-bottom: 5%;
+    background-color:rgb(221, 236, 255); 
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.mas_info_opci p{
+    color: red;
+}
+
+
+/*  -----------DARTOS DEL USUARIO---------  */
+
+.tit_datos{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.datos_ins{
+    height: 900px;
+   
+   
+    background-color: rgb(221, 236, 255);
+    border-radius: 5px;
+    display: flex;
+}
+
+.datos_box{
+    width: 100%;
+    
+    height: 100%;
+    
+}
+
+.datos_box p{
+   margin: auto;
+    margin-top: 20px;
+    height: 43px;
+   
+    width: max-content;
+
+    padding-top: 1%;
+    font-size: 20px ;
+}
+
+
+
+.controls{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-left: 465px;
+    background: rgba(138, 206, 223, 0.605);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    align-items: stretch;
+    border: 1px solid blue;
+    font-family: "Arial";
+    font-size: 18px;
+}
+
+.banco h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cont_banco{
+    height: 150px;
+    
+    background-color: rgb(221, 236, 255);
+}
+
+.box_banco{
+    display: flex;
+    height: 100%;
+    
+    text-align: center;
+}
+.left_banco{
+    width: 50%;
+  
+    ;
+}
+
+.left_banco p{
+    margin-top: 4%;
+}
+.right_banco{
+    width: 50%;
+}
+.right_banco p{
+    margin-top: 4%;
+}
+
+.controls2{
+    width: 50%;
+    background: rgba(138, 206, 223, 0.605);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px solid rgb(15, 15, 117);
+    font-family: "Arial";
+    font-size: 18px;
+}
+
+.ins_btn{
+    text-align: center  ;
+    margin-top: 30px;
+    margin-bottom: 30px ;
+    font-family: arial;
+}
+.ins_btn a:link, a:visited {
+    background-color: rgb(0, 4, 130);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.ins_btn a:hover, a:active {
+    background-color: rgb(107, 133, 228);
+    color: rgb(7, 12, 20);
+}
+
+
+
+@media screen and (max-width: 800px){
+
+
+
+    .ins_titulo h2{
+       
+     
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+            height: auto;
+        
+    }
+.intro{
+    width: auto;
+    height: max-content;
+    flex-direction: column;
+}
+
+.introduccion{
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+   
+
+}
+
+.selection{
+    height: auto;
+    border-radius: 5px;
+}
+.ins_logo{
+    margin-left: 20px;
+
+    margin-top: 5%;
+    padding-left: 0%;
+    height: 100px;
+   
+}
+.introduccion2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.introduccion2 h3{
+    font-size: 50px;
+    margin-top: 5%;
+
+    margin: auto;
+}
+.introduccion2 p{
+    margin-left: 2%; 
+    margin-right: 2%; 
+    margin-bottom: 3%;  
+}
+.content_select{
+    margin-bottom: 3%;
+
+}
+.opciones_plan{
+    height: max-content;
+    margin-top: 0%;
+    flex-wrap: wrap;
+  
+    border-radius: 5px;
+    
+    
+}
+
+.primera_opcion{
+    width: 35%;
+    margin: auto;
+    margin-top: 5%;
+
+}
+.segunda_opcion{
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+}
+.tercera_opcion{
+    width: 40%;
+    margin:80px auto;
+    margin-bottom: 0px;
+}
+
+.cuarta_opcion{
+    width: 40%;
+    margin:80px auto;
+    margin-bottom: 0px;
+}
+.ins_titulo{
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+}
+.titulo_opci{
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+}
+.tit_datos{
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    height: auto;
+}
+.mes_info_opci{
+    margin-top: 0;
+}
+
+.controls{
+    width: 65%;
+    text-align: center;
+    margin:0px 50px auto;
+    
+    background: rgba(138, 206, 223, 0.605);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    align-items: stretch;
+    border: 1px solid blue;
+    font-family: "Arial";
+    font-size: 18px;
+}
+}
+
+@keyframes anim{
+    0% {background-color: rgb(22, 42, 187);} /*Amarillo*/
+   25% {background-color: rgba(12, 68, 173, 0.856);} /*Naranja*/
+   50% {background-color: rgba(2, 33, 102, 0.768);} /*Negro*/
+   75% {background-color: rgba(30, 72, 188, 0.856)} /*Otra vez naranja*/
+  100% {background-color: rgb(22, 42, 187);} /*Otra vez amarillo*/
+  }
+  footer {
+  animation-name: anim;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  margin-top: 20px;
+  }
