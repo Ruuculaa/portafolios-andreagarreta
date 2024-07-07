@@ -19,9 +19,7 @@
  display: flex;
  
 }
-.imglogo{
-    
-}
+
 .imglogo{
     height: 100px;
   
@@ -712,9 +710,7 @@ footer{
 
 @media screen and (max-width: 600px){
 
-    *{
-        
-    }
+    
 .general{
     
     width: 100%;
@@ -853,52 +849,6 @@ footer{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
