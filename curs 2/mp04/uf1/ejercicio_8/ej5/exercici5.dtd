@@ -1,7 +1,0 @@
-<!ELEMENT estoc (nou | utilitzat)*>
-<!ELEMENT nou (model,preu)>
-<!ELEMENT utilitzat (model,preu,quilometratge,condicio?)>
-<!ELEMENT model (#PCDATA)>
-<!ELEMENT preu (#PCDATA)>
-<!ELEMENT quilometratge (#PCDATA)>
-<!ELEMENT condicio (#PCDATA)>

@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<carta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./exercici7.xsd">
-    <benvinguda>Apreciat<tracte>Sr/a.</tracte><nom>Bruno</nom></benvinguda>
-    <cos>Ens dirigim a vostè per ...</cos>
-    <signatura>Atentament ...</signatura>
-    <data>15 de <mes>novembre</mes> del <any>2018</any></data>
-</carta>

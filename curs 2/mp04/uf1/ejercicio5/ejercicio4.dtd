@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT missatges (missatge)>
-<!ELEMENT de (#PCDATA)>
-<!ELEMENT per (#PCDATA)>
-<!ELEMENT hora (#PCDATA)>
-<!ELEMENT text (#PCDATA)>
-<!ELEMENT strong (#PCDATA)>
