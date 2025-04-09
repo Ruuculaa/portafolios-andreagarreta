@@ -19,9 +19,7 @@
   display: flex;
   
  }
- .imglogo{
-     
- }
+
  .imglogo{
      height: 100px;
    
@@ -139,136 +137,139 @@
  /*----------------------------ESTUDIOS/EXPERIENCIA-----------------------*/
  
  
- .estudios_exp{
-     margin-top: 3%;
-   
-   
-     height: max-content;
- }
- .estudios_exp_flex{
-     display: flex;
-   
- }
- .title_study_exp{
-     text-align: center;
-    
-     height: 100px;  
- }
- 
- .box_study{
-   
-     height: 500px;
-     font-size: 30px;
-     text-align: center;
-     width: 70%;
-   
-     flex-direction: row;
-     justify-content: flex-star;
-    
-     align-items: stretch;
-     flex-wrap: nowrap;
-     margin: auto;
- }
- 
- .box_study h4{
-     font-size: 23px;
- 
-     text-align: center;
-     margin: auto;
-     
-    
- }
- 
- .estudios{
-     width: 70%;
-   font-size: 18px;
-     text-align: left;
-     margin: 30px auto;
-    
-     height: max-content;
- }
- 
- hr{
-     border: 2px solid black;
-     margin: 3%;
- }
- .box_exp{
-    
-     height: 500px;
-     font-size: 30px;
-     text-align: center;
-     
-     width: 70%;
-     margin: auto;
-     margin-left: 20px;
- }
- 
- .box_exp H4{
-     font-size: 23px;
-   
-     text-align: center;
-     margin: auto;
- }
- 
- .laboral{
-     width: 70%;
-   font-size: 18px;
-     text-align: left;
-     margin: 30px auto;
-   
- }
+ /* === SECCIÓN PRINCIPAL === */
+.section-formacion {
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === TÍTULO === */
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h2 {
+    font-size: 28px;
+    color: #1e3a5f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* === CONTENIDO FLEX === */
+.contenido-formacion {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* === BLOQUES INDIVIDUALES === */
+.bloque {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bloque h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #244c74;
+    border-bottom: 2px solid #1e3a5f;
+    padding-bottom: 6px;
+}
+
+/* === DETALLE DE TEXTO === */
+.detalle p {
+    background-color: #eef2f7;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 4px solid #1e3a5f;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .contenido-formacion {
+        flex-direction: column;
+    }
+}
  
  
  
  /*-----------------------------CUALIDADES---------------------------*/
- 
- 
- .cualidades {
-     height: max-content;
-     margin-top: 8%;
-     border-radius: 15px;
-     background-color: rgba(152, 209, 226, 0.781);
-     padding: 20px;
- }
- 
- .box_cualidades {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
- }
- 
- .seccion_cualidades {
-     height: auto;
-     width: 30%;
-     flex-direction: column;
-     margin: 10px;
-     background: #fff;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     padding: 15px;
- }
- 
- .icono_cuali {
-     text-align: center;
-     font-size: 50px;
-     margin-top: 10px;
- }
- 
- .title_cualidades {
-     text-align: center;
- }
- 
- .descripcion_cualidades {
-     height: auto;
-     line-height: 1.6;
-     text-align: left;
-     font-size: 16px;
-     margin-top: 10px;
- }
- 
- .descripcion_cualidades li {
-     margin: 5px 0;
- }
+ /* === SECCIÓN CUALIDADES === */
+.seccion-cualidades {
+    background-color: #fff;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+.contenedor-cualidades {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cualidad {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f4f8fc;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cualidad:hover {
+    transform: translateY(-5px);
+}
+
+.icono {
+    font-size: 30px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.cualidad h3 {
+    font-size: 20px;
+    color: #244c74;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.descripcion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.descripcion li {
+    padding: 10px;
+    margin: 6px 0;
+    background-color: #eaf0f6;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .contenedor-cualidades {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
  
  
  /*--------------------------TRABAJOS----------------------*/  
