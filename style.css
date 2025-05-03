@@ -7,7 +7,7 @@
  }
  
  .general{
-     width: 60%;
+     width: 80%;
      height: max-content;
      
      margin: auto;
@@ -246,6 +246,7 @@
 @media (max-width: 768px) {
     .descripcion {
         padding: 1.5rem;
+        width: 100%;
         min-height: 40vh;
     }
     
@@ -702,7 +703,7 @@
 .project-card {
     width: 100%;
    
-    max-width: 400px;
+    max-width: 530px;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
