@@ -1,967 +1,398 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andrea Garreta — Desarrolladora Web</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bg: #0d0d0d;
-    --surface: #161616;
-    --surface2: #1e1e1e;
-    --border: rgba(255,255,255,0.08);
-    --border2: rgba(255,255,255,0.14);
-    --text: #f0ede8;
-    --muted: #888880;
-    --accent: #c8b89a;
-    --accent2: #e8dcc8;
-    --green: #7ab87a;
-    --serif: 'DM Serif Display', serif;
-    --sans: 'DM Sans', sans-serif;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.7;
-    font-weight: 300;
-    overflow-x: hidden;
-  }
-
-  /* NAV / HEADER */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    padding: 1.25rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(13,13,13,0.95), transparent);
-    backdrop-filter: blur(12px);
-  }
-
-  .logo {
-    font-family: var(--serif);
-    font-size: 1.2rem;
-    color: var(--accent2);
-    letter-spacing: 0.01em;
-    text-decoration: none;
-  }
-
-  .cv {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-
-  .cv a {
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: color 0.3s;
-  }
-
-  .cv a:hover { color: var(--text); }
-
-  /* HERO / PRESENTACION */
-  .presentacion {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 8rem 3rem 4rem;
-    gap: 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .dedicacion { opacity: 0; animation: fadeUp 0.9s 0.2s ease forwards; }
-
-  .hero-eyebrow {
-    font-size: 0.8rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .hero-eyebrow::before {
-    content: '';
-    display: block;
-    width: 2rem;
-    height: 1px;
-    background: var(--accent);
-  }
-
-  .hero-name {
-    font-family: var(--serif);
-    font-size: clamp(3.5rem, 6vw, 5.5rem);
-    line-height: 1.05;
-    color: var(--text);
-    margin-bottom: 0.25rem;
-  }
-
-  .hero-name em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .hero-title {
-    font-family: var(--serif);
-    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-    font-weight: 400;
-    color: var(--muted);
-    margin-bottom: 2rem;
-    line-height: 1.2;
-  }
-
-  .textdescription {
-    font-size: 1rem;
-    color: var(--muted);
-    max-width: 440px;
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-  }
-
-  .hero-ctas {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .btn-primary {
-    background: var(--accent);
-    color: #0d0d0d;
-    padding: 0.85rem 2rem;
-    border-radius: 2px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: background 0.3s, transform 0.2s;
-  }
-
-  .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
-
-  .btn-ghost {
-    border: 1px solid var(--border2);
-    color: var(--text);
-    padding: 0.85rem 2rem;
-    border-radius: 2px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: border-color 0.3s, transform 0.2s;
-  }
-
-  .btn-ghost:hover { border-color: var(--accent); transform: translateY(-1px); }
-
-  .fotocara {
-    opacity: 0;
-    animation: fadeUp 0.9s 0.5s ease forwards;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-  }
-
-  .skill-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1rem 1.25rem;
-    transition: border-color 0.3s, transform 0.3s;
-  }
-
-  .skill-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-2px);
-  }
-
-  .skill-header {
-    font-size: 0.75rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.25rem;
-  }
-
-  .skill-title {
-    font-size: 1rem;
-    color: var(--text);
-    font-weight: 400;
-  }
-
-  .status-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .status-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--green);
-    box-shadow: 0 0 10px var(--green);
-    animation: pulse 2s infinite;
-    flex-shrink: 0;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-
-  .status-text {
-    font-size: 0.9rem;
-    color: var(--muted);
-  }
-
-  .status-text strong { color: var(--text); font-weight: 500; }
-
-  /* SECTIONS */
-  section { max-width: 1200px; margin: 0 auto; padding: 6rem 3rem; }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 4rem;
-  }
-
-  .section-number {
-    font-family: var(--serif);
-    font-size: 0.85rem;
-    color: var(--accent);
-    font-style: italic;
-  }
-
-  .section-title {
-    font-family: var(--serif);
-    font-size: clamp(2rem, 3vw, 2.8rem);
-    font-weight: 400;
-    color: var(--text);
-  }
-
-  .section-line {
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-
-  /* ABOUT / EXPERIENCE */
-  .experience-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: start;
-  }
-
-  .about-text p {
-    font-size: 1.05rem;
-    color: var(--muted);
-    line-height: 1.9;
-    margin-bottom: 1.25rem;
-  }
-
-  .about-text p strong {
-    color: var(--text);
-    font-weight: 500;
-  }
-
-  .timeline { display: flex; flex-direction: column; gap: 0; }
-
-  .experience-item {
-    border-left: 1px solid var(--border);
-    padding: 0 0 2.5rem 2rem;
-    position: relative;
-    transition: border-color 0.3s;
-  }
-
-  .experience-item:last-child { padding-bottom: 0; }
-
-  .experience-item::before {
-    content: '';
-    position: absolute;
-    left: -4px;
-    top: 6px;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 2px solid var(--bg);
-  }
-
-  .experience-item:hover { border-color: var(--accent); }
-
-  .item-date {
-    font-size: 0.75rem;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.3rem;
-    display: block;
-  }
-
-  .item-title {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text);
-    margin-bottom: 0.15rem;
-  }
-
-  .item-subtitle {
-    font-size: 0.9rem;
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-  }
-
-  .item-description {
-    font-size: 0.9rem;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-  /* SKILLS SECTION */
-  .skills-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-
-  .skills-section > div { max-width: 1200px; margin: 0 auto; padding: 5rem 3rem; }
-
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0;
-  }
-
-  .experience-card { padding: 2rem; border-right: 1px solid var(--border); }
-  .experience-card:last-child { border-right: none; }
-
-  .skill-cat-label {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.25rem;
-  }
-
-  .skill-list { display: flex; flex-direction: column; gap: 0.5rem; }
-
-  .tech-pill {
-    font-size: 0.95rem;
-    color: var(--muted);
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: default;
-  }
-
-  .tech-pill::before {
-    content: '';
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--accent);
-    flex-shrink: 0;
-  }
-
-  .tech-pill:hover { color: var(--text); }
-
-  /* PROJECTS / JOBS */
-  .professional-projects { display: flex; flex-direction: column; gap: 2rem; }
-
-  .project-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 2.5rem;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 2rem;
-    align-items: start;
-    transition: border-color 0.4s, transform 0.3s;
-    text-decoration: none;
-  }
-
-  .project-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-  }
-
-  .company-overlay {
-    display: inline-block;
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    background: rgba(200, 184, 154, 0.08);
-    border: 1px solid rgba(200, 184, 154, 0.2);
-    padding: 0.25rem 0.75rem;
-    border-radius: 2px;
-    margin-bottom: 0.75rem;
-  }
-
-  .project-info h3 {
-    font-family: var(--serif);
-    font-size: 1.6rem;
-    color: var(--text);
-    margin-bottom: 0.6rem;
-    font-weight: 400;
-  }
-
-  .project-description {
-    font-size: 0.95rem;
-    color: var(--muted);
-    line-height: 1.8;
-    max-width: 560px;
-    margin-bottom: 1.25rem;
-  }
-
-  .project-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-
-  .project-links a {
-    font-size: 0.75rem;
-    color: var(--muted);
-    border: 1px solid var(--border2);
-    padding: 0.2rem 0.65rem;
-    border-radius: 2px;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    transition: color 0.3s, border-color 0.3s;
-  }
-
-  .project-links a:hover { color: var(--text); border-color: var(--accent); }
-
-  .project-arrow {
-    font-size: 1.5rem;
-    color: var(--border2);
-    transition: color 0.3s, transform 0.3s;
-    margin-top: 0.5rem;
-    line-height: 1;
-  }
-
-  .project-card:hover .project-arrow { color: var(--accent); transform: translate(3px, -3px); }
-
-  /* ACADEMIC / WORK */
-  .box_work1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.25rem;
-  }
-
-  .secction_work {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 2rem;
-    text-decoration: none;
-    transition: border-color 0.3s, transform 0.3s;
-    display: block;
-  }
-
-  .secction_work:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-  }
-
-  .work-icon {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .work-name {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text);
-    margin-bottom: 0.4rem;
-  }
-
-  .work-desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-
-  /* CONTACT / REDES */
-  .redes_fo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-  }
-
-  .contact-text h3 {
-    font-family: var(--serif);
-    font-size: clamp(2rem, 3vw, 3rem);
-    font-weight: 400;
-    color: var(--text);
-    margin-bottom: 1.25rem;
-    line-height: 1.2;
-  }
-
-  .contact-text h3 em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .contact-text p {
-    font-size: 1rem;
-    color: var(--muted);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-  }
-
-  .section_redes { display: flex; flex-direction: column; gap: 1rem; }
-
-  .section_redes a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .section_redes a:last-child { border-bottom: none; }
-  .section_redes a:hover { color: var(--text); }
-
-  .contact-link-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    min-width: 80px;
-  }
-
-  .contact-quote {
-    border-left: 2px solid var(--accent);
-    padding-left: 2rem;
-  }
-
-  .contact-quote blockquote {
-    font-family: var(--serif);
-    font-size: 1.5rem;
-    font-style: italic;
-    color: var(--text);
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-
-  .contact-quote cite {
-    font-size: 0.8rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-style: normal;
-  }
-
-  /* FOOTER */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  footer p { font-size: 0.8rem; color: var(--muted); }
-
-  .footer-langs {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.8rem;
-    color: var(--muted);
-  }
-
-  .footer-langs span strong { color: var(--accent); font-weight: 500; }
-
-  /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(28px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* DIVIDER */
-  .divider { width: 100%; height: 1px; background: var(--border); }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b8a838b99b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="general">
+        <div class="header">
+            <div class="logo">
+                <img class="imglogo" src="./img/LOGO.png" alt="">
+            </div>
+            <div class="cv">
+                <a href="./Andrea Garreta Roman CV ES.pdf"><i class="fa-solid fa-file"></i></a>
+                <a href="https://github.com/Ruuculaa"><i class="fa-brands fa-github"></i></i></a>
+                
+            </div>
+        </div>
+        <div class="presentacion">
+            <div class="dedicacion">
+                <H1><b>DESARROLLADORA DE APLICACIONES WEB</b></H1> 
+                <h3>Sobre Mí y Mis Proyectos de Diseño Web </h3>
+            
+            </div>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="logo">Andrea Garreta</a>
-  <ul class="cv">
-    <li><a href="#sobre-mi">Sobre mí</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
 
-<!-- HERO -->
-<div class="presentacion">
-  <div class="dedicacion">
-    <p class="hero-eyebrow">Desarrolladora Web · Barcelona</p>
-    <h1 class="hero-name">Andrea<br><em>Garreta</em></h1>
-    <h2 class="hero-title">Frontend & Backend</h2>
-    <p class="textdescription">
-      Construyo aplicaciones web centradas en la experiencia de usuario — combinando diseño limpio, código eficiente y atención al detalle.
-    </p>
-    <div class="hero-ctas">
-      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
-      <a href="#contacto" class="btn-ghost">Contactar</a>
+            <div class="fotocara">
+                <div class="foto">
+                    <img class="cara" src="./img/AndreaGarreta.jpeg" alt="">
+                </div>
+                <!--
+                <div class="fotoinformatica">
+                    <img src="./img/informatica.png" alt="">
+                </div>-->
+
+            </div>
+    
+
+        </div>
+
+        <!---------------------------Descripcion------------------------------->
+        <div class="descripcion">
+            <div class="textdescription">
+                <h4>Soy Andrea Garreta Román y resido en Esparreguera (Barcelona).
+                    <br>
+                    Apasionada de la infomática con experiencia en frontend y backend. Habilidades en HTML, CSS, JavaScript, PHP y bases de datos. Enfocada en usabilidad y rendimiento.
+                
+                </h4>
+            </div>
+        </div>
+
+        <!-----------------------------ESTUDIOS/EXPERIENCIA---------------------------------->
+        <section class="experience-section">
+            <div class="section-header">
+                <h2 class="section-title">Estudios y Experiencia Laboral</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="experience-container">
+                <!-- Estudios -->
+                <article class="experience-card">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap card-icon"></i>
+                        <h3 class="card-title">Estudios</h3>
+                    </div>
+                    <ul class="experience-list">
+
+                        <li class="experience-item">
+                            <h4 class="item-title">Ingeniería Informática</h4>
+                            <p class="item-subtitle">Universitat Oberta de Ctalunya (UOC) </p>
+                            <span class="item-date">2025 - Actual</span>
+                        </li>
+                        
+                        <li class="experience-item">
+                            <h4 class="item-title">Formación Profesional Grado Superior</h4>
+                            <p class="item-subtitle">INS Daniel Blanxart i Pedrals (DAW)</p>
+                            <span class="item-date">2023 - 2025</span>
+                        </li>
+                        <li class="experience-item">
+                            <h4 class="item-title">Formación Profesional Grado Medio</h4>
+                            <p class="item-subtitle">INS Daniel Blanxart i Pedrals (SMX)</p>
+                            <span class="item-date">2021 - 2023</span>
+                        </li>
+                        
+                    </ul>
+                </article>
+                
+                <!-- Experiencia -->
+                <article class="experience-card">
+                    <div class="card-header">
+                        <i class="fas fa-briefcase card-icon"></i>
+                        <h3 class="card-title">Experiencia Laboral</h3>
+                    </div>
+                    <ul class="experience-list">
+                        <li class="experience-item">
+                            <h4 class="item-title">Desarrolladora Web</h4>
+                            <p class="item-subtitle">Salcom Consulting</p>
+                            <span class="item-date">2024 - 2025</span>
+                            <p class="item-description">
+                                Desarrollo de aplicaciones web con Wordpress. <br>
+                                Implementación de análisis web con Matomo. <br>
+                                Atención al cliente y recopilación de requisitos de diseño web.
+                            </p>
+                            
+                        </li>
+                        <li class="experience-item">
+                            <h4 class="item-title">Desarrolladora Web</h4>
+                            <p class="item-subtitle">Millenium Center</p>
+                            <span class="item-date">2022 - 2023</span>
+                            <p class="item-description">
+                                Creación de páginas web con VS Code. <br>
+                                 Uso de diferentes lenguajes de programación:
+                            </p>
+                            
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-------------------------CUALIDADES------------------------------------->
+        <section class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Competencias</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="skills-container">
+                <!-- Competencia Lingüística -->
+                <article class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="skill-title">Competencias Lingüísticas</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Español</span>
+                            <span class="skill-level native">Nativo</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Catalán</span>
+                            <span class="skill-level intermediate">C1</span>
+                        </li>
+                       
+                        <li class="skill-item">
+                            <span class="skill-name">Inglés</span>
+                            <span class="skill-level intermediate">B1</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Competencias Profesionales -->
+                <article class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="skill-title">Competencias Profesionales</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item professional">Responsable</li>
+                        <li class="skill-item professional">Trabajo en equipo</li>
+                        <li class="skill-item professional">Compromiso</li>
+                        <li class="skill-item professional">Organización</li>
+                    </ul>
+                </article>
+
+                <!-- Competencias TIC -->
+                <article class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="skill-title">Competencias TIC</h3>
+                    </div>
+                    <div class="tech-skills">
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">WordPress</span>
+                        <span class="tech-pill">JS</span>
+                        <span class="tech-pill">VS Code</span>
+                        <span class="tech-pill">Matomo</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">Node JS</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+     <!-----------------------TRABAJOS--------------------------->
+
+
+
+        <!-------------------------SALCOM------------------------------------->
+
+        <div class="jobs">
+            <div class="title-jobs">
+                <H2>EXPERIENCIA PROFESIONAL</H2>
+                <p class="subtitle">Proyectos desarrollados durante mi etapa en Salcom Consulting</p>
+            </div>
+            
+            <div class="professional-projects">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/SalcomConsulting/lacouture.png" alt="La Couture Creative">
+                        <div class="company-overlay">
+                            <span>Desarrollado para Salcom Consulting</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>La Couture Creative</h3>
+                        <p class="project-description">
+                            Sitio web corporativo responsive desarrollado con Wordpress, Elementor Pro y Matomo. 
+                            Participé en el desarrollo front-end y la implementación de animaciones.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://lacouturecreative.es/" target="_blank" rel="noopener">Visitar web</a>
+                            <!-- Omitir enlace a código si no es público -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/SalcomConsulting/sorac.png" alt="SORAC">
+                        <div class="company-overlay">
+                            <span>Desarrollado para Salcom Consulting</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sorac Integral S.L</h3>
+                        <p class="project-description">
+                            Sitio web corporativo responsive desarrollado con Wordpress, Elementor Pro y Matomo. 
+                            Participé en el desarrollo front-end y la implementación de animaciones.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://soracintegral.cat/" target="_blank" rel="noopener">Visitar web</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/SalcomConsulting/starls.png" alt="Starls">
+                        <div class="company-overlay">
+                            <span>Desarrollado para Salcom Consulting</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Starls</h3>
+                        <p class="project-description">
+                            Sitio web corporativo responsive desarrollado con Wordpress, Elementor Pro y Matomo. 
+                            Participé en el desarrollo front-end y la implementación de animaciones. Uso  de plantilla.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://starls.es/" target="_blank" rel="noopener">Visitar web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/SalcomConsulting/miralles.png" alt="SORAC">
+                        <div class="company-overlay">
+                            <span>Desarrollado para Salcom Consulting</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Miralles</h3>
+                        <p class="project-description">
+                            Sitio web corporativo responsive desarrollado con Wordpress, Elementor Pro y Matomo. 
+                            Participé en el desarrollo front-end y la implementación de animaciones.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://restaurantmiralles.cat/" target="_blank" rel="noopener">Visitar web</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Más proyectos según necesites -->
+            </div>
+            <div class="view-all-projects">
+        <a href="Proyectos.html" class="view-all-btn">Ver todos los proyectos <i class="fas fa-arrow-right"></i></a>
     </div>
-  </div>
+            
+            <div class="professional-note">
+                <p><strong>Nota:</strong> Estos proyectos fueron desarrollados durante mi etapa como profesional en Salcom Consulting. 
+                Los muestro aquí como ejemplo de mi experiencia laboral, reconociendo que son propiedad de dicha empresa.</p>
+            </div>
+        </div>
 
-  <div class="fotocara">
-    <div class="status-card">
-      <div class="status-dot"></div>
-      <div class="status-text">
-        <strong>Disponible para nuevas oportunidades</strong> — Barcelona o remoto
-      </div>
+  <section class="work">
+        <div class="title_work">
+            <h2>PROYECTOS ACADÉMICOS</h2>
+        </div>
+    
+        <div class="box_work1">
+            <!-- Proyecto GYM -->
+            <div class="secction_work">
+                <a href="./GYM/index2.html" target="_blank">
+                    <img src="./img/LOGOS PROYECTOS/gymsal.png" alt="Proyecto web de gimnasio">
+                </a>
+                <div class="gymsal2">
+                    <p><b>Pequeña web de un gimnasio.</b> No es funcional pero se podría hacer funcional. <br> Bastante sencilla y es responsive.</p>
+                    <a href="./GYM/index2.html" target="_blank">VISITAR</a>
+                </div>
+            </div>
+    
+            <!-- Proyecto BonVestir -->
+            <div class="secction_work">
+                <a href="./ElBonVestir/index.html" target="_blank">
+                    <img src="./img/LOGOS PROYECTOS/Bonvestir1.png" alt="Tienda de ropa BonVestir">
+                </a>
+                <div class="bonvestir2">
+                    <p><b>Página web de una tienda de ropa.</b> No es funcional pero se podría hacer funcional. Es responsive.</p>
+                    <a href="./ElBonVestir/index.html" target="_blank">VISITAR</a>
+                </div>
+            </div>
+    
+            <!-- Proyecto Street Fighter -->
+            <div class="secction_work">
+                <a href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" target="_blank">
+                    <img src="./img/LOGOS PROYECTOS/street1.png" alt="Proyecto Street Fighter en equipo">
+                </a>
+                <div class="street2">
+                    <p><b>Trabajo más elaborado en equipo con compañeros.</b> Creado con HTML, CSS, JS, Node.js, React y recursos de video.</p>
+                    <a href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" target="_blank">VISITAR</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box_work2">
+            <!-- Proyecto Dragon Ball -->
+            <div class="secction_work2">
+                <a href="./dragonball/index.html" target="_blank">
+                    <img src="./img/LOGOS PROYECTOS/dragonball1.png" alt="Web Dragon Ball orientada a objetos">
+                </a>
+                <div class="dragon2">
+                    <p><b>Trabajo elaborado en parejas.</b> Creado con HTML, CSS y JS.<br>Proyecto dedicado a la programación orientada a objetos.</p>
+                    <a href="./dragonball/index.html" target="_blank">VISITAR</a>
+                </div>
+            </div>
+    
+            <!-- Proyecto Sopa de Letras -->
+            <div class="secction_work2">
+                <a href="./SopaDeLetras/sopaletra.html" target="_blank">
+                    <img src="./img/LOGOS PROYECTOS/sopaletras1.png" alt="Juego sopa de letras">
+                </a>
+                <div class="sopa2">
+                    <p><b>Trabajo en equipo más elaborado.</b> Creado con HTML, CSS, JS, Node.js, React y ayuda de recursos online.</p>
+                    <a href="./SopaDeLetras/sopaletra.html" target="_blank">VISITAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+        <!----------------------------FOOTER--------------------------------->
+
+
+        <footer>
+            <div class="logo_fo">
+                <img class="img_fo" src="./img/LOGO.png" alt="">
+            </div>
+            <div class="redes_fo">
+                <div class="section_redes">
+                    <a href="https://www.linkedin.com/in/andreagarretaroman/"> <i class="fa-brands fa-linkedin"></i>  </a>
+                </div>
+                <div class="section_redes">
+                    <a href="tel:+34652331123"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <div class="section_redes">
+                    <a href="mailto: agarreta2@gmaill.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                
+                <div class="section_redes">
+                    <a href="https://github.com/Ruuculaa"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+            </div>
+            <div class="derechos">
+                <p>Created by Andrea Garreta Román <i class="fa-solid fa-copyright"></i></p>
+            </div>
+        </footer>
+
+
+
+
+
+
     </div>
-    <div class="skills-container">
-      <div class="skill-card">
-        <div class="skill-header">Frontend</div>
-        <div class="skill-title">HTML / CSS / JS</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-header">Backend</div>
-        <div class="skill-title">PHP · Node.js</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-header">CMS</div>
-        <div class="skill-title">WordPress</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-header">Base de datos</div>
-        <div class="skill-title">MySQL</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SOBRE MÍ -->
-<section id="sobre-mi">
-  <div class="section-header reveal">
-    <span class="section-number">01</span>
-    <h2 class="section-title">Sobre mí</h2>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="experience-container">
-      <div class="about-text reveal">
-      <p>Soy desarrolladora web con base en <strong>Esparreguera, Barcelona</strong>, apasionada por construir experiencias digitales que funcionen bien y se vean mejor. Me interesa tanto la parte visual como la lógica detrás.</p>
-      <p>Con experiencia profesional real desarrollando webs para clientes en <strong>Salcom Consulting</strong>, domino el ciclo completo: desde maquetación hasta integración con bases de datos.</p>
-      <p>Me muevo bien en equipo, entrego con compromiso y aprendo rápido. Busco un entorno donde pueda crecer y contribuir con impacto real.</p>
-    </div>
- 
-
-    <div class="reveal">
-      <div class="timeline">
-        
-        <div class="experience-item">
-          <span class="item-date">2024 – 2025 · Laboral</span>
-          <div class="item-title">Desarrolladora Web</div>
-          <p class="item-subtitle">Salcom Consulting</p>
-          <p class="item-description">Desarrollo con WordPress y Elementor Pro. Análisis web con Matomo. Atención al cliente y recogida de requisitos.</p>
-        </div>
-        <div class="experience-item">
-          <span class="item-date">2023 – 2025</span>
-          <div class="item-title">CFGS Desarrollo de Aplicaciones Web (DAW)</div>
-          <p class="item-subtitle">INS Daniel Blanxart i Pedrals</p>
-        </div>
-        <div class="experience-item">
-          <span class="item-date">2022 – 2023 · Laboral</span>
-          <div class="item-title">Desarrolladora Web</div>
-          <p class="item-subtitle">Millenium Center</p>
-          <p class="item-description">Creación de páginas web con HTML, CSS y JavaScript.</p>
-        </div>
-        <div class="experience-item">
-          <span class="item-date">2021 – 2023</span>
-          <div class="item-title">CFGM Sistemas Microinformáticos y Redes (SMX)</div>
-          <p class="item-subtitle">INS Daniel Blanxart i Pedrals</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<div class="skills-section">
-  <div>
-    <div class="skills-grid reveal">
-      <div class="experience-card">
-        <div class="skill-cat-label">Frontend</div>
-        <div class="skill-list">
-          <span class="tech-pill">HTML5 / CSS3</span>
-          <span class="tech-pill">JavaScript (ES6+)</span>
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">Responsive Design</span>
-          <span class="tech-pill">Elementor Pro</span>
-        </div>
-      </div>
-      <div class="experience-card">
-        <div class="skill-cat-label">Backend</div>
-        <div class="skill-list">
-          <span class="tech-pill">PHP</span>
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">MySQL</span>
-          <span class="tech-pill">REST APIs</span>
-        </div>
-      </div>
-      <div class="experience-card">
-        <div class="skill-cat-label">Herramientas</div>
-        <div class="skill-list">
-          <span class="tech-pill">WordPress</span>
-          <span class="tech-pill">Matomo Analytics</span>
-          <span class="tech-pill">VS Code</span>
-          <span class="tech-pill">Git / GitHub</span>
-        </div>
-      </div>
-      <div class="experience-card">
-        <div class="skill-cat-label">Idiomas</div>
-        <div class="skill-list">
-          <span class="tech-pill">Español — Nativo</span>
-          <span class="tech-pill">Catalán — C1</span>
-          <span class="tech-pill">Inglés — B1</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- PROYECTOS PROFESIONALES -->
-<section id="proyectos">
-  <div class="section-header reveal">
-    <span class="section-number">02</span>
-    <h2 class="section-title">Proyectos profesionales</h2>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="professional-projects">
-  
-      <div class="project-info">
-        <span class="company-overlay">Salcom Consulting</span>
-        <h3>La Couture Creative</h3>
-        <p class="project-description">Sitio web corporativo responsive para estudio creativo. Desarrollo front-end completo con animaciones personalizadas e integración de analítica web.</p>
-        <div class="project-links">
-          <a href="https://lacouturecreative.es/" target="_blank">WordPress</a>
-        </div>
-      </div>
-      
-    </a>
-
-    <a href="https://soracintegral.cat/" target="_blank">
-      <div class="project-info">
-        <span class="company-overlay">Salcom Consulting</span>
-        <h3>Sorac Integral S.L.</h3>
-        <p class="project-description">Web corporativa responsive para empresa de servicios integrales. Front-end y animaciones. Seguimiento de visitas con Matomo Analytics.</p>
-        <div class="project-links">
-          <a href="https://soracintegral.cat/" target="_blank">WordPress</a>
-      
-        </div>
-      </div>
-      
-    </a>
-
-    <a href="https://restaurantmiralles.cat/" target="_blank">
-      <div class="project-info">
-        <span class="company-overlay">Salcom Consulting</span>
-        <h3>Restaurant Miralles</h3>
-        <p class="project-description">Presencia digital para restaurante con énfasis en experiencia de usuario. Diseño responsive y cuidado en la presentación visual del negocio.</p>
-        <div class="project-links">
-          <a href="https://restaurantmiralles.cat/" target="_blank">WordPress</a>
-        </div>
-      </div>
-      <div class="project-arrow">↗</div>
-    </a>
-
-    <a href="https://starls.es/" target="_blank" >
-      <div class="project-info">
-        <span class="company-overlay">Salcom Consulting</span>
-        <h3>Starls</h3>
-        <p class="project-description">Sitio corporativo responsive con implementación de animaciones y analítica integrada. Adaptación de plantilla a las necesidades del cliente.</p>
-        <div class="project-links">
-          <a href="https://starls.es/" target="_blank">WordPress</a>
-      
-        </div>
-      </div>
-     
-    </a>
-  </div>
-
-  <p style="font-size: 0.8rem; color: var(--muted); margin-top: 1.5rem; text-align: center; font-style: italic;">
-    Proyectos desarrollados durante mi etapa en Salcom Consulting. Propiedad intelectual de la empresa.
-  </p>
-</section>
-
-<!-- PROYECTOS ACADÉMICOS -->
-<section>
-  <div class="section-header reveal">
-    <span class="section-number">03</span>
-    <h2 class="section-title">Proyectos académicos</h2>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="box_work1">
-    <a href="https://andreagarreta.vercel.app/GYM/index2.html" target="_blank" class="secction_work reveal">
-      <div class="work-icon">🏋️</div>
-      <div class="work-name">Gym Website</div>
-      <div class="work-desc">Web responsive para gimnasio. Maquetación completa, estructura semántica y diseño adaptable.</div>
-    </a>
-    <a href="https://andreagarreta.vercel.app/ElBonVestir/index.html" target="_blank" class="secction_work reveal">
-      <div class="work-icon">👗</div>
-      <div class="work-name">BonVestir — Tienda Ropa</div>
-      <div class="work-desc">E-commerce de moda. Interfaz responsiva con catálogo de productos y navegación fluida.</div>
-    </a>
-    <a href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" target="_blank" class="secction_work reveal">
-      <div class="work-icon">🎮</div>
-      <div class="work-name">Street Fighter — Equipo</div>
-      <div class="work-desc">Juego colaborativo con HTML, CSS, JS, Node.js y React. Trabajo en equipo con Git.</div>
-    </a>
-    <a href="https://andreagarreta.vercel.app/dragonball/index.html" target="_blank" class="secction_work reveal">
-      <div class="work-icon">⚡</div>
-      <div class="work-name">Dragon Ball — POO</div>
-      <div class="work-desc">Proyecto en pareja centrado en programación orientada a objetos con JavaScript.</div>
-    </a>
-    <a href="https://andreagarreta.vercel.app/SopaDeLetras/sopaletra.html" target="_blank" class="secction_work reveal">
-      <div class="work-icon">🔤</div>
-      <div class="work-name">Sopa de Letras</div>
-      <div class="work-desc">Juego interactivo en equipo con Node.js y React. Lógica de juego y UI dinámica.</div>
-    </a>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-  <div class="section-header reveal">
-    <span class="section-number">04</span>
-    <h2 class="section-title">Contacto</h2>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="redes_fo">
-    <div class="contact-text reveal">
-      <h3>¿Tienes un proyecto<br><em>en mente?</em></h3>
-      <p>Estoy abierta a oportunidades laborales, prácticas y colaboraciones. No dudes en escribirme — respondo en menos de 24h.</p>
-      <div class="section_redes">
-        <a href="https://github.com/Ruuculaa" target="_blank">
-          <span class="contact-link-label">GitHub</span>
-          github.com/Ruuculaa
-        </a>
-        <a href="https://www.linkedin.com/in/andreagarretaroman/" target="_blank">
-          <span class="contact-link-label">LinkedIn</span>
-          andreagarretaroman
-        </a>
-        <a href="mailto:agarreta2@gmail.com">
-          <span class="contact-link-label">Email</span>
-          agarreta2@gmail.com
-        </a>
-        <a href="tel:+34652331123">
-          <span class="contact-link-label">Teléfono</span>
-          +34 652 331 123
-        </a>
-        <a href="#">
-          <span class="contact-link-label">Ubicación</span>
-          Esparreguera, Barcelona · Disponible para remoto
-        </a>
-      </div>
-    </div>
-
-    <div class="contact-quote reveal">
-      <blockquote>
-        "El buen código, como el buen diseño, es invisible para quien lo usa."
-      </blockquote>
-      <cite>— Principio de usabilidad</cite>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 Andrea Garreta Román. Diseñado con intención.</p>
-  <div class="footer-langs">
-    <span>ES <strong>Nativo</strong></span>
-    <span>CA <strong>C1</strong></span>
-    <span>EN <strong>B1</strong></span>
-  </div>
-</footer>
-
-<!-- RESPONSIVE -->
-<style>
-  @media (max-width: 768px) {
-    nav { padding: 1rem 1.5rem; }
-    .cv { display: none; }
-    .presentacion { grid-template-columns: 1fr; padding: 7rem 1.5rem 3rem; gap: 3rem; }
-    .experience-container { grid-template-columns: 1fr; gap: 3rem; }
-    section { padding: 4rem 1.5rem; }
-    .redes_fo { grid-template-columns: 1fr; gap: 3rem; }
-    .skills-grid { grid-template-columns: 1fr 1fr; }
-    .experience-card { border-right: none; border-bottom: 1px solid var(--border); }
-    footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.5rem; }
-    .project-card { grid-template-columns: 1fr; }
-    .box_work1 { grid-template-columns: 1fr; }
-  }
-</style>
-
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  reveals.forEach(el => observer.observe(el));
-</script>
+   
 </body>
 </html>
