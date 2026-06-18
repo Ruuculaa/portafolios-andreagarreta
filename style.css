@@ -1,397 +1,689 @@
 /* ==========================================================================
-   1. VARIABLES DE DISEÑO (Estilo UI/UX de alta gama)
-   ========================================================================== */
-:root {
-    --clr-primary: #2563eb;       /* Azul tecnológico corporativo */
-    --clr-primary-hover: #1d4ed8; /* Azul oscuro para interactividad */
-    --clr-bg-main: #f8fafc;       /* Gris claro texturizado de fondo */
-    --clr-bg-card: #ffffff;       /* Blanco puro para tarjetas */
-    --clr-text-main: #0f172a;     /* Slate oscuro para textos principales */
-    --clr-text-muted: #475569;    /* Gris equilibrado para descripciones */
-    --clr-border: #e2e8f0;        /* Bordes sutiles modernos */
-    --clr-accent-ia: #10b981;     /* Verde esmeralda para el módulo de IA */
-    
-    --font-sans: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    --radius-lg: 16px;
-    --radius-md: 12px;
-    --radius-sm: 8px;
-    
-    /* Sombras multicapa profesionales */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-    
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* ==========================================================================
-   2. RESET Y REGLAS BASE
+   1. CONFIGURACIÓN GENERAL Y VARIABLES
    ========================================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
-    background-color: var(--clr-bg-main);
-    color: var(--clr-text-main);
-    font-family: var(--font-sans);
-    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #334155;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased; /* Suavizado tipográfico Mac/Windows */
 }
 
 .general {
-    width: 85%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 2rem 0;
+    width: 80%;
+    height: max-content;
+    margin: auto;
+    margin-top: 2%;
+    max-width: 1400px;
 }
 
 /* ==========================================================================
-   3. HEADER & CONTROL CV
+   2. HEADER & CV
    ========================================================================== */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--clr-border);
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .imglogo {
-    height: 50px;
+    height: 80px;
     object-fit: contain;
 }
 
 .cv {
     display: flex;
-    gap: 1rem;
-    background: var(--clr-bg-card);
-    padding: 0.6rem 1.2rem;
+    gap: 20px;
+    background: #ffffff;
+    padding: 12px 20px;
     border-radius: 50px;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--clr-border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
 }
 
 .cv a {
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .cv i {
-    font-size: 1.4rem;
-    color: var(--clr-text-muted);
-    transition: var(--transition);
+    font-size: 26px;
+    color: #475569;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .cv i:hover {
-    color: var(--clr-primary);
-    transform: translateY(-2px);
+    color: #345edb;
+    transform: scale(1.1);
 }
 
 /* ==========================================================================
-   4. PRESENTACIÓN (HERO)
+   3. PRESENTACIÓN (HERO SECTION)
    ========================================================================== */
 .presentacion {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    gap: 40px;
+}
+
+.dedicacion {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
 }
 
 .dedicacion h1 {
-    font-size: 3rem;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #0f172a;
+    margin-bottom: 15px;
     font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.03em;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--clr-text-main) 50%, var(--clr-primary));
+    background: linear-gradient(90deg, #0f172a, #345edb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .dedicacion h3 {
-    font-size: 1.25rem;
-    color: var(--clr-text-muted);
-    font-weight: 400;
-    max-width: 550px;
+    font-size: 20px;
+    color: #64748b;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.fotocara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .foto .cara {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     object-fit: cover;
-    box-shadow: var(--shadow-lg);
-    border: 4px solid var(--clr-bg-card);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 4px solid #ffffff;
 }
 
 /* ==========================================================================
-   5. DESCRIPCIÓN BREVE (ENCUADRE TIPOGRÁFICO)
+   4. DESCRIPCIÓN BREVE
    ========================================================================== */
 .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6% auto;
     text-align: center;
-    margin: 6rem auto;
-    max-width: 800px;
+    line-height: 1.7;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .textdescription h4 {
     font-size: 1.35rem;
     font-weight: 400;
-    color: var(--clr-text-main);
-    line-height: 1.7;
+    margin: 0 auto;
+    color: #334155;
+    max-width: 850px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==========================================================================
-   6. ESTRUCTURA DE COMPONENTES GRID (ESTUDIOS / SKILLS / PORTAFOLIO)
+   5. ESTUDIOS Y EXPERIENCIA LABORAL
    ========================================================================== */
+.experience-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
 }
 
 .divider {
-    width: 40px;
+    width: 60px;
     height: 4px;
-    background: var(--clr-primary);
-    margin: 0.75rem auto 0 auto;
+    background: #345edb;
+    margin: 0 auto;
     border-radius: 2px;
 }
 
-/* Contenedores Grid Unificados */
-.experience-container, .skills-container, .box_work1, .professional-projects {
+.experience-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 }
 
-/* Tarjetas Base Corporativas */
-.experience-card, .skill-card, .secction_work, .project-card {
-    background: var(--clr-bg-card);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--clr-border);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+.experience-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-card:hover, .skill-card:hover, .secction_work:hover, .project-card:hover {
+.experience-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(37, 99, 235, 0.12);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
-
-/* ==========================================================================
-   7. DETALLES DE LAS TARJETAS (EXPERIENCIA Y ESTUDIOS)
-   ========================================================================== */
-.experience-card { padding: 2.25rem; }
 
 .card-header {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--clr-border);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f5f9;
 }
 
-.card-icon { font-size: 1.25rem; color: var(--clr-primary); margin-right: 10px; }
-.card-title { font-size: 1.25rem; font-weight: 700; }
-.experience-list { list-style: none; }
-.experience-item { margin-bottom: 1.25rem; }
-.item-date {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--clr-primary);
-    background: rgba(37, 99, 235, 0.06);
-    padding: 2px 10px;
-    border-radius: 20px;
-    margin-bottom: 0.4rem;
-}
-.item-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 2px; }
-.item-subtitle { font-size: 0.9rem; color: var(--clr-text-muted); }
-
-/* ==========================================================================
-   8. SECCIÓN COMPETENCIAS (TIC & IA)
-   ========================================================================== */
-.skill-card { padding: 2rem; }
-.skill-header { display: flex; align-items: center; margin-bottom: 1.25rem; }
-.skill-icon { font-size: 1.25rem; color: var(--clr-primary); margin-right: 10px; }
-.skill-title { font-size: 1.15rem; font-weight: 700; }
-.skill-list { list-style: none; }
-.skill-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--clr-border); font-size: 0.95rem; }
-.skill-item:last-child { border-bottom: none; }
-.skill-level { font-weight: 600; }
-.skill-level.native { color: var(--clr-accent-ia); }
-.skill-level.intermediate { color: #f59e0b; }
-
-/* Píldoras Tecnológicas */
-.tech-skills { display: flex; flex-wrap: wrap; gap: 8px; }
-.tech-pill {
-    background-color: var(--clr-bg-main);
-    color: var(--clr-text-main);
-    padding: 5px 12px;
-    border-radius: 30px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    border: 1px solid var(--clr-border);
-    transition: var(--transition);
-}
-.tech-pill:hover {
-    background-color: var(--clr-primary);
-    color: #fff;
-    border-color: var(--clr-primary);
+.card-icon {
+    font-size: 1.5rem;
+    color: #345edb;
+    margin-right: 1rem;
 }
 
-/* Resaltado Premium exclusivo para Inteligencia Artificial */
-.ai-pill {
-    background-color: rgba(16, 185, 129, 0.05);
-    color: var(--clr-accent-ia);
-    border-color: rgba(16, 185, 129, 0.2);
+.card-title {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin: 0;
+}
+
+.experience-list {
+    list-style: none;
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.item-title {
+    font-size: 1.15rem;
+    color: #0f172a;
+    margin-bottom: 0.3rem;
     font-weight: 600;
 }
-.ai-pill:hover {
-    background-color: var(--clr-accent-ia);
-    border-color: var(--clr-accent-ia);
+
+.item-subtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 0.4rem;
+}
+
+.item-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #345edb;
+    background: #eff6ff;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.item-description {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* ==========================================================================
-   9. SECCIÓN PROYECTOS (PROFESIONALES Y ACADÉMICOS)
+   6. SECCIÓN COMPETENCIAS & NUEVOS AJUSTES DE IA
    ========================================================================== */
-.jobs, .work { padding-top: 5rem; }
-.title-jobs { text-align: center; margin-bottom: 3rem; }
-.title-jobs h2 { font-size: 2rem; font-weight: 700; }
-.title-jobs .subtitle { color: var(--clr-text-muted); margin-top: 0.25rem; font-size: 1rem; }
+.skills-section {
+    padding: 4rem 0;
+}
 
-/* Tarjetas de Proyectos */
-.project-image { position: relative; height: 210px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
-.project-image img, .secction_work img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-.project-card:hover .project-image img, .secction_work:hover img { transform: scale(1.03); }
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    padding: 2.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+    font-size: 1.6rem;
+    color: #345edb;
+    margin-right: 0.8rem;
+}
+
+.skill-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-level {
+    font-weight: 600;
+}
+
+.skill-level.native {
+    color: #10b981;
+}
+
+.skill-level.intermediate {
+    color: #f59e0b;
+}
+
+.skill-item.professional {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Píldoras de tecnología */
+.tech-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.tech-pill {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 0.4rem 0.9rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.tech-pill:hover {
+    background-color: #345edb;
+    color: white;
+    border-color: #345edb;
+}
+
+/* Efecto especial para la píldora de IA */
+.tech-pill[style*="background-color: #10b981"] {
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+    50% { box-shadow: 0 0 12px 2px rgba(16, 185, 129, 0.2); }
+}
+
+/* ==========================================================================
+   7. PROYECTOS PROFESIONALES (SALCOM)
+   ========================================================================== */
+.jobs {
+    margin: 4rem 0;
+}
+
+.title-jobs {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.title-jobs h2 {
+    font-size: 2.2rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.title-jobs .subtitle {
+    font-size: 1.05rem;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.professional-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
 
 .company-overlay {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(8px); /* Efecto cristal esmerilado de iOS */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(4px);
     color: #fff;
-    padding: 8px;
-    font-size: 0.75rem;
+    padding: 10px;
+    font-size: 13px;
     text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    font-weight: 500;
 }
 
-.project-info, .gymsal2, .bonvestir2 { padding: 1.5rem; display: flex; flex-direction: column; }
-.project-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-.project-description, .gymsal2 p, .bonvestir2 p { color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }
+.project-info {
+    padding: 24px;
+}
 
-/* Botones de acción minimalistas */
-.project-link, .gymsal2 a, .bonvestir2 a {
+.project-info h3 {
+    color: #0f172a;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.project-description {
+    color: #475569;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.project-links a, .project-link {
     display: inline-block;
-    padding: 8px 16px;
-    background: var(--clr-primary);
-    color: #ffffff;
+    padding: 10px 22px;
+    background: #345edb;
+    color: white;
     text-decoration: none;
-    border-radius: var(--radius-sm);
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 0.8rem;
-    text-align: center;
-    transition: var(--transition);
+    font-size: 0.9rem;
+    transition: background 0.2s ease, transform 0.1s ease;
 }
-.project-link:hover { background: var(--clr-primary-hover); }
 
-/* Variación elegante para proyectos académicos */
-.gymsal2 a, .bonvestir2 a {
-    background: transparent;
-    color: var(--clr-primary);
-    border: 1px solid var(--clr-border);
-}
-.gymsal2 a:hover, .bonvestir2 a:hover {
-    background: var(--clr-primary);
-    color: #ffffff;
-    border-color: var(--clr-primary);
+.project-links a:hover, .project-link:hover {
+    background: #1e40af;
 }
 
 .professional-note {
-    margin-top: 2rem;
-    padding: 1rem 1.25rem;
-    background: var(--clr-bg-card);
-    border-left: 3px solid var(--clr-primary);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    font-size: 0.85rem;
-    color: var(--clr-text-muted);
-    border-top: 1px solid var(--clr-border);
-    border-right: 1px solid var(--clr-border);
-    border-bottom: 1px solid var(--clr-border);
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 4px solid #345edb;
+    border-radius: 0 12px 12px 0;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
 }
 
-.view-all-projects { margin-top: 3rem; text-align: center; }
+/* ==========================================================================
+   8. PROYECTOS ACADÉMICOS
+   ========================================================================== */
+.work {
+    padding: 4rem 0;
+}
+
+.title_work h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.box_work1, .box_work2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.secction_work, .secction_work2 {
+    background-color: #fff;
+    border: 1px solid #f1f5f9;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.secction_work:hover, .secction_work2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.secction_work img, .secction_work2 img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+}
+
+.gymsal2, .bonvestir2, .street2, .dragon2, .sopa2 {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.gymsal2 p, .bonvestir2 p, .street2 p, .dragon2 p, .sopa2 p {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.gymsal2 a, .bonvestir2 a, .street2 a, .dragon2 a, .sopa2 a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #f1f5f9;
+    color: #345edb;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.gymsal2 a:hover, .bonvestir2 a:hover, .street2 a:hover, .dragon2 a:hover, .sopa2 a:hover {
+    background-color: #345edb;
+    color: #fff;
+    border-color: #345edb;
+}
+
+.view-all-projects {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .view-all-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 24px;
-    background-color: var(--clr-text-main);
+    gap: 0.6rem;
+    padding: 12px 28px;
+    background-color: #345edb;
     color: white;
     text-decoration: none;
-    border-radius: var(--radius-sm);
-    font-size: 0.9rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
     font-weight: 600;
-    transition: var(--transition);
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
-.view-all-btn:hover { background-color: var(--clr-primary); transform: translateY(-2px); }
-.view-all-btn i { transition: var(--transition); }
-.view-all-btn:hover i { transform: translateX(4px); }
+
+.view-all-btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(52, 94, 219, 0.3);
+}
+
+.view-all-btn i {
+    transition: transform 0.2s ease;
+}
+
+.view-all-btn:hover i {
+    transform: translateX(4px);
+}
 
 /* ==========================================================================
-   10. FOOTER CORPORATIVO
+   9. FOOTER
    ========================================================================== */
 footer {
-    background-color: var(--clr-text-main);
-    color: #ffffff;
-    padding: 4rem 2rem 2rem 2rem;
-    margin-top: 6rem;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 50px 20px;
+    margin-top: 4rem;
+    border-radius: 24px 24px 0 0;
     text-align: center;
 }
-.logo_fo { margin-bottom: 1.5rem; }
-.img_fo { width: 80px; height: auto; opacity: 0.7; }
-.redes_fo { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-.section_redes a { color: #64748b; font-size: 1.3rem; transition: var(--transition); }
-.section_redes a:hover { color: #ffffff; transform: scale(1.1); }
-.derechos { font-size: 0.8rem; color: #475569; border-top: 1px solid #1e293b; padding-top: 1.5rem; }
+
+.logo_fo {
+    margin-bottom: 24px;
+}
+
+.img_fo {
+    width: 100px;
+    height: auto;
+}
+
+.redes_fo {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.section_redes a {
+    color: #94a3b8;
+    font-size: 24px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.section_redes a:hover {
+    color: #345edb;
+    transform: scale(1.15);
+}
+
+.derechos {
+    font-size: 14px;
+    color: #64748b;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+}
 
 /* ==========================================================================
-   11. MEDIA QUERIES (RESPONSIVE TOTALMENTE FLUIDO)
+   10. MEDIA QUERIES (RESPONSIVE DESIGN)
    ========================================================================== */
 @media (max-width: 1024px) {
     .general { width: 90%; }
+    .professional-projects { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
-    .presentacion { grid-template-columns: 1fr; text-align: center; gap: 2rem; margin-top: 3rem; }
-    .dedicacion h1 { font-size: 2.25rem; }
-    .dedicacion h3 { max-width: 100%; font-size: 1.1rem; }
-    .foto { order: -1; } /* Sube la foto por encima del texto en móviles */
-    .section-title, .title-jobs h2 { font-size: 1.65rem; }
-    .descripcion { margin: 4rem auto; }
-    .textdescription h4 { font-size: 1.15rem; }
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .presentacion {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .dedicacion { text-align: center; }
+    .dedicacion h1 { font-size: 32px; }
+    .foto .cara { height: 200px; width: 200px; }
+    .section-title, .title-jobs h2, .title_work h2 { font-size: 1.8rem; }
+    .experience-container { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
-    .header { flex-direction: column; gap: 1rem; }
+    .textdescription h4 { font-size: 1.15rem; }
     .experience-card, .skill-card { padding: 1.5rem; }
-    .skill-header { flex-direction: column; text-align: center; gap: 0.25rem; }
-    .skill-icon { margin-right: 0; }
+    .skill-header { flex-direction: column; align-items: center; text-align: center; }
+    .skill-icon { margin-right: 0; margin-bottom: 8px; }
 }
