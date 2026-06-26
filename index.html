@@ -1,364 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Andrea Garreta</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/b8a838b99b.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Andrea Garreta Román | Desarrolladora Web</title>
+<meta name="description" content="Portfolio de Andrea Garreta Román, desarrolladora de aplicaciones web especializada en Front-end, Back-end y desarrollo asistido por IA." />
+<meta property="og:title" content="Andrea Garreta Román | Desarrolladora Web" />
+<meta property="og:description" content="Front-end, Back-end y desarrollo web asistido por IA." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#0a1628" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="general">
-        <div class="header">
-            <div class="logo">
-                <img class="imglogo" src="./img/LOGO.png" alt="Andrea Garreta Logo">
-            </div>
-            <div class="cv">
-                <a href="./Andrea Garreta Roman CV ES.pdf" title="Descargar CV"><i class="fa-solid fa-file"></i></a>
-                <a href="https://github.com/Ruuculaa" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
+
+<a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#inicio" class="nav-logo"><span>AG</span><span class="cursor" aria-hidden="true"></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#trayectoria">Trayectoria</a></li>
+      <li><a href="#competencias">Competencias</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#academicos">Académicos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</nav>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">Disponible para nuevas oportunidades</span>
+        <h1>Construyo experiencias web <span class="accent">claras, rápidas y bien hechas.</span></h1>
+        <p class="hero-sub">
+          Soy Andrea Garreta Román, desarrolladora de aplicaciones web especializada en Front-end, Back-end
+          y desarrollo asistido por IA. Resido en Esparreguera (Barcelona) y trabajo con HTML, CSS, JavaScript,
+          PHP y bases de datos relacionales, siempre con foco en usabilidad, accesibilidad y rendimiento.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="Andrea Garreta Roman CV ES.pdf" download>Descargar CV</a>
+          <a class="btn btn-ghost" href="https://github.com/Ruuculaa" target="_blank" rel="noopener">Ver GitHub</a>
         </div>
-
-        <div class="presentacion">
-            <div class="dedicacion">
-                <h1><b>DESARROLLADORA DE APLICACIONES WEB</b></h1> 
-                <h3>Especializada en Front-end, Back-end y Desarrollo Web | Asistido por IA</h3>
-            </div>
-
-            <div class="fotocara">
-                <div class="foto">
-                    <img class="cara" src="./img/AndreaGarreta.jpeg" alt="Andrea Garreta">
-                </div>
-            </div>
+      </div>
+      <div class="hero-portrait-col">
+        <div class="portrait-frame">
+          <div class="frame-bar">
+            <span></span><span></span><span></span>
+            <span class="filename">andrea.dev</span>
+          </div>
+          <img src="img/AndreaGarreta.jpeg" alt="Retrato de Andrea Garreta Román" />
         </div>
-
-        <!---------------------------Descripcion------------------------------->
-        <div class="descripcion">
-            <div class="textdescription">
-                <h4>
-                    Soy Andrea Garreta Román y resido en Esparreguera (Barcelona). 
-                    <br><br>
-                    Apasionada de la informática y el desarrollo de software, cuento con una sólida formación en entornos Full-stack (Frontend y Backend). Domino tecnologías como HTML, CSS, JavaScript, PHP y bases de datos relacionales, enfocando siempre mi trabajo en la usabilidad, la accesibilidad y el alto rendimiento. Además, integro herramientas de Inteligencia Artificial en mi flujo de trabajo diario para optimizar los tiempos de desarrollo y refactorizar código de manera eficiente.
-                </h4>
-            </div>
-        </div>
-
-        <!-----------------------------ESTUDIOS/EXPERIENCIA---------------------------------->
-        <section class="experience-section">
-            <div class="section-header">
-                <h2 class="section-title">Estudios y Experiencia Laboral</h2>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="experience-container">
-                <!-- Estudios -->
-                <article class="experience-card">
-                    <div class="card-header">
-                        <i class="fas fa-graduation-cap card-icon"></i>
-                        <h3 class="card-title">Estudios</h3>
-                    </div>
-                    <ul class="experience-list">
-                        <li class="experience-item">
-                            <h4 class="item-title">Formación Profesional Grado Superior</h4>
-                            <p class="item-subtitle">INS Daniel Blanxart i Pedrals (DAW)</p>
-                            <span class="item-date">2023 - 2025</span>
-                        </li>
-                        <li class="experience-item">
-                            <h4 class="item-title">Formación Profesional Grado Medio</h4>
-                            <p class="item-subtitle">INS Daniel Blanxart i Pedrals (SMX)</p>
-                            <span class="item-date">2021 - 2023</span>
-                        </li>
-                    </ul>
-                </article>
-                
-                <!-- Experiencia -->
-                <article class="experience-card">
-                    <div class="card-header">
-                        <i class="fas fa-briefcase card-icon"></i>
-                        <h3 class="card-title">Experiencia Laboral</h3>
-                    </div>
-                    <ul class="experience-list">
-                        <li class="experience-item">
-                            <h4 class="item-title">Desarrolladora Web</h4>
-                            <p class="item-subtitle">Salcom Consulting</p>
-                            <span class="item-date">2024 - 2025</span>
-                            <p class="item-description">
-                                Desarrollo de aplicaciones web corporativas utilizando WordPress y maquetadores avanzados.<br> 
-                                Implementación y monitorización de análisis web con Matomo.<br> 
-                                Gestión directa con clientes, consultoría técnica y toma de requisitos de diseño.
-                            </p>
-                        </li>
-                        <li class="experience-item">
-                            <h4 class="item-title">Desarrolladora Web</h4>
-                            <p class="item-subtitle">Millenium Center</p>
-                            <span class="item-date">2022 - 2023</span>
-                            <p class="item-description">
-                                Diseño, estructura y despliegue de páginas web nativas utilizando VS Code.<br> 
-                                Aplicación de lenguajes de programación estándar y lógicas orientadas a la web.
-                            </p>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-------------------------CUALIDADES------------------------------------->
-        <section class="skills-section">
-            <div class="section-header">
-                <h2 class="section-title">Competencias</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="skills-container">
-                <!-- Competencia Lingüística -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <h3 class="skill-title">Competencias Lingüísticas</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span class="skill-name">Español</span>
-                            <span class="skill-level native">Nativo</span>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">Catalán</span>
-                            <span class="skill-level intermediate">C1</span>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">Inglés</span>
-                            <span class="skill-level intermediate">B1</span>
-                        </li>
-                    </ul>
-                </article>
-
-                <!-- Competencias Profesionales -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h3 class="skill-title">Competencias Profesionales</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li class="skill-item professional">Responsable y proactiva</li>
-                        <li class="skill-item professional">Trabajo en equipo y metodologías ágiles</li>
-                        <li class="skill-item professional">Compromiso con la calidad del código</li>
-                        <li class="skill-item professional">Organización y metodologías limpias</li>
-                    </ul>
-                </article>
-
-                <!-- Competencias TIC e IA -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3 class="skill-title">Competencias TIC & IA</h3>
-                    </div>
-                    <div class="tech-skills">
-                        <span class="tech-pill">PHP</span>
-                        <span class="tech-pill">WordPress</span>
-                        <span class="tech-pill">JavaScript (ES6+)</span>
-                        <span class="tech-pill">React</span>
-                        <span class="tech-pill">Node.js</span>
-                        <span class="tech-pill">MySQL</span>
-                        <span class="tech-pill">Matomo</span>
-                        <span class="tech-pill" style="background-color: #10b981; color: #fff;"><i class="fa-solid fa-robot"></i> Optimización IA</span>
-                    </div>
-                    <p style="font-size: 13px; color: #94a3b8; margin-top: 15px; line-height: 1.4;">
-                        <i class="fa-solid fa-wand-magic-sparkles" style="color: #10b981;"></i> 
-                        <strong>AI-Driven Work:</strong> Integración de herramientas de IA (GitHub Copilot, ChatGPT) como <em>Pair Programmer</em> para acelerar maquetados, optimizar algoritmos y reducir tiempos de entrega.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!-----------------------TRABAJOS--------------------------->
-        <div class="jobs">
-            <div class="title-jobs">
-                <h2>EXPERIENCIA PROFESIONAL</h2>
-                <p class="subtitle">Proyectos desarrollados durante mi etapa en Salcom Consulting</p>
-            </div>
-            
-            <div class="professional-projects">
-                <!-- Proyecto 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img/SalcomConsulting/lacouture.png" alt="La Couture Creative">
-                        <div class="company-overlay">
-                            <span>Desarrollado para Salcom Consulting</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>La Couture Creative</h3>
-                        <p class="project-description">
-                            Sitio web corporativo responsive desarrollado con WordPress, Elementor Pro y Matomo. 
-                            Participé activamente en la maquetación front-end, adaptabilidad móvil e implementación de interacciones dinámicas.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://lacouturecreative.es/" target="_blank" rel="noopener">Visitar web</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Proyecto 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img/SalcomConsulting/sorac.png" alt="SORAC">
-                        <div class="company-overlay">
-                            <span>Desarrollado para Salcom Consulting</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Sorac Integral S.L</h3>
-                        <p class="project-description">
-                            Sitio web corporativo responsive desarrollado con WordPress, Elementor Pro y Matomo. 
-                            Enfocado en la optimización SEO inicial, velocidad de carga y diseño adaptado a la identidad de marca.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://soracintegral.cat/" target="_blank" rel="noopener">Visitar web</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Proyecto 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img/SalcomConsulting/starls.png" alt="Starls">
-                        <div class="company-overlay">
-                            <span>Desarrollado para Salcom Consulting</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Starls</h3>
-                        <p class="project-description">
-                            Sitio web corporativo responsive implementado a través de WordPress. Adaptación personalizada de plantillas avanzadas y estructuración de contenido técnico.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://starls.es/" target="_blank" rel="noopener">Visitar web</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img/SalcomConsulting/miralles.png" alt="Restaurant Miralles">
-                        <div class="company-overlay">
-                            <span>Desarrollado para Salcom Consulting</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Restaurant Miralles</h3>
-                        <p class="project-description">
-                            Portal web dinámico para restauración. Integración de menús autogestionables, diseño responsive intuitivo y analítica digital mediante Matomo.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://restaurantmiralles.cat/" target="_blank" rel="noopener">Visitar web</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="view-all-projects">
-                <a href="Proyectos.html" class="view-all-btn">Ver todos los proyectos <i class="fas fa-arrow-right"></i></a>
-            </div>
-            
-            <div class="professional-note">
-                <p><strong>Nota:</strong> Estos proyectos fueron desarrollados durante mi etapa como profesional en Salcom Consulting. Los muestro aquí como ejemplo de mi experiencia laboral, reconociendo la propiedad intelectual de dicha entidad.</p>
-            </div>
-        </div>
-
-        <section class="work">
-            <div class="title_work">
-                <h2>PROYECTOS ACADÉMICOS</h2>
-            </div>
-        
-            <div class="box_work1">
-                <!-- Proyecto GYM -->
-                <div class="secction_work">
-                    <a href="./GYM/index2.html" target="_blank">
-                        <img src="./img/LOGOS PROYECTOS/gymsal.png" alt="Proyecto web de gimnasio">
-                    </a>
-                    <div class="gymsal2">
-                        <p><b>Gimnasio Web App</b><br>Interfaz moderna y fluida para la gestión de un centro deportivo. Prototipo responsive con enfoque en arquitecturas escalables de maquetación.</p>
-                        <a href="./GYM/index2.html" target="_blank">VISITAR</a>
-                    </div>
-                </div>
-        
-                <!-- Proyecto BonVestir -->
-                <div class="secction_work">
-                    <a href="./ElBonVestir/index.html" target="_blank">
-                        <img src="./img/LOGOS PROYECTOS/Bonvestir1.png" alt="Tienda de ropa BonVestir">
-                    </a>
-                    <div class="bonvestir2">
-                        <p><b>E-commerce ElBonVestir</b><br>Plataforma web enfocada a una tienda de ropa online. Maquetación interactiva y responsive diseñada para flujos UX fluidos.</p>
-                        <a href="./ElBonVestir/index.html" target="_blank">VISITAR</a>
-                    </div>
-                </div>
-        
-                <!-- Proyecto Street Fighter -->
-                <div class="secction_work">
-                    <a href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" target="_blank">
-                        <img src="./img/LOGOS PROYECTOS/street1.png" alt="Proyecto Street Fighter en equipo">
-                    </a>
-                    <div class="street2">
-                        <p><b>Street Fighter Remake</b><br>Proyecto colaborativo de gran envergadura. Desarrollado utilizando Node.js, React y animaciones en vídeo para recrear dinámicas de juego reales.</p>
-                        <a href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" target="_blank">VISITAR</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="box_work2">
-                <!-- Proyecto Dragon Ball -->
-                <div class="secction_work2">
-                    <a href="./dragonball/index.html" target="_blank">
-                        <img src="./img/LOGOS PROYECTOS/dragonball1.png" alt="Web Dragon Ball orientada a objetos">
-                    </a>
-                    <div class="dragon2">
-                        <p><b>Dragon Ball POO Project</b><br>Aplicación interactiva realizada en pareja enfocada en la robustez lógica y los principios de la Programación Orientada a Objetos mediante JavaScript nativo.</p>
-                        <a href="./dragonball/index.html" target="_blank">VISITAR</a>
-                    </div>
-                </div>
-        
-                <!-- Proyecto Sopa de Letras -->
-                <div class="secction_work2">
-                    <a href="./SopaDeLetras/sopaletra.html" target="_blank">
-                        <img src="./img/LOGOS PROYECTOS/sopaletras1.png" alt="Juego sopa de letras">
-                    </a>
-                    <div class="sopa2">
-                        <p><b>Sopa de Letras Interactiva</b><br>Aplicación lúdica con algoritmos dinámicos complejos para la generación de matrices de juego. Creado de manera ágil con React, HTML, CSS y JS.</p>
-                        <a href="./SopaDeLetras/sopaletra.html" target="_blank">VISITAR</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!----------------------------FOOTER--------------------------------->
-        <footer>
-            <div class="logo_fo">
-                <img class="img_fo" src="./img/LOGO.png" alt="Andrea Garreta">
-            </div>
-            <div class="redes_fo">
-                <div class="section_redes">
-                    <a href="https://www.linkedin.com/in/andreagarreta/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-                </div>
-                <div class="section_redes">
-                    <a href="tel:+34652331123"><i class="fa-solid fa-phone"></i></a>
-                </div>
-                <div class="section_redes">
-                    <a href="mailto:agarreta2@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-                <div class="section_redes">
-                    <a href="https://github.com/Ruuculaa" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="derechos">
-                <p>Created by Andrea Garreta Román <i class="fa-solid fa-copyright"></i></p>
-            </div>
-        </footer>
+        <span class="portrait-tag">Front-end · Back-end · IA</span>
+      </div>
     </div>
+  </header>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-label">// Quién soy</span>
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Apasionada de la informática y el desarrollo de software, cuento con una sólida formación en
+            entornos <strong>Full-stack</strong> (Frontend y Backend). Domino tecnologías como HTML, CSS,
+            JavaScript, PHP y bases de datos relacionales, enfocando siempre mi trabajo en la usabilidad,
+            la accesibilidad y el alto rendimiento.
+          </p>
+          <p>
+            Además, integro herramientas de <strong>Inteligencia Artificial</strong> en mi flujo de trabajo
+            diario para optimizar los tiempos de desarrollo y refactorizar código de manera eficiente.
+          </p>
+          <div class="stat-row">
+            <div class="stat">
+              <div class="num">2+</div>
+              <div class="label">Años de experiencia</div>
+            </div>
+            <div class="stat">
+              <div class="num">7+</div>
+              <div class="label">Proyectos entregados</div>
+            </div>
+            <div class="stat">
+              <div class="num">3</div>
+              <div class="label">Idiomas</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="timeline-group-label">Formación</span>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2023 — 2025</span>
+              <h4>Formación Profesional Grado Superior</h4>
+              <span class="org">INS Daniel Blanxart i Pedrals · DAW</span>
+              <p>Desarrollo de Aplicaciones Web.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2021 — 2023</span>
+              <h4>Formación Profesional Grado Medio</h4>
+              <span class="org">INS Daniel Blanxart i Pedrals · SMX</span>
+              <p>Sistemas Microinformáticos y Redes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section id="trayectoria" class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-label">// Experiencia</span>
+        <h2>Trayectoria profesional</h2>
+        <p>Empresas y proyectos en los que he aportado valor real.</p>
+      </div>
+      <div class="reveal" style="max-width:720px;">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">2024 — 2025</span>
+            <h4>Desarrolladora Web</h4>
+            <span class="org">Salcom Consulting</span>
+            <p>
+              Desarrollo de aplicaciones web corporativas utilizando WordPress y maquetadores avanzados.
+              Implementación y monitorización de análisis web con Matomo. Gestión directa con clientes,
+              consultoría técnica y toma de requisitos de diseño.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2022 — 2023</span>
+            <h4>Desarrolladora Web</h4>
+            <span class="org">Millenium Center</span>
+            <p>
+              Diseño, estructura y despliegue de páginas web nativas utilizando VS Code. Aplicación de
+              lenguajes de programación estándar y lógicas orientadas a la web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIAS -->
+  <section id="competencias">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-label">// Stack &amp; competencias</span>
+        <h2>Lo que domino</h2>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <h3>Profesionales</h3>
+          <p>Responsable y proactiva, con compromiso firme con la calidad del código y metodologías limpias.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Trabajo en equipo</h3>
+          <p>Cómoda en entornos ágiles, con organización clara y comunicación directa con clientes.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Calidad &amp; detalle</h3>
+          <p>Foco constante en usabilidad, accesibilidad y rendimiento en cada entrega.</p>
+        </div>
+      </div>
+
+      <div class="chip-row reveal">
+        <span class="chip">PHP</span>
+        <span class="chip">WordPress</span>
+        <span class="chip">JavaScript (ES6+)</span>
+        <span class="chip">React</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">Matomo</span>
+        <span class="chip">Optimización con IA</span>
+      </div>
+
+      <div class="ai-callout reveal">
+        <strong>AI-Driven Work</strong>
+        Integración de herramientas de IA (GitHub Copilot, ChatGPT) como Pair Programmer para acelerar
+        maquetados, optimizar algoritmos y reducir tiempos de entrega.
+      </div>
+
+      <div class="lang-row reveal">
+        <div class="lang-item">
+          <div class="lang-name">Español</div>
+          <div class="lang-level">Nativo</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Catalán</div>
+          <div class="lang-level">C1</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Inglés</div>
+          <div class="lang-level">B1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS PROFESIONALES -->
+  <section id="proyectos" class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-label">// Experiencia profesional</span>
+        <h2>Proyectos en Salcom Consulting</h2>
+        <p>Sitios corporativos reales, desarrollados de principio a fin para clientes.</p>
+      </div>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="img/SalcomConsulting/lacouture.png" alt="Captura del sitio web La Couture Creative" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag">WordPress · Elementor Pro · Matomo</span>
+          <h3>La Couture Creative</h3>
+          <p>
+            Sitio web corporativo responsive. Participé activamente en la maquetación front-end,
+            adaptabilidad móvil e implementación de interacciones dinámicas.
+          </p>
+          <a class="project-link" href="https://lacouturecreative.es/" target="_blank" rel="noopener">Visitar web</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="img/SalcomConsulting/sorac.png" alt="Captura del sitio web Sorac Integral S.L" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag">WordPress · Elementor Pro · SEO</span>
+          <h3>Sorac Integral S.L</h3>
+          <p>
+            Sitio web corporativo responsive, enfocado en la optimización SEO inicial, velocidad de
+            carga y diseño adaptado a la identidad de marca.
+          </p>
+          <a class="project-link" href="https://soracintegral.cat/" target="_blank" rel="noopener">Visitar web</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="img/SalcomConsulting/starls.png" alt="Captura del sitio web Starls" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag">WordPress · Plantillas avanzadas</span>
+          <h3>Starls</h3>
+          <p>
+            Sitio web corporativo responsive. Adaptación personalizada de plantillas avanzadas y
+            estructuración de contenido técnico.
+          </p>
+          <a class="project-link" href="https://starls.es/" target="_blank" rel="noopener">Visitar web</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="img/SalcomConsulting/miralles.png" alt="Captura del sitio web Restaurant Miralles" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <span class="project-tag">WordPress · Matomo · Responsive</span>
+          <h3>Restaurant Miralles</h3>
+          <p>
+            Portal web dinámico para restauración. Integración de menús autogestionables, diseño
+            responsive intuitivo y analítica digital mediante Matomo.
+          </p>
+          <a class="project-link" href="https://restaurantmiralles.cat/" target="_blank" rel="noopener">Visitar web</a>
+        </div>
+      </article>
+
+      <p class="note-box reveal">
+        Estos proyectos fueron desarrollados durante mi etapa como profesional en Salcom Consulting.
+        Los muestro aquí como ejemplo de mi experiencia laboral, reconociendo la propiedad intelectual
+        de dicha entidad.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROYECTOS ACADÉMICOS -->
+  <section id="academicos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-label">// Práctica personal</span>
+        <h2>Proyectos académicos</h2>
+        <p>Ejercicios y prototipos donde experimento, aprendo y aplico lo nuevo.</p>
+      </div>
+
+      <div class="academic-grid reveal">
+        <article class="academic-card">
+          <a href="GYM/index2.html" class="thumb">
+            <img src="img/LOGOS PROYECTOS/gymsal.png" alt="Captura del proyecto Gimnasio Web App" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <h4>Gimnasio Web App</h4>
+            <p>Interfaz moderna y fluida para la gestión de un centro deportivo, con enfoque en arquitecturas escalables.</p>
+            <a class="project-link" href="GYM/index2.html">Visitar</a>
+          </div>
+        </article>
+
+        <article class="academic-card">
+          <a href="ElBonVestir/index.html" class="thumb">
+            <img src="img/LOGOS PROYECTOS/Bonvestir1.png" alt="Captura del proyecto E-commerce ElBonVestir" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <h4>E-commerce ElBonVestir</h4>
+            <p>Plataforma de tienda de ropa online. Maquetación interactiva y responsive para flujos UX fluidos.</p>
+            <a class="project-link" href="ElBonVestir/index.html">Visitar</a>
+          </div>
+        </article>
+
+        <article class="academic-card">
+          <a href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" class="thumb" target="_blank" rel="noopener">
+            <img src="img/LOGOS PROYECTOS/street1.png" alt="Captura del proyecto Street Fighter Remake" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <h4>Street Fighter Remake</h4>
+            <p>Proyecto colaborativo con Node.js, React y animaciones en vídeo para recrear dinámicas de juego reales.</p>
+            <a class="project-link" href="https://github.com/StreetfighterTrabajoUF5/StreetFighter" target="_blank" rel="noopener">Visitar</a>
+          </div>
+        </article>
+
+        <article class="academic-card">
+          <a href="dragonball/index.html" class="thumb">
+            <img src="img/LOGOS PROYECTOS/dragonball1.png" alt="Captura del proyecto Dragon Ball POO" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <h4>Dragon Ball POO Project</h4>
+            <p>Aplicación interactiva en pareja, enfocada en robustez lógica y principios de POO con JavaScript nativo.</p>
+            <a class="project-link" href="dragonball/index.html">Visitar</a>
+          </div>
+        </article>
+
+        <article class="academic-card">
+          <a href="SopaDeLetras/sopaletra.html" class="thumb">
+            <img src="img/LOGOS PROYECTOS/sopaletras1.png" alt="Captura del proyecto Sopa de Letras Interactiva" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <h4>Sopa de Letras Interactiva</h4>
+            <p>Aplicación lúdica con algoritmos dinámicos para generación de matrices de juego. React, HTML, CSS y JS.</p>
+            <a class="project-link" href="SopaDeLetras/sopaletra.html">Visitar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="see-all reveal">
+        <a class="btn btn-ghost" href="Proyectos.html">Ver todos los proyectos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <h2>¿Hablamos de tu próximo proyecto?</h2>
+        <p>Estoy disponible para nuevas oportunidades como desarrolladora Front-end, Back-end o Full-stack.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:agarreta2@gmail.com">Escríbeme</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/andreagarreta/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="tel:+34652331123">+34 652 331 123</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <span class="footer-credit">© <span id="year"></span> Andrea Garreta Román</span>
+      <div class="footer-links">
+        <a href="https://github.com/Ruuculaa" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/andreagarreta/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:agarreta2@gmail.com">Email</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
